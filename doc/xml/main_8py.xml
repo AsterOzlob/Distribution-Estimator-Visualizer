@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="main_8py" kind="file" language="Python">
+    <compoundname>main.py</compoundname>
+    <innerclass refid="classmain_1_1_my_application" prot="public">main::MyApplication</innerclass>
+    <innernamespace refid="namespacemain">main</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>random_variables<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>(RandomVariable,<sp/>SmoothedRandomVariable,<sp/>NormalRandomVariable,<sp/>UniformRandomVariable,</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LaplaceRandomVariable,<sp/>ExponentialRandomVariable,<sp/>CauchyRandomVariable)</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>random_number_generators<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>SimpleRandomNumberGenerator</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>estimations<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>EDF,<sp/>Histogram</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>enums<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>DistComboBoxValues</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>plotting<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>plot_distributions,<sp/>plot_histograms</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>PyQt5<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>QtWidgets</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sys</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ui_Lab2</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classmain_1_1_my_application" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmain_1_1_my_application" kindref="compound">MyApplication</ref>(QtWidgets.QMainWindow,<sp/><ref refid="classui___lab2_1_1_ui___main_window" kindref="compound">ui_Lab2.Ui_MainWindow</ref>):</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self)<sp/>-&gt;<sp/>None:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().__init__()</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classui___lab2_1_1_ui___main_window_1a67de752878dfb528d7c5e55245105a09" kindref="member">setupUi</ref>(self)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classui___lab2_1_1_ui___main_window_1a0daf437bda93831ff767ce5646c5d661" kindref="member">distComboBox</ref>.currentIndexChanged.connect(self.<ref refid="classmain_1_1_my_application_1ab6eb66e46ff62f3633499e97ac98bd23" kindref="member">on_combobox_changed</ref><ref refid="classmain_1_1_my_application_1a6fed158424101c5cdea7cbcf32e98a48" kindref="member">on_combobox_changed</ref>)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classui___lab2_1_1_ui___main_window_1ac8c64b693a72ac47dff0e07ecbffb0ec" kindref="member">calcButton</ref>.clicked.connect(self.<ref refid="classmain_1_1_my_application_1a543964c902127e2b46c18027150ee8a1" kindref="member">calculate</ref><ref refid="classmain_1_1_my_application_1a3cde2d0aad0b151bea2814a40f99f71c" kindref="member">calculate</ref>)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">on_combobox_changed(self)<sp/>-&gt;<sp/>None:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>selected_text<sp/>=<sp/>self.<ref refid="classui___lab2_1_1_ui___main_window_1a0daf437bda93831ff767ce5646c5d661" kindref="member">distComboBox</ref>.currentText()</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>selected_text<sp/>==<sp/>DistComboBoxValues.UniformDist.value:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lower_label,<sp/>upper_label<sp/>=<sp/>(</highlight><highlight class="stringliteral">&quot;a:&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;b:&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>selected_text<sp/>==<sp/>DistComboBoxValues.ExponentialDist.value:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lower_label,<sp/>upper_label<sp/>=<sp/>(</highlight><highlight class="stringliteral">&quot;lambda:&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classui___lab2_1_1_ui___main_window_1ad436e620515e4292aacbc72389381b96" kindref="member">UpperBoundLabel</ref>.setEnabled(</highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classui___lab2_1_1_ui___main_window_1a2204e7d59f86462549c1743069dd8c0c" kindref="member">UpperBoundLineEdit</ref>.setEnabled(</highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lower_label,<sp/>upper_label<sp/>=<sp/>(</highlight><highlight class="stringliteral">&quot;Сдвиг:&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Масштаб:&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classui___lab2_1_1_ui___main_window_1ad436e620515e4292aacbc72389381b96" kindref="member">UpperBoundLabel</ref>.setEnabled(</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classui___lab2_1_1_ui___main_window_1a2204e7d59f86462549c1743069dd8c0c" kindref="member">UpperBoundLineEdit</ref>.setEnabled(</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classui___lab2_1_1_ui___main_window_1ada38799d3aa0607000c6fb4c63aeab08" kindref="member">LowerBoundLabel</ref>.setText(lower_label)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classui___lab2_1_1_ui___main_window_1ad436e620515e4292aacbc72389381b96" kindref="member">UpperBoundLabel</ref>.setText(upper_label)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">calculate(self)<sp/>-&gt;<sp/>None:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classmain_1_1_my_application_1a927957419a31e11484daed27d7d77bea" kindref="member">firstGraphWidget</ref><ref refid="classui___lab2_1_1_ui___main_window_1a3ad74d4db51bf95144ecc302b337b48c" kindref="member">firstGraphWidget</ref>.clear()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classmain_1_1_my_application_1a3d3e7c77cb484ad398cdca7b851cd93b" kindref="member">secondGraphWidget</ref><ref refid="classui___lab2_1_1_ui___main_window_1a30c529d9b2869e4064ba51ff404c2b0c" kindref="member">secondGraphWidget</ref>.clear()</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>location,<sp/>scale,<sp/>N,<sp/>bandwith,<sp/>m<sp/>=<sp/>self.<ref refid="classmain_1_1_my_application_1ab8e5186ebf799caa8a56af74c1eb5993" kindref="member">get_input_parameters</ref>()</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rv<sp/>=<sp/>self.<ref refid="classmain_1_1_my_application_1a2b8ac716b401a9e9dbd579e1daa451f2" kindref="member">get_selected_random_variable</ref>(location,<sp/>scale)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>generator<sp/>=<sp/><ref refid="classrandom__number__generators_1_1_simple_random_number_generator" kindref="compound">SimpleRandomNumberGenerator</ref>(rv)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sample<sp/>=<sp/>generator.get(N)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>M<sp/>=<sp/>100</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>X<sp/>=<sp/>np.linspace(np.min(sample),<sp/>np.max(sample),<sp/>M)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Y_truth<sp/>=<sp/>np.vectorize(rv.cdf)(X)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>edf<sp/>=<sp/><ref refid="classestimations_1_1_e_d_f" kindref="compound">EDF</ref>(sample)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Y_edf<sp/>=<sp/>np.vectorize(edf.value)(X)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srv<sp/>=<sp/><ref refid="classrandom__variables_1_1_smoothed_random_variable" kindref="compound">SmoothedRandomVariable</ref>(sample,<sp/>bandwith)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Y_kernel<sp/>=<sp/>np.vectorize(srv.cdf)(X)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plot_distributions(self.<ref refid="classmain_1_1_my_application_1a927957419a31e11484daed27d7d77bea" kindref="member">firstGraphWidget</ref><ref refid="classui___lab2_1_1_ui___main_window_1a3ad74d4db51bf95144ecc302b337b48c" kindref="member">firstGraphWidget</ref>,<sp/>X,<sp/>Y_truth,<sp/>Y_edf,<sp/>Y_kernel)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hist<sp/>=<sp/><ref refid="classestimations_1_1_histogram" kindref="compound">Histogram</ref>(sample,<sp/>m)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P_1<sp/>=<sp/>np.vectorize(rv.pdf)(X)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P_2<sp/>=<sp/>np.vectorize(hist.value)(X)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P_3<sp/>=<sp/>np.vectorize(srv.pdf)(X)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>plot_histograms(self.<ref refid="classmain_1_1_my_application_1a3d3e7c77cb484ad398cdca7b851cd93b" kindref="member">secondGraphWidget</ref><ref refid="classui___lab2_1_1_ui___main_window_1a30c529d9b2869e4064ba51ff404c2b0c" kindref="member">secondGraphWidget</ref>,<sp/>X,<sp/>P_1,<sp/>P_2,<sp/>P_3)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_input_parameters(self)<sp/>-&gt;<sp/>tuple:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float(self.<ref refid="classui___lab2_1_1_ui___main_window_1a10f9c5b8a8ae915672e3f5756ef77b8a" kindref="member">LowerBoundLineEdit</ref>.text()),</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float(self.<ref refid="classui___lab2_1_1_ui___main_window_1a2204e7d59f86462549c1743069dd8c0c" kindref="member">UpperBoundLineEdit</ref>.text()),</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int(self.<ref refid="classui___lab2_1_1_ui___main_window_1a356296ad1c022360966e6e0a578887f0" kindref="member">NLineEdit</ref>.text()),</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float(self.<ref refid="classui___lab2_1_1_ui___main_window_1ac0da2abe5bb568758d3297027a4460ee" kindref="member">BandwithLineEdit</ref>.text()),</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int(self.<ref refid="classui___lab2_1_1_ui___main_window_1a5094fce85000796aff90ce9e08af9bcc" kindref="member">MLineEdit</ref>.text())</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_selected_random_variable(self,<sp/>location:<sp/>float,<sp/>scale:<sp/>float)<sp/>-&gt;<sp/>RandomVariable:</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>selected_text<sp/>=<sp/>self.<ref refid="classui___lab2_1_1_ui___main_window_1a0daf437bda93831ff767ce5646c5d661" kindref="member">distComboBox</ref>.currentText()</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>selected_text<sp/>==<sp/>DistComboBoxValues.NormalDist.value:</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rv<sp/>=<sp/><ref refid="classrandom__variables_1_1_normal_random_variable" kindref="compound">NormalRandomVariable</ref>(location,<sp/>scale)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>selected_text<sp/>==<sp/>DistComboBoxValues.UniformDist.value:</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rv<sp/>=<sp/><ref refid="classrandom__variables_1_1_uniform_random_variable" kindref="compound">UniformRandomVariable</ref>(location,<sp/>scale)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>selected_text<sp/>==<sp/>DistComboBoxValues.ExponentialDist.value:</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rv<sp/>=<sp/><ref refid="classrandom__variables_1_1_exponential_random_variable" kindref="compound">ExponentialRandomVariable</ref>(location)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>selected_text<sp/>==<sp/>DistComboBoxValues.LaplaceDist.value:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rv<sp/>=<sp/><ref refid="classrandom__variables_1_1_laplace_random_variable" kindref="compound">LaplaceRandomVariable</ref>(location,<sp/>scale)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>selected_text<sp/>==<sp/>DistComboBoxValues.CauchyDist.value:</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rv<sp/>=<sp/><ref refid="classrandom__variables_1_1_cauchy_random_variable" kindref="compound">CauchyRandomVariable</ref>(location,<sp/>scale)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rv</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>__name__<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;__main__&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>app<sp/>=<sp/>QtWidgets.QApplication(sys.argv)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>window<sp/>=<sp/><ref refid="classmain_1_1_my_application" kindref="compound">MyApplication</ref>()</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>window.show()</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>app.exec_()</highlight></codeline>
+    </programlisting>
+    <location file="main.py"/>
+  </compounddef>
+</doxygen>

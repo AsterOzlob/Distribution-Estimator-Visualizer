@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="random__number__generators_8py" kind="file" language="Python">
+    <compoundname>random_number_generators.py</compoundname>
+    <innerclass refid="classrandom__number__generators_1_1_random_number_generator" prot="public">random_number_generators::RandomNumberGenerator</innerclass>
+    <innerclass refid="classrandom__number__generators_1_1_simple_random_number_generator" prot="public">random_number_generators::SimpleRandomNumberGenerator</innerclass>
+    <innernamespace refid="namespacerandom__number__generators">random_number_generators</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>abc<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ABC,<sp/>abstractmethod</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>random_variables<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>RandomVariable</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classrandom__number__generators_1_1_random_number_generator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrandom__number__generators_1_1_random_number_generator" kindref="compound">RandomNumberGenerator</ref>(ABC):</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>random_variable:<sp/>RandomVariable)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classrandom__number__generators_1_1_random_number_generator_1aac5500852a4c0bc01a2b06d1e4cd6ee8" kindref="member">random_variable</ref><sp/>=<sp/>random_variable</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">@abstractmethod</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get(self,<sp/>N:<sp/>int)<sp/>-&gt;<sp/>np.ndarray:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classrandom__number__generators_1_1_simple_random_number_generator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrandom__number__generators_1_1_simple_random_number_generator" kindref="compound">SimpleRandomNumberGenerator</ref>(<ref refid="classrandom__number__generators_1_1_random_number_generator" kindref="compound">RandomNumberGenerator</ref>):</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>random_variable:<sp/>RandomVariable)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().__init__(random_variable)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get(self,<sp/>N:<sp/>int)<sp/>-&gt;<sp/>np.ndarray:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>us<sp/>=<sp/>np.random.uniform(0,<sp/>1,<sp/>N)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>np.vectorize(self.<ref refid="classrandom__number__generators_1_1_random_number_generator_1aac5500852a4c0bc01a2b06d1e4cd6ee8" kindref="member">random_variable</ref>.quantile)(us)</highlight></codeline>
+    </programlisting>
+    <location file="random_number_generators.py"/>
+  </compounddef>
+</doxygen>

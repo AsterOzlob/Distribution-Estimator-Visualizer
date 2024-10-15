@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classtest_1_1_histogram_1_1_interval" kind="class" language="Python" prot="public">
+    <compoundname>test::Histogram::Interval</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtest_1_1_histogram_1_1_interval_1ad5b742cde3dfb166a7051331bdea49a5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.Histogram.Interval::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <qualifiedname>test.Histogram.Interval.a</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="106" column="1" bodyfile="test.py" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtest_1_1_histogram_1_1_interval_1a76d12ba156784af3ddabf2642b40e48a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.Histogram.Interval::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>test.Histogram.Interval.b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="107" column="1" bodyfile="test.py" bodystart="107" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtest_1_1_histogram_1_1_interval_1aad702d5401448e270dee3b74317e361d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.Histogram.Interval.__init__</definition>
+        <argsstring>(self, a, b)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>test.Histogram.Interval.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>a</type>
+          <defname>a</defname>
+        </param>
+        <param>
+          <type>b</type>
+          <defname>b</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="105" column="1" bodyfile="test.py" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1_histogram_1_1_interval_1a8d774b70187e099f37b5dcdb86d677d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.Histogram.Interval.is_in</definition>
+        <argsstring>(self, x)</argsstring>
+        <name>is_in</name>
+        <qualifiedname>test.Histogram.Interval.is_in</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="109" column="1" bodyfile="test.py" bodystart="109" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1_histogram_1_1_interval_1a56f388db0d4c1c44de0d5b69310b8796" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.Histogram.Interval.__repr__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__repr__</name>
+        <qualifiedname>test.Histogram.Interval.__repr__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="112" column="1" bodyfile="test.py" bodystart="112" bodyend="115"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="test.py" line="104" column="1" bodyfile="test.py" bodystart="104" bodyend="114"/>
+    <listofallmembers>
+      <member refid="classtest_1_1_histogram_1_1_interval_1aad702d5401448e270dee3b74317e361d" prot="public" virt="non-virtual"><scope>test::Histogram::Interval</scope><name>__init__</name></member>
+      <member refid="classtest_1_1_histogram_1_1_interval_1a56f388db0d4c1c44de0d5b69310b8796" prot="public" virt="non-virtual"><scope>test::Histogram::Interval</scope><name>__repr__</name></member>
+      <member refid="classtest_1_1_histogram_1_1_interval_1ad5b742cde3dfb166a7051331bdea49a5" prot="public" virt="non-virtual"><scope>test::Histogram::Interval</scope><name>a</name></member>
+      <member refid="classtest_1_1_histogram_1_1_interval_1a76d12ba156784af3ddabf2642b40e48a" prot="public" virt="non-virtual"><scope>test::Histogram::Interval</scope><name>b</name></member>
+      <member refid="classtest_1_1_histogram_1_1_interval_1a8d774b70187e099f37b5dcdb86d677d5" prot="public" virt="non-virtual"><scope>test::Histogram::Interval</scope><name>is_in</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

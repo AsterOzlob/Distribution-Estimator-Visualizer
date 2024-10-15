@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classestimations_1_1_estimation" kind="class" language="Python" prot="public">
+    <compoundname>estimations::Estimation</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ABC</basecompoundref>
+    <derivedcompoundref refid="classestimations_1_1_e_d_f" prot="public" virt="non-virtual">estimations.EDF</derivedcompoundref>
+    <derivedcompoundref refid="classestimations_1_1_histogram" prot="public" virt="non-virtual">estimations.Histogram</derivedcompoundref>
+    <derivedcompoundref refid="classhistogram_1_1_histogram" prot="public" virt="non-virtual">histogram.Histogram</derivedcompoundref>
+    <derivedcompoundref refid="classrandom__variables_1_1_smoothed_random_variable" prot="public" virt="non-virtual">random_variables.SmoothedRandomVariable</derivedcompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classestimations_1_1_estimation_1a08d29495d5fbe318c219324099d56376" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>estimations.Estimation::sample</definition>
+        <argsstring></argsstring>
+        <name>sample</name>
+        <qualifiedname>estimations.Estimation.sample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="estimations.py" line="9" column="1" bodyfile="estimations.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classestimations_1_1_estimation_1a5678fdc77206aa9918e2b03def8132b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None estimations.Estimation.__init__</definition>
+        <argsstring>(self, np.ndarray sample)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>estimations.Estimation.__init__</qualifiedname>
+        <reimplementedby refid="classhistogram_1_1_histogram_1a2ea0c266e1bc70dabd3c3646ef261394">__init__</reimplementedby>
+        <reimplementedby refid="classrandom__variables_1_1_smoothed_random_variable_1a08453283cc636e12919698922bbbadea">__init__</reimplementedby>
+        <reimplementedby refid="classestimations_1_1_histogram_1a594cd6faad51e7a685695dd0d4d9d26b">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>sample</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="estimations.py" line="8" column="1" bodyfile="estimations.py" bodystart="8" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>estimations.Estimation</label>
+        <link refid="classestimations_1_1_estimation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>estimations.EDF</label>
+        <link refid="classestimations_1_1_e_d_f"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>estimations.Histogram</label>
+        <link refid="classestimations_1_1_histogram"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>histogram.Histogram</label>
+        <link refid="classhistogram_1_1_histogram"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>random_variables.SmoothedRandomVariable</label>
+        <link refid="classrandom__variables_1_1_smoothed_random_variable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>estimations.Estimation</label>
+        <link refid="classestimations_1_1_estimation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="estimations.py" line="7" column="1" bodyfile="estimations.py" bodystart="7" bodyend="11"/>
+    <listofallmembers>
+      <member refid="classestimations_1_1_estimation_1a5678fdc77206aa9918e2b03def8132b0" prot="public" virt="non-virtual"><scope>estimations::Estimation</scope><name>__init__</name></member>
+      <member refid="classestimations_1_1_estimation_1a08d29495d5fbe318c219324099d56376" prot="public" virt="non-virtual"><scope>estimations::Estimation</scope><name>sample</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

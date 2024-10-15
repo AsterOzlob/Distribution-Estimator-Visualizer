@@ -1,0 +1,191 @@
+\doxysection{random\+\_\+variables.\+Smoothed\+Random\+Variable Class Reference}
+\hypertarget{classrandom__variables_1_1_smoothed_random_variable}{}\label{classrandom__variables_1_1_smoothed_random_variable}\index{random\_variables.SmoothedRandomVariable@{random\_variables.SmoothedRandomVariable}}
+
+
+Представляет сглаженную версию случайной величины с использованием оценки плотности ядра.  
+
+
+Inheritance diagram for random\+\_\+variables.\+Smoothed\+Random\+Variable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classrandom__variables_1_1_smoothed_random_variable}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_a08453283cc636e12919698922bbbadea}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, np.\+ndarray \mbox{\hyperlink{classestimations_1_1_estimation_a08d29495d5fbe318c219324099d56376}{sample}}, float \mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_ac070e1e11bd99bc1b4dd922d0fddb11a}{h}})
+\begin{DoxyCompactList}\small\item\em Инициализирует Smoothed\+Random\+Variable с выборкой и шириной полосы. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_a8140f0b5e74439a4f63cd1ef1d7984b1}{probability\+\_\+density\+\_\+function}} (self, float x)
+\begin{DoxyCompactList}\small\item\em Вычисляет плотность вероятности в указанной точке. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_aa61dadc5b7c3c8ef62accf01c22d0394}{cumulative\+\_\+distribution\+\_\+function}} (self, float x)
+\begin{DoxyCompactList}\small\item\em Вычисляет кумулятивную функцию распределения в указанной точке. \end{DoxyCompactList}\item 
+None \mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_a6f1cfa17af6e44012cdc7579700ee81b}{quantile}} (self, float alpha)
+\begin{DoxyCompactList}\small\item\em Квантильная функция для сглаженной случайной величины. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_ac070e1e11bd99bc1b4dd922d0fddb11a}{h}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classestimations_1_1_estimation}{estimations.\+Estimation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classestimations_1_1_estimation_a08d29495d5fbe318c219324099d56376}{sample}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_a7f14dfa3aa8d7efcfc5ac178232d3aed}{\+\_\+k}} (float x)
+\begin{DoxyCompactList}\small\item\em Вспомогательная функция ядра для оценки плотности. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_ac729d6f5cd0b7918ee572789ec815b48}{\+\_\+K}} (float x)
+\begin{DoxyCompactList}\small\item\em Вспомогательная функция интеграла ядра для оценки кумулятивной функции распределения. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Представляет сглаженную версию случайной величины с использованием оценки плотности ядра. 
+
+Этот класс расширяет Random\+Variable и использует выборку для оценки pdf и cdf. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classrandom__variables_1_1_smoothed_random_variable_a08453283cc636e12919698922bbbadea}\label{classrandom__variables_1_1_smoothed_random_variable_a08453283cc636e12919698922bbbadea} 
+\index{random\_variables.SmoothedRandomVariable@{random\_variables.SmoothedRandomVariable}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!random\_variables.SmoothedRandomVariable@{random\_variables.SmoothedRandomVariable}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None random\+\_\+variables.\+Smoothed\+Random\+Variable.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{np.\+ndarray}]{sample,  }\item[{float}]{h }\end{DoxyParamCaption})}
+
+
+
+Инициализирует Smoothed\+Random\+Variable с выборкой и шириной полосы. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sample} & Массив выборочных точек данных. \\
+\hline
+{\em h} & Ширина полосы, используемая в оценке плотности ядра. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classestimations_1_1_estimation_a5678fdc77206aa9918e2b03def8132b0}{estimations.\+Estimation}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classrandom__variables_1_1_smoothed_random_variable_a7f14dfa3aa8d7efcfc5ac178232d3aed}\label{classrandom__variables_1_1_smoothed_random_variable_a7f14dfa3aa8d7efcfc5ac178232d3aed} 
+\index{random\_variables.SmoothedRandomVariable@{random\_variables.SmoothedRandomVariable}!\_k@{\_k}}
+\index{\_k@{\_k}!random\_variables.SmoothedRandomVariable@{random\_variables.SmoothedRandomVariable}}
+\doxysubsubsection{\texorpdfstring{\_k()}{\_k()}}
+{\footnotesize\ttfamily  float random\+\_\+variables.\+Smoothed\+Random\+Variable.\+\_\+k (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Вспомогательная функция ядра для оценки плотности. 
+
+Использует квадратичное ядро. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Нормализованное значение разности. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Значение функции ядра в точке x. 
+\end{DoxyReturn}
+\Hypertarget{classrandom__variables_1_1_smoothed_random_variable_ac729d6f5cd0b7918ee572789ec815b48}\label{classrandom__variables_1_1_smoothed_random_variable_ac729d6f5cd0b7918ee572789ec815b48} 
+\index{random\_variables.SmoothedRandomVariable@{random\_variables.SmoothedRandomVariable}!\_K@{\_K}}
+\index{\_K@{\_K}!random\_variables.SmoothedRandomVariable@{random\_variables.SmoothedRandomVariable}}
+\doxysubsubsection{\texorpdfstring{\_K()}{\_K()}}
+{\footnotesize\ttfamily  float random\+\_\+variables.\+Smoothed\+Random\+Variable.\+\_\+K (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Вспомогательная функция интеграла ядра для оценки кумулятивной функции распределения. 
+
+Использует кусочно-\/линейную аппроксимацию квадратичного ядра. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Нормализованное значение разности. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Интегральное значение функции ядра в точке x. 
+\end{DoxyReturn}
+\Hypertarget{classrandom__variables_1_1_smoothed_random_variable_aa61dadc5b7c3c8ef62accf01c22d0394}\label{classrandom__variables_1_1_smoothed_random_variable_aa61dadc5b7c3c8ef62accf01c22d0394} 
+\index{random\_variables.SmoothedRandomVariable@{random\_variables.SmoothedRandomVariable}!cumulative\_distribution\_function@{cumulative\_distribution\_function}}
+\index{cumulative\_distribution\_function@{cumulative\_distribution\_function}!random\_variables.SmoothedRandomVariable@{random\_variables.SmoothedRandomVariable}}
+\doxysubsubsection{\texorpdfstring{cumulative\_distribution\_function()}{cumulative\_distribution\_function()}}
+{\footnotesize\ttfamily  float random\+\_\+variables.\+Smoothed\+Random\+Variable.\+cumulative\+\_\+distribution\+\_\+function (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Вычисляет кумулятивную функцию распределения в указанной точке. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Точка,в которой вычисляется кумулятивная функция распределения. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Значение кумулятивной функции распределения в точке x. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrandom__variables_1_1_random_variable_aa15a98c6a25152b6f3ba555470c7e3f8}{random\+\_\+variables.\+Random\+Variable}}.
+
+\Hypertarget{classrandom__variables_1_1_smoothed_random_variable_a8140f0b5e74439a4f63cd1ef1d7984b1}\label{classrandom__variables_1_1_smoothed_random_variable_a8140f0b5e74439a4f63cd1ef1d7984b1} 
+\index{random\_variables.SmoothedRandomVariable@{random\_variables.SmoothedRandomVariable}!probability\_density\_function@{probability\_density\_function}}
+\index{probability\_density\_function@{probability\_density\_function}!random\_variables.SmoothedRandomVariable@{random\_variables.SmoothedRandomVariable}}
+\doxysubsubsection{\texorpdfstring{probability\_density\_function()}{probability\_density\_function()}}
+{\footnotesize\ttfamily  float random\+\_\+variables.\+Smoothed\+Random\+Variable.\+probability\+\_\+density\+\_\+function (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Вычисляет плотность вероятности в указанной точке. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Точка,в которой вычисляется плотность вероятности. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Значение плотности вероятности в точке x. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrandom__variables_1_1_random_variable_a1edc987c59408dfbfab082331b483b98}{random\+\_\+variables.\+Random\+Variable}}.
+
+\Hypertarget{classrandom__variables_1_1_smoothed_random_variable_a6f1cfa17af6e44012cdc7579700ee81b}\label{classrandom__variables_1_1_smoothed_random_variable_a6f1cfa17af6e44012cdc7579700ee81b} 
+\index{random\_variables.SmoothedRandomVariable@{random\_variables.SmoothedRandomVariable}!quantile@{quantile}}
+\index{quantile@{quantile}!random\_variables.SmoothedRandomVariable@{random\_variables.SmoothedRandomVariable}}
+\doxysubsubsection{\texorpdfstring{quantile()}{quantile()}}
+{\footnotesize\ttfamily  None random\+\_\+variables.\+Smoothed\+Random\+Variable.\+quantile (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{alpha }\end{DoxyParamCaption})}
+
+
+
+Квантильная функция для сглаженной случайной величины. 
+
+Не реализована в данном классе. 
+\begin{DoxyParams}{Parameters}
+{\em alpha} & Уровень вероятности квантиля. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Implemented\+Error} & Поскольку метод не реализован. \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{classrandom__variables_1_1_random_variable_a6f8b863683dc64ade32c02eec896d08d}{random\+\_\+variables.\+Random\+Variable}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classrandom__variables_1_1_smoothed_random_variable_ac070e1e11bd99bc1b4dd922d0fddb11a}\label{classrandom__variables_1_1_smoothed_random_variable_ac070e1e11bd99bc1b4dd922d0fddb11a} 
+\index{random\_variables.SmoothedRandomVariable@{random\_variables.SmoothedRandomVariable}!h@{h}}
+\index{h@{h}!random\_variables.SmoothedRandomVariable@{random\_variables.SmoothedRandomVariable}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily random\+\_\+variables.\+Smoothed\+Random\+Variable.\+h}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tumos/\+One\+Drive/Рабочий стол/Проектирование программ/Оценка функций и плотностей распределений/\mbox{\hyperlink{random__variables_8py}{random\+\_\+variables.\+py}}\end{DoxyCompactItemize}

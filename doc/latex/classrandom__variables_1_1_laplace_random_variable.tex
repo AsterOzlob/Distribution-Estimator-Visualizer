@@ -1,0 +1,145 @@
+\doxysection{random\+\_\+variables.\+Laplace\+Random\+Variable Class Reference}
+\hypertarget{classrandom__variables_1_1_laplace_random_variable}{}\label{classrandom__variables_1_1_laplace_random_variable}\index{random\_variables.LaplaceRandomVariable@{random\_variables.LaplaceRandomVariable}}
+
+
+Представляет распределение Лапласа.  
+
+
+Inheritance diagram for random\+\_\+variables.\+Laplace\+Random\+Variable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classrandom__variables_1_1_laplace_random_variable}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_a573d8339ca1c7429d5ee7cc375fb39e5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, float \mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_af2e025dc2a77e59a01ae9eb66b3703f0}{location}}=0, float \mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_a2e34446d03a53d1552f57a8a8cc3bcb7}{scale}}=1)
+\begin{DoxyCompactList}\small\item\em Инициализирует случайную величину распределения Лапласа с заданным местоположением и масштабом. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_a8142fab56dfde04a67a2c2b57d46612a}{probability\+\_\+density\+\_\+function}} (self, float x)
+\begin{DoxyCompactList}\small\item\em Вычисляет плотность вероятности в указанной точке. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_ac38c4978bd129d30e1416a96defc29ad}{cumulative\+\_\+distribution\+\_\+function}} (self, float x)
+\begin{DoxyCompactList}\small\item\em Вычисляет кумулятивную функцию распределения в указанной точке. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_ac4783a7c00f94f9f47e5c4ddde42b810}{quantile}} (self, float alpha)
+\begin{DoxyCompactList}\small\item\em Вычисляет квантильную функцию для заданного уровня вероятности. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_af2e025dc2a77e59a01ae9eb66b3703f0}{location}}
+\item 
+\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_a2e34446d03a53d1552f57a8a8cc3bcb7}{scale}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Представляет распределение Лапласа. 
+
+Характеризуется параметром местоположения и параметром масштаба. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classrandom__variables_1_1_laplace_random_variable_a573d8339ca1c7429d5ee7cc375fb39e5}\label{classrandom__variables_1_1_laplace_random_variable_a573d8339ca1c7429d5ee7cc375fb39e5} 
+\index{random\_variables.LaplaceRandomVariable@{random\_variables.LaplaceRandomVariable}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!random\_variables.LaplaceRandomVariable@{random\_variables.LaplaceRandomVariable}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None random\+\_\+variables.\+Laplace\+Random\+Variable.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float }]{location = {\ttfamily 0},  }\item[{float }]{scale = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Инициализирует случайную величину распределения Лапласа с заданным местоположением и масштабом. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & Параметр местоположения распределения Лапласа. \\
+\hline
+{\em scale} & Параметр масштаба распределения Лапласа. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classrandom__variables_1_1_laplace_random_variable_ac38c4978bd129d30e1416a96defc29ad}\label{classrandom__variables_1_1_laplace_random_variable_ac38c4978bd129d30e1416a96defc29ad} 
+\index{random\_variables.LaplaceRandomVariable@{random\_variables.LaplaceRandomVariable}!cumulative\_distribution\_function@{cumulative\_distribution\_function}}
+\index{cumulative\_distribution\_function@{cumulative\_distribution\_function}!random\_variables.LaplaceRandomVariable@{random\_variables.LaplaceRandomVariable}}
+\doxysubsubsection{\texorpdfstring{cumulative\_distribution\_function()}{cumulative\_distribution\_function()}}
+{\footnotesize\ttfamily  float random\+\_\+variables.\+Laplace\+Random\+Variable.\+cumulative\+\_\+distribution\+\_\+function (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Вычисляет кумулятивную функцию распределения в указанной точке. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Точка,в которой вычисляется кумулятивная функция распределения. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Значение кумулятивной функции распределения в точке x. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrandom__variables_1_1_random_variable_aa15a98c6a25152b6f3ba555470c7e3f8}{random\+\_\+variables.\+Random\+Variable}}.
+
+\Hypertarget{classrandom__variables_1_1_laplace_random_variable_a8142fab56dfde04a67a2c2b57d46612a}\label{classrandom__variables_1_1_laplace_random_variable_a8142fab56dfde04a67a2c2b57d46612a} 
+\index{random\_variables.LaplaceRandomVariable@{random\_variables.LaplaceRandomVariable}!probability\_density\_function@{probability\_density\_function}}
+\index{probability\_density\_function@{probability\_density\_function}!random\_variables.LaplaceRandomVariable@{random\_variables.LaplaceRandomVariable}}
+\doxysubsubsection{\texorpdfstring{probability\_density\_function()}{probability\_density\_function()}}
+{\footnotesize\ttfamily  float random\+\_\+variables.\+Laplace\+Random\+Variable.\+probability\+\_\+density\+\_\+function (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Вычисляет плотность вероятности в указанной точке. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Точка,в которой вычисляется плотность вероятности. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Значение плотности вероятности в точке x. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrandom__variables_1_1_random_variable_a1edc987c59408dfbfab082331b483b98}{random\+\_\+variables.\+Random\+Variable}}.
+
+\Hypertarget{classrandom__variables_1_1_laplace_random_variable_ac4783a7c00f94f9f47e5c4ddde42b810}\label{classrandom__variables_1_1_laplace_random_variable_ac4783a7c00f94f9f47e5c4ddde42b810} 
+\index{random\_variables.LaplaceRandomVariable@{random\_variables.LaplaceRandomVariable}!quantile@{quantile}}
+\index{quantile@{quantile}!random\_variables.LaplaceRandomVariable@{random\_variables.LaplaceRandomVariable}}
+\doxysubsubsection{\texorpdfstring{quantile()}{quantile()}}
+{\footnotesize\ttfamily  float random\+\_\+variables.\+Laplace\+Random\+Variable.\+quantile (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{alpha }\end{DoxyParamCaption})}
+
+
+
+Вычисляет квантильную функцию для заданного уровня вероятности. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alpha} & Уровень вероятности. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Квантиль, соответствующий уровню вероятности alpha. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrandom__variables_1_1_random_variable_a6f8b863683dc64ade32c02eec896d08d}{random\+\_\+variables.\+Random\+Variable}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classrandom__variables_1_1_laplace_random_variable_af2e025dc2a77e59a01ae9eb66b3703f0}\label{classrandom__variables_1_1_laplace_random_variable_af2e025dc2a77e59a01ae9eb66b3703f0} 
+\index{random\_variables.LaplaceRandomVariable@{random\_variables.LaplaceRandomVariable}!location@{location}}
+\index{location@{location}!random\_variables.LaplaceRandomVariable@{random\_variables.LaplaceRandomVariable}}
+\doxysubsubsection{\texorpdfstring{location}{location}}
+{\footnotesize\ttfamily random\+\_\+variables.\+Laplace\+Random\+Variable.\+location}
+
+\Hypertarget{classrandom__variables_1_1_laplace_random_variable_a2e34446d03a53d1552f57a8a8cc3bcb7}\label{classrandom__variables_1_1_laplace_random_variable_a2e34446d03a53d1552f57a8a8cc3bcb7} 
+\index{random\_variables.LaplaceRandomVariable@{random\_variables.LaplaceRandomVariable}!scale@{scale}}
+\index{scale@{scale}!random\_variables.LaplaceRandomVariable@{random\_variables.LaplaceRandomVariable}}
+\doxysubsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily random\+\_\+variables.\+Laplace\+Random\+Variable.\+scale}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tumos/\+One\+Drive/Рабочий стол/Проектирование программ/Оценка функций и плотностей распределений/\mbox{\hyperlink{random__variables_8py}{random\+\_\+variables.\+py}}\end{DoxyCompactItemize}

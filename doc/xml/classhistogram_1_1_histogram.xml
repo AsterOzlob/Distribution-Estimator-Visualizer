@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classhistogram_1_1_histogram" kind="class" language="Python" prot="public">
+    <compoundname>histogram::Histogram</compoundname>
+    <basecompoundref refid="classestimations_1_1_estimation" prot="public" virt="non-virtual">estimations.Estimation</basecompoundref>
+    <innerclass refid="classhistogram_1_1_histogram_1_1_interval" prot="public">histogram::Histogram::Interval</innerclass>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classhistogram_1_1_histogram_1af29e036a42ccdd271fd20b5799e30939" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>histogram.Histogram::m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <qualifiedname>histogram.Histogram.m</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="histogram.py" line="21" column="1" bodyfile="histogram.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhistogram_1_1_histogram_1a683621a71d8f331f7e4a62e20c13048c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>histogram.Histogram::intervals</definition>
+        <argsstring></argsstring>
+        <name>intervals</name>
+        <qualifiedname>histogram.Histogram.intervals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="histogram.py" line="28" column="1" bodyfile="histogram.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhistogram_1_1_histogram_1a21351a65f461a10808f0273d92751849" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>histogram.Histogram::sub_interval_width</definition>
+        <argsstring></argsstring>
+        <name>sub_interval_width</name>
+        <qualifiedname>histogram.Histogram.sub_interval_width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="histogram.py" line="31" column="1" bodyfile="histogram.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhistogram_1_1_histogram_1a00448c3bae3a17abfb5e66941a2ea5d0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>histogram.Histogram::sample</definition>
+        <argsstring></argsstring>
+        <name>sample</name>
+        <qualifiedname>histogram.Histogram.sample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="histogram.py" line="40" column="1" bodyfile="histogram.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhistogram_1_1_histogram_1a2ea0c266e1bc70dabd3c3646ef261394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None histogram.Histogram.__init__</definition>
+        <argsstring>(self, list sample, int m)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>histogram.Histogram.__init__</qualifiedname>
+        <reimplements refid="classestimations_1_1_estimation_1a5678fdc77206aa9918e2b03def8132b0">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>sample</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="histogram.py" line="19" column="1" bodyfile="histogram.py" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classhistogram_1_1_histogram_1a7d7b113efb9a1b42012dfd87258a4485" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None histogram.Histogram.init_intervals</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_intervals</name>
+        <qualifiedname>histogram.Histogram.init_intervals</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="histogram.py" line="24" column="1" bodyfile="histogram.py" bodystart="24" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classhistogram_1_1_histogram_1a696f789f84a92c791a4de2da87f5d896" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[<ref refid="classhistogram_1_1_histogram_1_1_interval" kindref="compound">Interval</ref>]</type>
+        <definition> Optional[Interval] histogram.Histogram.get_interval</definition>
+        <argsstring>(self, float x)</argsstring>
+        <name>get_interval</name>
+        <qualifiedname>histogram.Histogram.get_interval</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="histogram.py" line="33" column="1" bodyfile="histogram.py" bodystart="33" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classhistogram_1_1_histogram_1ac08af17f38d4cbabebef67b1ef3f47cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>np.ndarray</type>
+        <definition> np.ndarray histogram.Histogram.get_sample_by_interval</definition>
+        <argsstring>(self, Interval interval)</argsstring>
+        <name>get_sample_by_interval</name>
+        <qualifiedname>histogram.Histogram.get_sample_by_interval</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classhistogram_1_1_histogram_1_1_interval" kindref="compound">Interval</ref></type>
+          <declname>interval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="histogram.py" line="39" column="1" bodyfile="histogram.py" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classhistogram_1_1_histogram_1ad8ae55262547afd7d44f3f03d4d9ce87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float histogram.Histogram.value</definition>
+        <argsstring>(self, float x)</argsstring>
+        <name>value</name>
+        <qualifiedname>histogram.Histogram.value</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="histogram.py" line="42" column="1" bodyfile="histogram.py" bodystart="42" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="2">
+        <label>estimations.Estimation</label>
+        <link refid="classestimations_1_1_estimation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>histogram.Histogram</label>
+        <link refid="classhistogram_1_1_histogram"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="2">
+        <label>estimations.Estimation</label>
+        <link refid="classestimations_1_1_estimation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>histogram.Histogram</label>
+        <link refid="classhistogram_1_1_histogram"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="histogram.py" line="7" column="1" bodyfile="histogram.py" bodystart="7" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classhistogram_1_1_histogram_1a2ea0c266e1bc70dabd3c3646ef261394" prot="public" virt="non-virtual"><scope>histogram::Histogram</scope><name>__init__</name></member>
+      <member refid="classhistogram_1_1_histogram_1a696f789f84a92c791a4de2da87f5d896" prot="public" virt="non-virtual"><scope>histogram::Histogram</scope><name>get_interval</name></member>
+      <member refid="classhistogram_1_1_histogram_1ac08af17f38d4cbabebef67b1ef3f47cf" prot="public" virt="non-virtual"><scope>histogram::Histogram</scope><name>get_sample_by_interval</name></member>
+      <member refid="classhistogram_1_1_histogram_1a7d7b113efb9a1b42012dfd87258a4485" prot="public" virt="non-virtual"><scope>histogram::Histogram</scope><name>init_intervals</name></member>
+      <member refid="classhistogram_1_1_histogram_1a683621a71d8f331f7e4a62e20c13048c" prot="public" virt="non-virtual"><scope>histogram::Histogram</scope><name>intervals</name></member>
+      <member refid="classhistogram_1_1_histogram_1af29e036a42ccdd271fd20b5799e30939" prot="public" virt="non-virtual"><scope>histogram::Histogram</scope><name>m</name></member>
+      <member refid="classhistogram_1_1_histogram_1a00448c3bae3a17abfb5e66941a2ea5d0" prot="public" virt="non-virtual"><scope>histogram::Histogram</scope><name>sample</name></member>
+      <member refid="classhistogram_1_1_histogram_1a21351a65f461a10808f0273d92751849" prot="public" virt="non-virtual"><scope>histogram::Histogram</scope><name>sub_interval_width</name></member>
+      <member refid="classhistogram_1_1_histogram_1ad8ae55262547afd7d44f3f03d4d9ce87" prot="public" virt="non-virtual"><scope>histogram::Histogram</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

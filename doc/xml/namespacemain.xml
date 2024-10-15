@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacemain" kind="namespace" language="Python">
+    <compoundname>main</compoundname>
+    <innerclass refid="classmain_1_1_my_application" prot="public">main::MyApplication</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="main_8py_1a5fa94f0581009434c7a63791944d6ff4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.app</definition>
+        <argsstring></argsstring>
+        <name>app</name>
+        <qualifiedname>main.app</qualifiedname>
+        <initializer>=  QtWidgets.QApplication(sys.argv)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="97" column="1" bodyfile="main.py" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="main_8py_1ae1ea5d7d8ba9156ef06beef9bf8901a8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <qualifiedname>main.window</qualifiedname>
+        <initializer>=  <ref refid="classmain_1_1_my_application" kindref="compound">MyApplication</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="98" column="1" bodyfile="main.py" bodystart="98" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="main.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

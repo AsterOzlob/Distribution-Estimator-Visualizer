@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classenums_1_1_dist_combo_box_values" kind="class" language="Python" prot="public">
+    <compoundname>enums::DistComboBoxValues</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Enum</basecompoundref>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classenums_1_1_dist_combo_box_values_1aaea1668adbf4f6f4408d7e33648d2943" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str enums.DistComboBoxValues::NormalDist</definition>
+        <argsstring></argsstring>
+        <name>NormalDist</name>
+        <qualifiedname>enums.DistComboBoxValues.NormalDist</qualifiedname>
+        <initializer>=  &quot;Нормальное распределение&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="enums.py" line="5" column="1" bodyfile="enums.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classenums_1_1_dist_combo_box_values_1a3dc2d0223027d5b5380ec737d6c7d0be" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str enums.DistComboBoxValues::UniformDist</definition>
+        <argsstring></argsstring>
+        <name>UniformDist</name>
+        <qualifiedname>enums.DistComboBoxValues.UniformDist</qualifiedname>
+        <initializer>=  &quot;Равномерное распределение&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="enums.py" line="6" column="1" bodyfile="enums.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classenums_1_1_dist_combo_box_values_1a614d31b9327662efaab382c9a2b869e2" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str enums.DistComboBoxValues::ExponentialDist</definition>
+        <argsstring></argsstring>
+        <name>ExponentialDist</name>
+        <qualifiedname>enums.DistComboBoxValues.ExponentialDist</qualifiedname>
+        <initializer>=  &quot;Экспоненциальное распределение&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="enums.py" line="7" column="1" bodyfile="enums.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classenums_1_1_dist_combo_box_values_1a6e6af66a9dff528a708382d0e761ec53" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str enums.DistComboBoxValues::LaplaceDist</definition>
+        <argsstring></argsstring>
+        <name>LaplaceDist</name>
+        <qualifiedname>enums.DistComboBoxValues.LaplaceDist</qualifiedname>
+        <initializer>=  &quot;Распределение Лапласа&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="enums.py" line="8" column="1" bodyfile="enums.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classenums_1_1_dist_combo_box_values_1a46d981a16ab0dc665884e77ad87c6a57" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str enums.DistComboBoxValues::CauchyDist</definition>
+        <argsstring></argsstring>
+        <name>CauchyDist</name>
+        <qualifiedname>enums.DistComboBoxValues.CauchyDist</qualifiedname>
+        <initializer>=  &quot;Распределение Коши&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="enums.py" line="9" column="1" bodyfile="enums.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Enum</label>
+      </node>
+      <node id="1">
+        <label>enums.DistComboBoxValues</label>
+        <link refid="classenums_1_1_dist_combo_box_values"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Enum</label>
+      </node>
+      <node id="1">
+        <label>enums.DistComboBoxValues</label>
+        <link refid="classenums_1_1_dist_combo_box_values"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="enums.py" line="4" column="1" bodyfile="enums.py" bodystart="4" bodyend="10"/>
+    <listofallmembers>
+      <member refid="classenums_1_1_dist_combo_box_values_1a46d981a16ab0dc665884e77ad87c6a57" prot="public" virt="non-virtual"><scope>enums::DistComboBoxValues</scope><name>CauchyDist</name></member>
+      <member refid="classenums_1_1_dist_combo_box_values_1a614d31b9327662efaab382c9a2b869e2" prot="public" virt="non-virtual"><scope>enums::DistComboBoxValues</scope><name>ExponentialDist</name></member>
+      <member refid="classenums_1_1_dist_combo_box_values_1a6e6af66a9dff528a708382d0e761ec53" prot="public" virt="non-virtual"><scope>enums::DistComboBoxValues</scope><name>LaplaceDist</name></member>
+      <member refid="classenums_1_1_dist_combo_box_values_1aaea1668adbf4f6f4408d7e33648d2943" prot="public" virt="non-virtual"><scope>enums::DistComboBoxValues</scope><name>NormalDist</name></member>
+      <member refid="classenums_1_1_dist_combo_box_values_1a3dc2d0223027d5b5380ec737d6c7d0be" prot="public" virt="non-virtual"><scope>enums::DistComboBoxValues</scope><name>UniformDist</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

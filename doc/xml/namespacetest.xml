@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacetest" kind="namespace" language="Python">
+    <compoundname>test</compoundname>
+    <innerclass refid="classtest_1_1_e_d_f" prot="public">test::EDF</innerclass>
+    <innerclass refid="classtest_1_1_estimation" prot="public">test::Estimation</innerclass>
+    <innerclass refid="classtest_1_1_histogram" prot="public">test::Histogram</innerclass>
+    <innerclass refid="classtest_1_1_normal_random_variable" prot="public">test::NormalRandomVariable</innerclass>
+    <innerclass refid="classtest_1_1_random_number_generator" prot="public">test::RandomNumberGenerator</innerclass>
+    <innerclass refid="classtest_1_1_random_variable" prot="public">test::RandomVariable</innerclass>
+    <innerclass refid="classtest_1_1_simple_random_number_generator" prot="public">test::SimpleRandomNumberGenerator</innerclass>
+    <innerclass refid="classtest_1_1_smoothed_random_variable" prot="public">test::SmoothedRandomVariable</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="test_8py_1a07373c5d5b632b719ee7be3c05487d04" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int test.location</definition>
+        <argsstring></argsstring>
+        <name>location</name>
+        <qualifiedname>test.location</qualifiedname>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="138" column="1" bodyfile="test.py" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8py_1a747382a6e9d1a6da7f209797047cd3ff" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int test.scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <qualifiedname>test.scale</qualifiedname>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="139" column="1" bodyfile="test.py" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8py_1a68547baa961d37140f854cd8258d4b96" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int test.N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <qualifiedname>test.N</qualifiedname>
+        <initializer>=  100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="140" column="1" bodyfile="test.py" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8py_1a983135ff36825587f2c5eab7c060df6a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.rv</definition>
+        <argsstring></argsstring>
+        <name>rv</name>
+        <qualifiedname>test.rv</qualifiedname>
+        <initializer>=  <ref refid="classtest_1_1_normal_random_variable" kindref="compound">NormalRandomVariable</ref>(location, scale)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="142" column="1" bodyfile="test.py" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8py_1afc47227fb6d9fc1c0923bfe5e5003825" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.generator</definition>
+        <argsstring></argsstring>
+        <name>generator</name>
+        <qualifiedname>test.generator</qualifiedname>
+        <initializer>=  <ref refid="classtest_1_1_simple_random_number_generator" kindref="compound">SimpleRandomNumberGenerator</ref>(rv)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="143" column="1" bodyfile="test.py" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8py_1ad1b5278de6e4f95681ee800d169f4903" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.sample</definition>
+        <argsstring></argsstring>
+        <name>sample</name>
+        <qualifiedname>test.sample</qualifiedname>
+        <initializer>=  generator.get(N)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="145" column="1" bodyfile="test.py" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8py_1a62565f4430b64bd06558c3a3ccef0156" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int test.M</definition>
+        <argsstring></argsstring>
+        <name>M</name>
+        <qualifiedname>test.M</qualifiedname>
+        <initializer>=  100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="147" column="1" bodyfile="test.py" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8py_1a774a98474a7ee9608acbebbb789cdb64" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <qualifiedname>test.X</qualifiedname>
+        <initializer>=  np.linspace(np.min(sample), np.max(sample), M)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="148" column="1" bodyfile="test.py" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8py_1aa9b2871c5b110c5a4c724c8e54ff2ba8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.Y_truth</definition>
+        <argsstring></argsstring>
+        <name>Y_truth</name>
+        <qualifiedname>test.Y_truth</qualifiedname>
+        <initializer>=  np.vectorize(rv.cdf)(X)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="150" column="1" bodyfile="test.py" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8py_1a083811eeb7e42b911f61227f1597c9d8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.edf</definition>
+        <argsstring></argsstring>
+        <name>edf</name>
+        <qualifiedname>test.edf</qualifiedname>
+        <initializer>=  <ref refid="classtest_1_1_e_d_f" kindref="compound">EDF</ref>(sample)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="153" column="1" bodyfile="test.py" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8py_1a283fff329935d3841239d10e6a699059" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.Y_edf</definition>
+        <argsstring></argsstring>
+        <name>Y_edf</name>
+        <qualifiedname>test.Y_edf</qualifiedname>
+        <initializer>=  np.vectorize(edf.value)(X)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="154" column="1" bodyfile="test.py" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8py_1addf93c7a5cf90e31f66bacad99634ca5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float test.bandwidth</definition>
+        <argsstring></argsstring>
+        <name>bandwidth</name>
+        <qualifiedname>test.bandwidth</qualifiedname>
+        <initializer>=  0.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="157" column="1" bodyfile="test.py" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8py_1a5dc740342ed332a3d5e8d2b7e489802a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.srv</definition>
+        <argsstring></argsstring>
+        <name>srv</name>
+        <qualifiedname>test.srv</qualifiedname>
+        <initializer>=  <ref refid="classtest_1_1_smoothed_random_variable" kindref="compound">SmoothedRandomVariable</ref>(sample, bandwidth)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="159" column="1" bodyfile="test.py" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8py_1aad64fe737279d6fea92a98c4da78e55e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.Y_kernel</definition>
+        <argsstring></argsstring>
+        <name>Y_kernel</name>
+        <qualifiedname>test.Y_kernel</qualifiedname>
+        <initializer>=  np.vectorize(srv.cdf)(X)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="160" column="1" bodyfile="test.py" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8py_1ada669b02027018501f632cb9fb0a903f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.P_1</definition>
+        <argsstring></argsstring>
+        <name>P_1</name>
+        <qualifiedname>test.P_1</qualifiedname>
+        <initializer>=  np.vectorize(rv.pdf)(X)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="163" column="1" bodyfile="test.py" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8py_1ae5324345f9286dad2f1e8eaf8ad1700b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int test.m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <qualifiedname>test.m</qualifiedname>
+        <initializer>=  20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="165" column="1" bodyfile="test.py" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8py_1ad553b3222f9fcc6013acea8c3690b09d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.hist</definition>
+        <argsstring></argsstring>
+        <name>hist</name>
+        <qualifiedname>test.hist</qualifiedname>
+        <initializer>=  <ref refid="classtest_1_1_histogram" kindref="compound">Histogram</ref>(sample, m)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="167" column="1" bodyfile="test.py" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8py_1a84d702cee36a5f884fe3f3103403b458" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.P_2</definition>
+        <argsstring></argsstring>
+        <name>P_2</name>
+        <qualifiedname>test.P_2</qualifiedname>
+        <initializer>=  np.vectorize(hist.value)(X)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="168" column="1" bodyfile="test.py" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="test_8py_1a51c3f0d4d498dd2a203cbf5de8a34c6c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.P_3</definition>
+        <argsstring></argsstring>
+        <name>P_3</name>
+        <qualifiedname>test.P_3</qualifiedname>
+        <initializer>=  np.vectorize(srv.pdf)(X)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="172" column="1" bodyfile="test.py" bodystart="172" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="test_8py_1abc5722df345f276d0e1736e4cfcf2505" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.plot</definition>
+        <argsstring>(xs, ys, colors)</argsstring>
+        <name>plot</name>
+        <qualifiedname>test.plot</qualifiedname>
+        <param>
+          <type>xs</type>
+          <defname>xs</defname>
+        </param>
+        <param>
+          <type>ys</type>
+          <defname>ys</defname>
+        </param>
+        <param>
+          <type>colors</type>
+          <defname>colors</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="131" column="1" bodyfile="test.py" bodystart="131" bodyend="136"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

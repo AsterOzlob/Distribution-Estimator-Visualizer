@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="enums_8py" kind="file" language="Python">
+    <compoundname>enums.py</compoundname>
+    <innerclass refid="classenums_1_1_dist_combo_box_values" prot="public">enums::DistComboBoxValues</innerclass>
+    <innernamespace refid="namespaceenums">enums</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>enum<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Enum</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classenums_1_1_dist_combo_box_values" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classenums_1_1_dist_combo_box_values" kindref="compound">DistComboBoxValues</ref>(Enum):</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>NormalDist<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Нормальное<sp/>распределение&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>UniformDist<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Равномерное<sp/>распределение&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>ExponentialDist<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Экспоненциальное<sp/>распределение&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>LaplaceDist<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Распределение<sp/>Лапласа&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>CauchyDist<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Распределение<sp/>Коши&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="enums.py"/>
+  </compounddef>
+</doxygen>

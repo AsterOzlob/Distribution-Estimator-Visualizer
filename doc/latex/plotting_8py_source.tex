@@ -1,0 +1,50 @@
+\doxysection{C\+:/\+Users/tumos/\+One\+Drive/Рабочий стол/Дик Курсовая/Оценка функций и плотностей распределений/plotting.py}
+\hypertarget{plotting_8py_source}{}\label{plotting_8py_source}\mbox{\hyperlink{plotting_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00001}\mbox{\hyperlink{namespaceplotting}{00001}}\ \textcolor{keyword}{from}\ pyqtgraph\ \textcolor{keyword}{import}\ mkPen}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00002}00002\ \textcolor{keyword}{from}\ PyQt5.QtWidgets\ \textcolor{keyword}{import}\ QWidget}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00004}00004\ \textcolor{comment}{\#\ Глобальные\ переменные,\ используемые\ для\ построения\ графиков}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00005}\mbox{\hyperlink{namespaceplotting_a9da31f878e0dc3f1b3f8cd304bc30c73}{00005}}\ PEN\_RED\ =\ mkPen(color=\textcolor{stringliteral}{'r'},\ width=2)}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00006}\mbox{\hyperlink{namespaceplotting_ac61e15053b89157f288183455b42ed60}{00006}}\ PEN\_BLUE\ =\ mkPen(color=\textcolor{stringliteral}{'b'},\ width=2)}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00007}\mbox{\hyperlink{namespaceplotting_aab3d0b728279c45d7429657f95d637f9}{00007}}\ PEN\_GREEN\ =\ mkPen(color=\textcolor{stringliteral}{'g'},\ width=2)}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00010}\mbox{\hyperlink{namespaceplotting_adbcf58f6733db71abaaac51278704ada}{00010}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespaceplotting_adbcf58f6733db71abaaac51278704ada}{plot\_distributions}}(graph\_widget:\ QWidget,\ x\_array,\ y\_truth,\ y\_edf,\ y\_kernel)\ -\/>\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00011}00011\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00012}00012\ \textcolor{stringliteral}{\ \ \ \ @brief\ Строит\ графики\ распределений\ на\ предоставленном\ виджете.}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00013}00013\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00014}00014\ \textcolor{stringliteral}{\ \ \ \ Эта\ функция\ принимает\ данные\ для\ трех\ распределений\ и\ строит\ их\ на\ заданном\ виджете.}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00015}00015\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00016}00016\ \textcolor{stringliteral}{\ \ \ \ @param\ graph\_widget:\ Виджет\ QWidget,\ на\ котором\ будут\ построены\ графики.}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00017}00017\ \textcolor{stringliteral}{\ \ \ \ @param\ x\_array:\ Общие\ данные\ для\ оси\ x\ для\ всех\ распределений.}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00018}00018\ \textcolor{stringliteral}{\ \ \ \ @param\ y\_truth:\ Данные\ для\ оси\ y\ для\ графика\ истинного\ распределения.}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00019}00019\ \textcolor{stringliteral}{\ \ \ \ @param\ y\_edf:\ Данные\ для\ оси\ y\ для\ графика\ эмпирической\ функции\ распределения.}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00020}00020\ \textcolor{stringliteral}{\ \ \ \ @param\ y\_kernel:\ Данные\ для\ оси\ y\ для\ графика\ ядерного\ распределения.}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00021}00021\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00022}00022\ \textcolor{stringliteral}{\ \ \ \ @note\ Используемые\ перья:\ RED\ для\ истинного\ распределения,\ BLUE\ для\ EDF\ и\ GREEN\ для\ ядерного\ распределения.}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00023}00023\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00024}00024\ \ \ \ \ graph\_widget.plot(x\_array,\ y\_truth,\ pen=PEN\_RED)}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00025}00025\ \ \ \ \ graph\_widget.plot(x\_array,\ y\_edf,\ pen=PEN\_BLUE)}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00026}00026\ \ \ \ \ graph\_widget.plot(x\_array,\ y\_kernel,\ pen=PEN\_GREEN)}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00029}\mbox{\hyperlink{namespaceplotting_a918244fe7ba3f43e06964e6c120b727a}{00029}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespaceplotting_a918244fe7ba3f43e06964e6c120b727a}{plot\_histograms}}(graph\_widget:\ QWidget,\ x\_array,p\_1,\ p\_2,\ p\_3)\ -\/>\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00030}00030\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00031}00031\ \textcolor{stringliteral}{\ \ \ \ @brief\ Строит\ графики\ гистограмм\ на\ предоставленном\ виджете.}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00032}00032\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00033}00033\ \textcolor{stringliteral}{\ \ \ \ Эта\ функция\ принимает\ данные\ для\ трех\ гистограмм\ и\ строит\ их\ на\ заданном\ виджете.}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00034}00034\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00035}00035\ \textcolor{stringliteral}{\ \ \ \ @param\ graph\_widget:\ Виджет\ QWidget,\ на\ котором\ будут\ построены\ гистограммы.}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00036}00036\ \textcolor{stringliteral}{\ \ \ \ @param\ x\_array:\ Общие\ данные\ для\ оси\ x\ для\ всех\ гистограмм.}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00037}00037\ \textcolor{stringliteral}{\ \ \ \ @param\ p\_1:\ Данные\ для\ оси\ y\ для\ первой\ гистограммы.}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00038}00038\ \textcolor{stringliteral}{\ \ \ \ @param\ p\_2:\ Данные\ для\ оси\ y\ для\ второй\ гистограммы.}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00039}00039\ \textcolor{stringliteral}{\ \ \ \ @param\ p\_3:\ Данные\ для\ оси\ y\ для\ третьей\ гистограммы.}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00040}00040\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00041}00041\ \textcolor{stringliteral}{\ \ \ \ @note\ Используемые\ перья:\ RED\ для\ первой\ гистограммы,\ BLUE\ для\ второй\ и\ GREEN\ для\ третьей.}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00042}00042\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00043}00043\ \ \ \ \ graph\_widget.plot(x\_array,\ p\_1,\ pen=PEN\_RED)}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00044}00044\ \ \ \ \ graph\_widget.plot(x\_array,\ p\_2,\ pen=PEN\_BLUE)}
+\DoxyCodeLine{\Hypertarget{plotting_8py_source_l00045}00045\ \ \ \ \ graph\_widget.plot(x\_array,\ p\_3,\ pen=PEN\_GREEN)}
+
+\end{DoxyCode}

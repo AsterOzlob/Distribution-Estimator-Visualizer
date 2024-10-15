@@ -1,0 +1,227 @@
+\doxysection{main.\+My\+Application Class Reference}
+\hypertarget{classmain_1_1_my_application}{}\label{classmain_1_1_my_application}\index{main.MyApplication@{main.MyApplication}}
+
+
+Класс главного окна приложения для демонстрации расчетов распределений и построения графиков.  
+
+
+Inheritance diagram for main.\+My\+Application\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmain_1_1_my_application}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classmain_1_1_my_application_a8e8e412681dd8c3cd329f9f322a20e29}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em Инициализация окна приложения и подключение сигналов к слотам. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmain_1_1_my_application_a94bc2d4e9e8ab845069734f73bb75c9f}{connect\+\_\+signals}} (self)
+\begin{DoxyCompactList}\small\item\em Подключает сигналы к слотам. \end{DoxyCompactList}\item 
+None \mbox{\hyperlink{classmain_1_1_my_application_a6fed158424101c5cdea7cbcf32e98a48}{on\+\_\+combobox\+\_\+changed}} (self)
+\begin{DoxyCompactList}\small\item\em Обработчик событий изменения выбора в комбо-\/боксе. \end{DoxyCompactList}\item 
+None \mbox{\hyperlink{classmain_1_1_my_application_a3cde2d0aad0b151bea2814a40f99f71c}{calculate}} (self)
+\begin{DoxyCompactList}\small\item\em Вычисляет распределения и строит графики на основе пользовательских данных. \end{DoxyCompactList}\item 
+tuple \mbox{\hyperlink{classmain_1_1_my_application_ab8e5186ebf799caa8a56af74c1eb5993}{get\+\_\+input\+\_\+parameters}} (self)
+\begin{DoxyCompactList}\small\item\em Извлекает входные параметры из GUI. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrandom__variables_1_1_random_variable}{Random\+Variable}} \mbox{\hyperlink{classmain_1_1_my_application_a2b8ac716b401a9e9dbd579e1daa451f2}{get\+\_\+selected\+\_\+random\+\_\+variable}} (self, float location, float scale)
+\begin{DoxyCompactList}\small\item\em Возвращает объект случайной величины в зависимости от выбранного пользователем распределения. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classgui_1_1_ui___main_window}{gui.\+Ui\+\_\+\+Main\+Window}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_a6334caf294f0c5adfe21c4a09878c371}{setup\+Ui}} (self, Main\+Window)
+\begin{DoxyCompactList}\small\item\em Инициализирует элементы интерфейса пользователя и устанавливает основные параметры виджетов. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_a7d6a6ac34a21cebda896d821ee672f73}{retranslate\+Ui}} (self, Main\+Window)
+\begin{DoxyCompactList}\small\item\em Устанавливает текстовые метки интерфейса, переводит интерфейс на текущий язык пользователя. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain_1_1_my_application_ab6eb66e46ff62f3633499e97ac98bd23}{on\+\_\+combobox\+\_\+changed}}
+\item 
+\mbox{\hyperlink{classmain_1_1_my_application_a543964c902127e2b46c18027150ee8a1}{calculate}}
+\item 
+\mbox{\hyperlink{classmain_1_1_my_application_a306ba45d4b151fd203ce1ee21f991f52}{CDFGraph\+Widget}}
+\item 
+\mbox{\hyperlink{classmain_1_1_my_application_a0308a6d96c10a22b9480af77b7fb8eb4}{PDFGraph\+Widget}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classgui_1_1_ui___main_window}{gui.\+Ui\+\_\+\+Main\+Window}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_ac900ad92ffecd9461283d42ed0bdb934}{centralwidget}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_aeb2f812b753057d1dc7ba6ccaa12af8c}{horizontal\+Layout}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_ad29fcc3ab73c717aae174e002af3506e}{vertical\+Layout\+\_\+4}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_aa0d357fe1971378fccb3dab19e3bb34d}{Entry\+Label}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_a06472cd70fc4d059990296ec22b6578b}{line\+\_\+2}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_a00f302816bf8583d4829025067b68372}{form\+Layout\+\_\+4}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_a8976a6e7412aedb1b7113437940d8e1e}{Dist\+Label}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_a84ab91aead055f5f2445d656986c6eb1}{Dist\+Combo\+Box}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_ab7a9c664a0de4606fc2e0da519852838}{Lower\+Bound\+Label}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_a9e19f03eac8ba2167b626bc692ebdfac}{Lower\+Bound\+Line\+Edit}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_aa4e0eb8e615702d447c17b1a831997be}{Upper\+Bound\+Label}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_a2686f8a908c3d6ea9ed594a8d65ce3b2}{Upper\+Bound\+Line\+Edit}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_a6bb358d2f738b562cfbf80215dbd38e3}{Size\+Label}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_aa0e5e3082f6f3e3479aa0cd4932312e3}{Size\+Line\+Edit}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_a975010789ed40e8a36fc5c3530c13341}{Bandwith\+Label}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_a3cc1e45faab2f0d601a57aaed79cbc46}{Bandwith\+Line\+Edit}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_a3c854acc0abea07a97e94d378402d293}{Intervals\+Label}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_aafcafa85aa479d79a8e7dbde6b7d4018}{Intervals\+Line\+Edit}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_abac2b08601a479b3e2e314c590905034}{line\+\_\+5}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_ad1978f359a5969617ac640d5df163c5e}{Calc\+Button}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_a136178c1cba067cf08278e6848e9fb3f}{line}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_a09ac33d6f0e909e96ff5019f1528a83b}{vertical\+Layout}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_ac32188ed0bfb1c48e308a6889546dd8b}{CDFGraph\+Label}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_ae384c769c0de2535f6b9e34376d3b4dd}{line\+\_\+3}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_a0d4e58c1f54e9c0ac0d3c541d62dd4ca}{CDFGraph\+Widget}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_ab31fd353c5bf9463ec65f1ba702b22ef}{line\+\_\+6}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_ab9483a1e98511711af121d7660d44887}{PDFGraph\+Label}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_aa233cb8fffe25a517827f874edccce79}{line\+\_\+4}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_a06967dd73624859e6dbc2a47790e49be}{PDFGraph\+Widget}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_a569cc7e806577657e55ac9eb75edd60e}{menubar}}
+\item 
+\mbox{\hyperlink{classgui_1_1_ui___main_window_a7a1c098550ce150f46c3532b3f84a931}{statusbar}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс главного окна приложения для демонстрации расчетов распределений и построения графиков. 
+
+Этот класс интегрирует взаимодействие с интерфейсом пользователя с вычислениями статистических распределений, обеспечивая динамическую визуализацию на основе пользовательского ввода. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmain_1_1_my_application_a8e8e412681dd8c3cd329f9f322a20e29}\label{classmain_1_1_my_application_a8e8e412681dd8c3cd329f9f322a20e29} 
+\index{main.MyApplication@{main.MyApplication}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!main.MyApplication@{main.MyApplication}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None main.\+My\+Application.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Инициализация окна приложения и подключение сигналов к слотам. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmain_1_1_my_application_a3cde2d0aad0b151bea2814a40f99f71c}\label{classmain_1_1_my_application_a3cde2d0aad0b151bea2814a40f99f71c} 
+\index{main.MyApplication@{main.MyApplication}!calculate@{calculate}}
+\index{calculate@{calculate}!main.MyApplication@{main.MyApplication}}
+\doxysubsubsection{\texorpdfstring{calculate()}{calculate()}}
+{\footnotesize\ttfamily  None main.\+My\+Application.\+calculate (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Вычисляет распределения и строит графики на основе пользовательских данных. 
+
+Выполняет расчеты и визуализацию распределений. \Hypertarget{classmain_1_1_my_application_a94bc2d4e9e8ab845069734f73bb75c9f}\label{classmain_1_1_my_application_a94bc2d4e9e8ab845069734f73bb75c9f} 
+\index{main.MyApplication@{main.MyApplication}!connect\_signals@{connect\_signals}}
+\index{connect\_signals@{connect\_signals}!main.MyApplication@{main.MyApplication}}
+\doxysubsubsection{\texorpdfstring{connect\_signals()}{connect\_signals()}}
+{\footnotesize\ttfamily main.\+My\+Application.\+connect\+\_\+signals (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Подключает сигналы к слотам. 
+
+Метод устанавливает связь между элементами GUI и соответствующими функциями обработчиками, которые вызываются при наступлении определенных событий. \Hypertarget{classmain_1_1_my_application_ab8e5186ebf799caa8a56af74c1eb5993}\label{classmain_1_1_my_application_ab8e5186ebf799caa8a56af74c1eb5993} 
+\index{main.MyApplication@{main.MyApplication}!get\_input\_parameters@{get\_input\_parameters}}
+\index{get\_input\_parameters@{get\_input\_parameters}!main.MyApplication@{main.MyApplication}}
+\doxysubsubsection{\texorpdfstring{get\_input\_parameters()}{get\_input\_parameters()}}
+{\footnotesize\ttfamily  tuple main.\+My\+Application.\+get\+\_\+input\+\_\+parameters (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Извлекает входные параметры из GUI. 
+
+Возвращает значения, введенные пользователем в интерфейсе. \begin{DoxyReturn}{Returns}
+кортеж с параметрами распределения. 
+\end{DoxyReturn}
+\Hypertarget{classmain_1_1_my_application_a2b8ac716b401a9e9dbd579e1daa451f2}\label{classmain_1_1_my_application_a2b8ac716b401a9e9dbd579e1daa451f2} 
+\index{main.MyApplication@{main.MyApplication}!get\_selected\_random\_variable@{get\_selected\_random\_variable}}
+\index{get\_selected\_random\_variable@{get\_selected\_random\_variable}!main.MyApplication@{main.MyApplication}}
+\doxysubsubsection{\texorpdfstring{get\_selected\_random\_variable()}{get\_selected\_random\_variable()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classrandom__variables_1_1_random_variable}{Random\+Variable}} main.\+My\+Application.\+get\+\_\+selected\+\_\+random\+\_\+variable (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{location,  }\item[{float}]{scale }\end{DoxyParamCaption})}
+
+
+
+Возвращает объект случайной величины в зависимости от выбранного пользователем распределения. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & Сдвиг распределения. \\
+\hline
+{\em scale} & Масштаб распределения. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+объект Random\+Variable соответствующего типа. 
+\end{DoxyReturn}
+\Hypertarget{classmain_1_1_my_application_a6fed158424101c5cdea7cbcf32e98a48}\label{classmain_1_1_my_application_a6fed158424101c5cdea7cbcf32e98a48} 
+\index{main.MyApplication@{main.MyApplication}!on\_combobox\_changed@{on\_combobox\_changed}}
+\index{on\_combobox\_changed@{on\_combobox\_changed}!main.MyApplication@{main.MyApplication}}
+\doxysubsubsection{\texorpdfstring{on\_combobox\_changed()}{on\_combobox\_changed()}}
+{\footnotesize\ttfamily  None main.\+My\+Application.\+on\+\_\+combobox\+\_\+changed (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Обработчик событий изменения выбора в комбо-\/боксе. 
+
+Обновляет интерфейс в зависимости от выбранного распределения. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmain_1_1_my_application_a543964c902127e2b46c18027150ee8a1}\label{classmain_1_1_my_application_a543964c902127e2b46c18027150ee8a1} 
+\index{main.MyApplication@{main.MyApplication}!calculate@{calculate}}
+\index{calculate@{calculate}!main.MyApplication@{main.MyApplication}}
+\doxysubsubsection{\texorpdfstring{calculate}{calculate}}
+{\footnotesize\ttfamily main.\+My\+Application.\+calculate}
+
+\Hypertarget{classmain_1_1_my_application_a306ba45d4b151fd203ce1ee21f991f52}\label{classmain_1_1_my_application_a306ba45d4b151fd203ce1ee21f991f52} 
+\index{main.MyApplication@{main.MyApplication}!CDFGraphWidget@{CDFGraphWidget}}
+\index{CDFGraphWidget@{CDFGraphWidget}!main.MyApplication@{main.MyApplication}}
+\doxysubsubsection{\texorpdfstring{CDFGraphWidget}{CDFGraphWidget}}
+{\footnotesize\ttfamily main.\+My\+Application.\+CDFGraph\+Widget}
+
+\Hypertarget{classmain_1_1_my_application_ab6eb66e46ff62f3633499e97ac98bd23}\label{classmain_1_1_my_application_ab6eb66e46ff62f3633499e97ac98bd23} 
+\index{main.MyApplication@{main.MyApplication}!on\_combobox\_changed@{on\_combobox\_changed}}
+\index{on\_combobox\_changed@{on\_combobox\_changed}!main.MyApplication@{main.MyApplication}}
+\doxysubsubsection{\texorpdfstring{on\_combobox\_changed}{on\_combobox\_changed}}
+{\footnotesize\ttfamily main.\+My\+Application.\+on\+\_\+combobox\+\_\+changed}
+
+\Hypertarget{classmain_1_1_my_application_a0308a6d96c10a22b9480af77b7fb8eb4}\label{classmain_1_1_my_application_a0308a6d96c10a22b9480af77b7fb8eb4} 
+\index{main.MyApplication@{main.MyApplication}!PDFGraphWidget@{PDFGraphWidget}}
+\index{PDFGraphWidget@{PDFGraphWidget}!main.MyApplication@{main.MyApplication}}
+\doxysubsubsection{\texorpdfstring{PDFGraphWidget}{PDFGraphWidget}}
+{\footnotesize\ttfamily main.\+My\+Application.\+PDFGraph\+Widget}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tumos/\+One\+Drive/Рабочий стол/Проектирование программ/Оценка функций и плотностей распределений/\mbox{\hyperlink{main_8py}{main.\+py}}\end{DoxyCompactItemize}

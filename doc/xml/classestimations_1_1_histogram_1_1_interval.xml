@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classestimations_1_1_histogram_1_1_interval" kind="class" language="Python" prot="public">
+    <compoundname>estimations::Histogram::Interval</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classestimations_1_1_histogram_1_1_interval_1ae43e82789115dd41cd45f7ae7dd0a4ad" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>estimations.Histogram.Interval::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <qualifiedname>estimations.Histogram.Interval.a</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="estimations.py" line="23" column="1" bodyfile="estimations.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classestimations_1_1_histogram_1_1_interval_1a3cfcacd800daa5653a225dd8312b8b5e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>estimations.Histogram.Interval::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>estimations.Histogram.Interval.b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="estimations.py" line="24" column="1" bodyfile="estimations.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classestimations_1_1_histogram_1_1_interval_1afc9012c9e9c50429d1b19a5c0c2637a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None estimations.Histogram.Interval.__init__</definition>
+        <argsstring>(self, float a, float b)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>estimations.Histogram.Interval.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="estimations.py" line="22" column="1" bodyfile="estimations.py" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classestimations_1_1_histogram_1_1_interval_1a5f4f5822b9456aba0d58b6774c723d70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool estimations.Histogram.Interval.is_in</definition>
+        <argsstring>(self, float x)</argsstring>
+        <name>is_in</name>
+        <qualifiedname>estimations.Histogram.Interval.is_in</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="estimations.py" line="26" column="1" bodyfile="estimations.py" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classestimations_1_1_histogram_1_1_interval_1a309817ae73245358d632c19161234bdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str estimations.Histogram.Interval.__repr__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__repr__</name>
+        <qualifiedname>estimations.Histogram.Interval.__repr__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="estimations.py" line="29" column="1" bodyfile="estimations.py" bodystart="29" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="estimations.py" line="21" column="1" bodyfile="estimations.py" bodystart="21" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classestimations_1_1_histogram_1_1_interval_1afc9012c9e9c50429d1b19a5c0c2637a5" prot="public" virt="non-virtual"><scope>estimations::Histogram::Interval</scope><name>__init__</name></member>
+      <member refid="classestimations_1_1_histogram_1_1_interval_1a309817ae73245358d632c19161234bdb" prot="public" virt="non-virtual"><scope>estimations::Histogram::Interval</scope><name>__repr__</name></member>
+      <member refid="classestimations_1_1_histogram_1_1_interval_1ae43e82789115dd41cd45f7ae7dd0a4ad" prot="public" virt="non-virtual"><scope>estimations::Histogram::Interval</scope><name>a</name></member>
+      <member refid="classestimations_1_1_histogram_1_1_interval_1a3cfcacd800daa5653a225dd8312b8b5e" prot="public" virt="non-virtual"><scope>estimations::Histogram::Interval</scope><name>b</name></member>
+      <member refid="classestimations_1_1_histogram_1_1_interval_1a5f4f5822b9456aba0d58b6774c723d70" prot="public" virt="non-virtual"><scope>estimations::Histogram::Interval</scope><name>is_in</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

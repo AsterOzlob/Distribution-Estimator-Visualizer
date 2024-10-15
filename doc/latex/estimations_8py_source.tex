@@ -1,0 +1,151 @@
+\doxysection{C\+:/\+Users/tumos/\+One\+Drive/Рабочий стол/Дик Курсовая/Оценка функций и плотностей распределений/estimations.py}
+\hypertarget{estimations_8py_source}{}\label{estimations_8py_source}\mbox{\hyperlink{estimations_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00001}\mbox{\hyperlink{namespaceestimations}{00001}}\ \textcolor{keyword}{from}\ abc\ \textcolor{keyword}{import}\ ABC}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00002}00002\ \textcolor{keyword}{from}\ typing\ \textcolor{keyword}{import}\ Optional}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00004}00004\ \textcolor{keyword}{import}\ numpy\ \textcolor{keyword}{as}\ np}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00007}\mbox{\hyperlink{classestimations_1_1_estimation}{00007}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classestimations_1_1_estimation}{Estimation}}(ABC):}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00008}00008\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00009}00009\ \textcolor{stringliteral}{\ \ \ \ @brief\ Абстрактный\ базовый\ класс\ для\ статистической\ оценки\ на\ основе\ выборки.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00010}00010\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00011}00011\ \textcolor{stringliteral}{\ \ \ \ Этот\ класс\ предоставляет\ базу\ для\ всех\ оценок,\ которые\ происходят\ из\ выборок\ данных.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00012}00012\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00014}\mbox{\hyperlink{classestimations_1_1_estimation_a5678fdc77206aa9918e2b03def8132b0}{00014}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classestimations_1_1_estimation_a5678fdc77206aa9918e2b03def8132b0}{\_\_init\_\_}}(self,\ sample:\ np.ndarray)\ -\/>\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00015}00015\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00016}00016\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Конструктор\ класса\ Estimation.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00017}00017\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00018}00018\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ sample:\ Массив\ образцов\ данных.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00019}00019\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00020}\mbox{\hyperlink{classestimations_1_1_estimation_a08d29495d5fbe318c219324099d56376}{00020}}\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classestimations_1_1_estimation_a08d29495d5fbe318c219324099d56376}{sample}}\ =\ sample}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00023}\mbox{\hyperlink{classestimations_1_1_e_d_f}{00023}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classestimations_1_1_e_d_f}{EDF}}(\mbox{\hyperlink{classestimations_1_1_estimation}{Estimation}}):}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00024}00024\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00025}00025\ \textcolor{stringliteral}{\ \ \ \ @brief\ Класс\ для\ вычисления\ эмпирической\ функции\ распределения\ (EDF).}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00026}00026\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00027}00027\ \textcolor{stringliteral}{\ \ \ \ EDF\ -\/\ это\ оценка\ кумулятивной\ функции\ распределения,}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00028}00028\ \textcolor{stringliteral}{\ \ \ \ которая\ назначает\ одинаковую\ вероятность\ каждой\ точке\ данных\ в\ выборке.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00029}00029\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00031}\mbox{\hyperlink{classestimations_1_1_e_d_f_a160988bc2a9562952359aa3aab5520ef}{00031}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classestimations_1_1_e_d_f_a160988bc2a9562952359aa3aab5520ef}{heaviside\_function}}(x:\ float)\ -\/>\ int:}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00032}00032\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00033}00033\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Функция\ Хевисайда,\ используемая\ при\ вычислении\ EDF.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00034}00034\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00035}00035\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ x:\ Значение\ для\ оценки.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00036}00036\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return:\ Возвращает\ 1,\ если\ x\ >\ 0,\ иначе\ 0.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00037}00037\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1\ \textcolor{keywordflow}{if}\ x\ >\ 0\ \textcolor{keywordflow}{else}\ 0}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00040}\mbox{\hyperlink{classestimations_1_1_e_d_f_acb6973158b08720798036e63c58193fa}{00040}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classestimations_1_1_e_d_f_acb6973158b08720798036e63c58193fa}{value}}(self,\ x\_array:\ np.ndarray)\ -\/>\ np.ndarray:}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00041}00041\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00042}00042\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Вычисляет\ значение\ EDF\ в\ указанных\ точках.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00043}00043\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00044}00044\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ x\_array:\ Массив\ точек,\ в\ которых\ вычисляется\ EDF.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00045}00045\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return:\ Массив\ значений\ EDF,\ соответствующих\ входным\ точкам.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00046}00046\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00047}\mbox{\hyperlink{classestimations_1_1_e_d_f_a69f9271482812c103bb472c1b1f1df4f}{00047}}\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ np.mean(np.vectorize(EDF.heaviside\_function)(x\_array\ -\/\ self.\mbox{\hyperlink{classestimations_1_1_estimation_a08d29495d5fbe318c219324099d56376}{sample}}\mbox{\hyperlink{classestimations_1_1_e_d_f_a69f9271482812c103bb472c1b1f1df4f}{sample}}))}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00050}\mbox{\hyperlink{classestimations_1_1_histogram}{00050}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classestimations_1_1_histogram}{Histogram}}(\mbox{\hyperlink{classestimations_1_1_estimation}{Estimation}}):}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00051}00051\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00052}00052\ \textcolor{stringliteral}{\ \ \ \ @brief\ Класс\ для\ создания\ гистограммы\ по\ выборке\ данных.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00053}00053\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00054}00054\ \textcolor{stringliteral}{\ \ \ \ Этот\ класс\ разбивает\ диапазон\ выборки\ на\ интервалы}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00055}00055\ \textcolor{stringliteral}{\ \ \ \ и\ подсчитывает\ количество\ точек\ данных\ в\ каждом\ интервале.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00056}00056\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00058}\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval}{00058}}\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval}{Interval}}:}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00059}00059\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00060}00060\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Представляет\ интервал\ в\ гистограмме.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00061}00061\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00062}00062\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ Каждый\ интервал\ определяет\ сегмент\ диапазона\ значений\ данных.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00063}00063\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00064}\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval_afc9012c9e9c50429d1b19a5c0c2637a5}{00064}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval_afc9012c9e9c50429d1b19a5c0c2637a5}{\_\_init\_\_}}(self,\ a:\ float,\ b:\ float)\ -\/>\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00066}00066\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ @brief\ Инициализирует\ интервал\ с\ заданными\ границами.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00067}00067\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00068}00068\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ @param\ a:\ Нижняя\ граница\ интервала.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00069}00069\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ @param\ b:\ Верхняя\ граница\ интервала.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00070}00070\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00071}\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval_a78a94d2ee19cbb0a7e8262c9d7850220}{00071}}\ \ \ \ \ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval_a78a94d2ee19cbb0a7e8262c9d7850220}{left\_boundary\_of\_interval}}\ =\ a}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00072}\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval_a113d9f0a959348c410a82e257dd869ef}{00072}}\ \ \ \ \ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval_a113d9f0a959348c410a82e257dd869ef}{right\_boundary\_of\_intervals}}\ =\ b}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00074}\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval_a5f4f5822b9456aba0d58b6774c723d70}{00074}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval_a5f4f5822b9456aba0d58b6774c723d70}{is\_in}}(self,\ x:\ float)\ -\/>\ bool:}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00076}00076\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ @brief\ Проверяет,\ попадает\ ли\ значение\ в\ интервал.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00077}00077\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00078}00078\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ @param\ x:\ Значение\ для\ проверки.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00079}00079\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ @return:\ True,\ если\ x\ находится\ внутри\ интервала,\ иначе\ False.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00080}00080\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ self.\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval_a78a94d2ee19cbb0a7e8262c9d7850220}{left\_boundary\_of\_interval}}\ <=\ x\ <\ self.\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval_a113d9f0a959348c410a82e257dd869ef}{right\_boundary\_of\_intervals}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00082}00082\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00083}\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval_a309817ae73245358d632c19161234bdb}{00083}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval_a309817ae73245358d632c19161234bdb}{\_\_repr\_\_}}(self)\ -\/>\ str:}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00085}00085\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ @brief\ Возвращает\ строковое\ представление\ интервала.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00086}00086\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00087}00087\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ @return:\ Строка,\ представляющая\ границы\ интервала.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00088}00088\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ f\textcolor{stringliteral}{'(\{self.a\},\ \{self.b\})'}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00090}00090\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00091}\mbox{\hyperlink{classestimations_1_1_histogram_a594cd6faad51e7a685695dd0d4d9d26b}{00091}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classestimations_1_1_histogram_a594cd6faad51e7a685695dd0d4d9d26b}{\_\_init\_\_}}(self,\ sample:\ np.ndarray,\ m:\ int)\ -\/>\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00092}00092\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00093}00093\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Конструктор\ класса\ Histogram.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00094}00094\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00095}00095\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ sample:\ Массив\ образцов\ данных.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00096}00096\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ m:\ Количество\ интервалов\ для\ создания.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00097}00097\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00098}00098\ \ \ \ \ \ \ \ \ super().\mbox{\hyperlink{classestimations_1_1_histogram_a594cd6faad51e7a685695dd0d4d9d26b}{\_\_init\_\_}}(sample)}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00099}\mbox{\hyperlink{classestimations_1_1_histogram_a042605d6d89e7c6084fd49db63e22b25}{00099}}\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classestimations_1_1_histogram_a042605d6d89e7c6084fd49db63e22b25}{m}}\ =\ m}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00100}00100\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classestimations_1_1_histogram_a879d3fb7770f06d5fbb91dcebede8999}{init\_intervals}}()}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00101}00101\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00102}\mbox{\hyperlink{classestimations_1_1_histogram_a879d3fb7770f06d5fbb91dcebede8999}{00102}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classestimations_1_1_histogram_a879d3fb7770f06d5fbb91dcebede8999}{init\_intervals}}(self)\ -\/>\ None:}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00103}00103\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00104}00104\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Инициализирует\ интервалы\ на\ основе\ выборки\ данных\ и\ желаемого\ количества\ интервалов.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00105}00105\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00106}00106\ \ \ \ \ \ \ \ \ left\_boundary\_of\_intervals\ =\ np.linspace(np.min(self.\mbox{\hyperlink{classestimations_1_1_estimation_a08d29495d5fbe318c219324099d56376}{sample}}\mbox{\hyperlink{classestimations_1_1_histogram_a45a8946177f658f9c4b191386cef24e9}{sample}}),\ np.max(self.\mbox{\hyperlink{classestimations_1_1_estimation_a08d29495d5fbe318c219324099d56376}{sample}}\mbox{\hyperlink{classestimations_1_1_histogram_a45a8946177f658f9c4b191386cef24e9}{sample}}),\ self.\mbox{\hyperlink{classestimations_1_1_histogram_a042605d6d89e7c6084fd49db63e22b25}{m}}\ +\ 1)[:-\/1]}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00107}00107\ \ \ \ \ \ \ \ \ right\_boundary\_of\_intervals\ =\ np.concatenate((left\_boundary\_of\_intervals[1:],\ [np.max(self.\mbox{\hyperlink{classestimations_1_1_estimation_a08d29495d5fbe318c219324099d56376}{sample}}\mbox{\hyperlink{classestimations_1_1_histogram_a45a8946177f658f9c4b191386cef24e9}{sample}})]))}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00109}\mbox{\hyperlink{classestimations_1_1_histogram_a916cfba7d1383d136745c6f94976ae91}{00109}}\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classestimations_1_1_histogram_a916cfba7d1383d136745c6f94976ae91}{intervals}}\ =\ [\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval}{Histogram.Interval}}(a,\ b)\ \textcolor{keywordflow}{for}\ a,\ b\ \textcolor{keywordflow}{in}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00110}00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ zip(left\_boundary\_of\_intervals,\ right\_boundary\_of\_intervals)]}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00111}00111\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00112}\mbox{\hyperlink{classestimations_1_1_histogram_a9e675cdad0e13b322330a4f08ff1989a}{00112}}\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classestimations_1_1_histogram_a9e675cdad0e13b322330a4f08ff1989a}{sub\_interval\_width}}\ =\ right\_boundary\_of\_intervals[0]\ -\/\ left\_boundary\_of\_intervals[0]}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00113}00113\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00114}\mbox{\hyperlink{classestimations_1_1_histogram_acfd9facf5c3d8689b01ff4217543df2b}{00114}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classestimations_1_1_histogram_acfd9facf5c3d8689b01ff4217543df2b}{get\_interval}}(self,\ x:\ float)\ -\/>\ Optional[Interval]:}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00115}00115\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00116}00116\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Получает\ интервал,\ содержащий\ определенное\ значение.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00117}00117\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00118}00118\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ x:\ Значение,\ для\ которого\ необходимо\ найти\ интервал.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00119}00119\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return:\ Интервал,\ содержащий\ x,\ или\ None,\ если\ интервал\ не\ найден.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00120}00120\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00121}00121\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ i\ \textcolor{keywordflow}{in}\ self.\mbox{\hyperlink{classestimations_1_1_histogram_a916cfba7d1383d136745c6f94976ae91}{intervals}}:}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00122}00122\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ i.is\_in(x):}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00123}00123\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ i}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00124}00124\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keywordtype}{None}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00125}00125\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00126}\mbox{\hyperlink{classestimations_1_1_histogram_adfb848b6cc9b9274e0ff971c2a19c8c1}{00126}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classestimations_1_1_histogram_adfb848b6cc9b9274e0ff971c2a19c8c1}{get\_sample\_by\_interval}}(self,\ interval:\ Interval)\ -\/>\ np.ndarray:}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00127}00127\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00128}00128\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Получает\ все\ точки\ выборки,\ попадающие\ в\ заданный\ интервал.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00129}00129\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00130}00130\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ interval:\ Интервал\ для\ проверки\ по\ точкам\ выборки.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00131}00131\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return:\ Массив\ точек\ выборки\ внутри\ интервала.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00132}00132\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00133}\mbox{\hyperlink{classestimations_1_1_histogram_a45a8946177f658f9c4b191386cef24e9}{00133}}\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ np.array(list(filter(\textcolor{keyword}{lambda}\ x:\ interval.is\_in(x),\ self.\mbox{\hyperlink{classestimations_1_1_estimation_a08d29495d5fbe318c219324099d56376}{sample}}\mbox{\hyperlink{classestimations_1_1_histogram_a45a8946177f658f9c4b191386cef24e9}{sample}})))}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00135}\mbox{\hyperlink{classestimations_1_1_histogram_a565841d0a993eab21bf2441f03d4ca9f}{00135}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classestimations_1_1_histogram_a565841d0a993eab21bf2441f03d4ca9f}{value}}(self,\ x:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00136}00136\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00137}00137\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Вычисляет\ значение\ гистограммы\ в\ определенной\ точке.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00138}00138\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00139}00139\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ x:\ Точка,\ в\ которой\ вычисляется\ гистограмма.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00140}00140\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return:\ Значение\ гистограммы\ в\ точке\ x.}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00141}00141\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00142}00142\ \ \ \ \ \ \ \ \ interval\ =\ self.\mbox{\hyperlink{classestimations_1_1_histogram_acfd9facf5c3d8689b01ff4217543df2b}{get\_interval}}(x)}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00143}00143\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ interval\ \textcolor{keywordflow}{is}\ \textcolor{keywordflow}{not}\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00144}00144\ \ \ \ \ \ \ \ \ \ \ \ \ sample\_by\_interval\ =\ self.\mbox{\hyperlink{classestimations_1_1_histogram_adfb848b6cc9b9274e0ff971c2a19c8c1}{get\_sample\_by\_interval}}(interval)}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00145}00145\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ len(sample\_by\_interval)\ /\ (self.\mbox{\hyperlink{classestimations_1_1_histogram_a9e675cdad0e13b322330a4f08ff1989a}{sub\_interval\_width}}\ *\ len(self.\mbox{\hyperlink{classestimations_1_1_estimation_a08d29495d5fbe318c219324099d56376}{sample}}\mbox{\hyperlink{classestimations_1_1_histogram_a45a8946177f658f9c4b191386cef24e9}{sample}}))}
+\DoxyCodeLine{\Hypertarget{estimations_8py_source_l00146}00146\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.0}
+
+\end{DoxyCode}

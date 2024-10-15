@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceplotting" kind="namespace" language="Python">
+    <compoundname>plotting</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="plotting_8py_1a9da31f878e0dc3f1b3f8cd304bc30c73" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>plotting.PEN_RED</definition>
+        <argsstring></argsstring>
+        <name>PEN_RED</name>
+        <qualifiedname>plotting.PEN_RED</qualifiedname>
+        <initializer>=  mkPen(color=&apos;r&apos;, width=2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plotting.py" line="5" column="1" bodyfile="plotting.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="plotting_8py_1ac61e15053b89157f288183455b42ed60" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>plotting.PEN_BLUE</definition>
+        <argsstring></argsstring>
+        <name>PEN_BLUE</name>
+        <qualifiedname>plotting.PEN_BLUE</qualifiedname>
+        <initializer>=  mkPen(color=&apos;b&apos;, width=2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plotting.py" line="6" column="1" bodyfile="plotting.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="plotting_8py_1aab3d0b728279c45d7429657f95d637f9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>plotting.PEN_GREEN</definition>
+        <argsstring></argsstring>
+        <name>PEN_GREEN</name>
+        <qualifiedname>plotting.PEN_GREEN</qualifiedname>
+        <initializer>=  mkPen(color=&apos;g&apos;, width=2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plotting.py" line="7" column="1" bodyfile="plotting.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="plotting_8py_1a5bc10f034bf8f41f40df993d14984801" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None plotting.plot_distributions</definition>
+        <argsstring>(QWidget first_widget, x, y_truth, y_edf, y_kernel)</argsstring>
+        <name>plot_distributions</name>
+        <qualifiedname>plotting.plot_distributions</qualifiedname>
+        <param>
+          <type>QWidget</type>
+          <declname>first_widget</declname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y_truth</type>
+          <defname>y_truth</defname>
+        </param>
+        <param>
+          <type>y_edf</type>
+          <defname>y_edf</defname>
+        </param>
+        <param>
+          <type>y_kernel</type>
+          <defname>y_kernel</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plotting.py" line="10" column="1" bodyfile="plotting.py" bodystart="10" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="plotting_8py_1a14bcd4b204bb567ec51068402fa1f26f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None plotting.plot_histograms</definition>
+        <argsstring>(QWidget second_widget, x, p_1, p_2, p_3)</argsstring>
+        <name>plot_histograms</name>
+        <qualifiedname>plotting.plot_histograms</qualifiedname>
+        <param>
+          <type>QWidget</type>
+          <declname>second_widget</declname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>p_1</type>
+          <defname>p_1</defname>
+        </param>
+        <param>
+          <type>p_2</type>
+          <defname>p_2</defname>
+        </param>
+        <param>
+          <type>p_3</type>
+          <defname>p_3</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plotting.py" line="16" column="1" bodyfile="plotting.py" bodystart="16" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="plotting.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

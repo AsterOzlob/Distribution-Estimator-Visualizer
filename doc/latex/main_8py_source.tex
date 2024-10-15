@@ -1,0 +1,144 @@
+\doxysection{C\+:/\+Users/tumos/\+One\+Drive/Рабочий стол/Дик Курсовая/Оценка функций и плотностей распределений/main.py}
+\hypertarget{main_8py_source}{}\label{main_8py_source}\mbox{\hyperlink{main_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00001}\mbox{\hyperlink{namespacemain}{00001}}\ \textcolor{keyword}{from}\ random\_variables\ \textcolor{keyword}{import}\ (RandomVariable,\ SmoothedRandomVariable,\ NormalRandomVariable,\ UniformRandomVariable,}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00002}00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ LaplaceRandomVariable,\ ExponentialRandomVariable,\ CauchyRandomVariable)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00003}00003\ \textcolor{keyword}{from}\ random\_number\_generators\ \textcolor{keyword}{import}\ SimpleRandomNumberGenerator}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00004}00004\ \textcolor{keyword}{from}\ estimations\ \textcolor{keyword}{import}\ EDF,\ Histogram}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00005}00005\ \textcolor{keyword}{from}\ enums\ \textcolor{keyword}{import}\ DistComboBoxValues}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00006}00006\ \textcolor{keyword}{from}\ plotting\ \textcolor{keyword}{import}\ plot\_distributions,\ plot\_histograms}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00007}00007\ \textcolor{keyword}{from}\ PyQt5\ \textcolor{keyword}{import}\ QtWidgets}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00010}00010\ \textcolor{keyword}{import}\ sys}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00011}00011\ \textcolor{keyword}{import}\ numpy\ \textcolor{keyword}{as}\ np}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00012}00012\ \textcolor{keyword}{import}\ gui}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00015}\mbox{\hyperlink{classmain_1_1_my_application}{00015}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classmain_1_1_my_application}{MyApplication}}(QtWidgets.QMainWindow,\ \mbox{\hyperlink{classgui_1_1_ui___main_window}{gui.Ui\_MainWindow}}):}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00016}00016\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00020}\mbox{\hyperlink{classmain_1_1_my_application_a8e8e412681dd8c3cd329f9f322a20e29}{00020}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classmain_1_1_my_application_a8e8e412681dd8c3cd329f9f322a20e29}{\_\_init\_\_}}(self)\ -\/>\ None:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00021}00021\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00022}00022\ \ \ \ \ \ \ \ \ super().\mbox{\hyperlink{classmain_1_1_my_application_a8e8e412681dd8c3cd329f9f322a20e29}{\_\_init\_\_}}()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00023}00023\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classgui_1_1_ui___main_window_a6334caf294f0c5adfe21c4a09878c371}{setupUi}}(self)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00024}00024\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classmain_1_1_my_application_a94bc2d4e9e8ab845069734f73bb75c9f}{connect\_signals}}()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00026}\mbox{\hyperlink{classmain_1_1_my_application_a94bc2d4e9e8ab845069734f73bb75c9f}{00026}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classmain_1_1_my_application_a94bc2d4e9e8ab845069734f73bb75c9f}{connect\_signals}}(self):}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00028}00028\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Подключает\ сигналы\ к\ слотам.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00029}00029\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00030}00030\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ Метод\ устанавливает\ связь\ между\ элементами\ GUI\ и\ соответствующими\ функциями\ обработчиками,}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00031}00031\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ которые\ вызываются\ при\ наступлении\ определенных\ событий.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00032}00032\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00033}00033\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ Сигналы\ и\ слоты:}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00034}00034\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ -\/\ @c\ currentIndexChanged:\ Срабатывает\ при\ изменении\ выбранного\ элемента\ в\ комбо-\/боксе\ @c\ DistComboBox.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00035}00035\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ Подключен\ к\ методу\ @c\ on\_combobox\_changed.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00036}00036\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ -\/\ @c\ clicked:\ Срабатывает\ при\ нажатии\ на\ кнопку\ @c\ CalcButton.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00037}00037\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ Подключен\ к\ методу\ @c\ calculate.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00038}00038\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00039}\mbox{\hyperlink{classmain_1_1_my_application_ab6eb66e46ff62f3633499e97ac98bd23}{00039}}\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classgui_1_1_ui___main_window_a84ab91aead055f5f2445d656986c6eb1}{DistComboBox}}.currentIndexChanged.connect(self.\mbox{\hyperlink{classmain_1_1_my_application_ab6eb66e46ff62f3633499e97ac98bd23}{on\_combobox\_changed}}\mbox{\hyperlink{classmain_1_1_my_application_a6fed158424101c5cdea7cbcf32e98a48}{on\_combobox\_changed}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00040}\mbox{\hyperlink{classmain_1_1_my_application_a543964c902127e2b46c18027150ee8a1}{00040}}\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classgui_1_1_ui___main_window_ad1978f359a5969617ac640d5df163c5e}{CalcButton}}.clicked.connect(self.\mbox{\hyperlink{classmain_1_1_my_application_a543964c902127e2b46c18027150ee8a1}{calculate}}\mbox{\hyperlink{classmain_1_1_my_application_a3cde2d0aad0b151bea2814a40f99f71c}{calculate}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00042}\mbox{\hyperlink{classmain_1_1_my_application_a6fed158424101c5cdea7cbcf32e98a48}{00042}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classmain_1_1_my_application_ab6eb66e46ff62f3633499e97ac98bd23}{on\_combobox\_changed}}(self)\ -\/>\ None:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00043}00043\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00044}00044\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Обрабатывает\ изменения\ в\ комбо-\/боксе\ типа\ распределения.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00045}00045\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00046}00046\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ Обновляет\ подписи\ к\ входным\ данным\ и\ включает/отключает\ ввод\ в\ зависимости\ от\ выбранного\ распределения.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00047}00047\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00048}00048\ \ \ \ \ \ \ \ \ selected\_text\ =\ self.\mbox{\hyperlink{classgui_1_1_ui___main_window_a84ab91aead055f5f2445d656986c6eb1}{DistComboBox}}.currentText()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00050}00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ selected\_text\ ==\ DistComboBoxValues.UniformDist.value:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ lower\_label,\ upper\_label\ =\ (\textcolor{stringliteral}{"{}a:"{}},\ \textcolor{stringliteral}{"{}b:"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00052}00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ selected\_text\ ==\ DistComboBoxValues.ExponentialDist.value:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ lower\_label,\ upper\_label\ =\ (\textcolor{stringliteral}{"{}lambda:"{}},\ \textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classgui_1_1_ui___main_window_aa4e0eb8e615702d447c17b1a831997be}{UpperBoundLabel}}.setEnabled(\textcolor{keyword}{False})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classgui_1_1_ui___main_window_a2686f8a908c3d6ea9ed594a8d65ce3b2}{UpperBoundLineEdit}}.setEnabled(\textcolor{keyword}{False})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00056}00056\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ lower\_label,\ upper\_label\ =\ (\textcolor{stringliteral}{"{}Сдвиг:"{}},\ \textcolor{stringliteral}{"{}Масштаб:"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classgui_1_1_ui___main_window_aa4e0eb8e615702d447c17b1a831997be}{UpperBoundLabel}}.setEnabled(\textcolor{keyword}{True})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classgui_1_1_ui___main_window_a2686f8a908c3d6ea9ed594a8d65ce3b2}{UpperBoundLineEdit}}.setEnabled(\textcolor{keyword}{True})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00061}00061\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classgui_1_1_ui___main_window_ab7a9c664a0de4606fc2e0da519852838}{LowerBoundLabel}}.setText(lower\_label)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00062}00062\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classgui_1_1_ui___main_window_aa4e0eb8e615702d447c17b1a831997be}{UpperBoundLabel}}.setText(upper\_label)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00064}\mbox{\hyperlink{classmain_1_1_my_application_a3cde2d0aad0b151bea2814a40f99f71c}{00064}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classmain_1_1_my_application_a543964c902127e2b46c18027150ee8a1}{calculate}}(self)\ -\/>\ None:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00065}00065\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00066}00066\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Вычисляет\ распределения\ и\ строит\ графики\ на\ основе\ ввода\ пользователя.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00067}00067\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00068}00068\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ Получает\ входные\ значения,\ вычисляет\ указанные\ распределения\ и\ обновляет\ пользовательский\ интерфейс.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00069}00069\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00070}00070\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classgui_1_1_ui___main_window_a0d4e58c1f54e9c0ac0d3c541d62dd4ca}{CDFGraphWidget}}\mbox{\hyperlink{classmain_1_1_my_application_a306ba45d4b151fd203ce1ee21f991f52}{CDFGraphWidget}}.clear()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00071}00071\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classgui_1_1_ui___main_window_a06967dd73624859e6dbc2a47790e49be}{PDFGraphWidget}}\mbox{\hyperlink{classmain_1_1_my_application_a0308a6d96c10a22b9480af77b7fb8eb4}{PDFGraphWidget}}.clear()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00073}00073\ \ \ \ \ \ \ \ \ location,\ scale,\ size,\ bandwidth,\ num\_intervals\ =\ self.\mbox{\hyperlink{classmain_1_1_my_application_ab8e5186ebf799caa8a56af74c1eb5993}{get\_input\_parameters}}()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00075}00075\ \ \ \ \ \ \ \ \ random\_variable\ =\ self.\mbox{\hyperlink{classmain_1_1_my_application_a2b8ac716b401a9e9dbd579e1daa451f2}{get\_selected\_random\_variable}}(location,\ scale)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00077}00077\ \ \ \ \ \ \ \ \ generator\ =\ \mbox{\hyperlink{classrandom__number__generators_1_1_simple_random_number_generator}{SimpleRandomNumberGenerator}}(random\_variable)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00078}00078\ \ \ \ \ \ \ \ \ sample\ =\ generator.get(size)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00080}00080\ \ \ \ \ \ \ \ \ num\_points\ =\ 100}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00081}00081\ \ \ \ \ \ \ \ \ x\_array\ =\ np.linspace(np.min(sample),\ np.max(sample),\ num\_points)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00082}00082\ \ \ \ \ \ \ \ \ y\_truth\ =\ np.vectorize(random\_variable.cumulative\_distribution\_function)(x\_array)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00084}00084\ \ \ \ \ \ \ \ \ edf\ =\ \mbox{\hyperlink{classestimations_1_1_e_d_f}{EDF}}(sample)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00085}00085\ \ \ \ \ \ \ \ \ y\_edf\ =\ np.vectorize(edf.value)(x\_array)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00087}00087\ \ \ \ \ \ \ \ \ smoothed\_random\_variable\ =\ \mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable}{SmoothedRandomVariable}}(sample,\ bandwidth)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00088}00088\ \ \ \ \ \ \ \ \ y\_kernel\ =\ np.vectorize(smoothed\_random\_variable.cumulative\_distribution\_function)(x\_array)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00090}\mbox{\hyperlink{classmain_1_1_my_application_a306ba45d4b151fd203ce1ee21f991f52}{00090}}\ \ \ \ \ \ \ \ \ plot\_distributions(self.\mbox{\hyperlink{classgui_1_1_ui___main_window_a0d4e58c1f54e9c0ac0d3c541d62dd4ca}{CDFGraphWidget}}\mbox{\hyperlink{classmain_1_1_my_application_a306ba45d4b151fd203ce1ee21f991f52}{CDFGraphWidget}},\ x\_array,\ y\_truth,\ y\_edf,\ y\_kernel)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00092}00092\ \ \ \ \ \ \ \ \ histogram\ =\ \mbox{\hyperlink{classestimations_1_1_histogram}{Histogram}}(sample,\ num\_intervals)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00093}00093\ \ \ \ \ \ \ \ \ pdf\_theoretical\ =\ np.vectorize(random\_variable.probability\_density\_function)(x\_array)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00094}00094\ \ \ \ \ \ \ \ \ pdf\_histogram\ =\ np.vectorize(histogram.value)(x\_array)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00095}00095\ \ \ \ \ \ \ \ \ pdf\_kernel\ =\ np.vectorize(smoothed\_random\_variable.probability\_density\_function)(x\_array)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00097}\mbox{\hyperlink{classmain_1_1_my_application_a0308a6d96c10a22b9480af77b7fb8eb4}{00097}}\ \ \ \ \ \ \ \ \ plot\_histograms(self.\mbox{\hyperlink{classgui_1_1_ui___main_window_a06967dd73624859e6dbc2a47790e49be}{PDFGraphWidget}}\mbox{\hyperlink{classmain_1_1_my_application_a0308a6d96c10a22b9480af77b7fb8eb4}{PDFGraphWidget}},\ x\_array,\ pdf\_theoretical,\ pdf\_histogram,\ pdf\_kernel)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00099}\mbox{\hyperlink{classmain_1_1_my_application_ab8e5186ebf799caa8a56af74c1eb5993}{00099}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classmain_1_1_my_application_ab8e5186ebf799caa8a56af74c1eb5993}{get\_input\_parameters}}(self)\ -\/>\ tuple:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00100}00100\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00101}00101\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Получает\ входные\ параметры\ из\ пользовательского\ интерфейса.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00102}00102\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00103}00103\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ Кортеж,\ содержащий\ сдвиг,\ масштаб,\ объём\ выборки,\ ширину\ полосы\ и\ кол-\/во\ интервалов\ гистограммы.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00104}00104\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00105}00105\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ float(self.\mbox{\hyperlink{classgui_1_1_ui___main_window_a9e19f03eac8ba2167b626bc692ebdfac}{LowerBoundLineEdit}}.text()),}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ float(self.\mbox{\hyperlink{classgui_1_1_ui___main_window_a2686f8a908c3d6ea9ed594a8d65ce3b2}{UpperBoundLineEdit}}.text()),}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ \ \ int(self.\mbox{\hyperlink{classgui_1_1_ui___main_window_aa0e5e3082f6f3e3479aa0cd4932312e3}{SizeLineEdit}}.text()),}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00109}00109\ \ \ \ \ \ \ \ \ \ \ \ \ float(self.\mbox{\hyperlink{classgui_1_1_ui___main_window_a3cc1e45faab2f0d601a57aaed79cbc46}{BandwithLineEdit}}.text()),}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00110}00110\ \ \ \ \ \ \ \ \ \ \ \ \ int(self.\mbox{\hyperlink{classgui_1_1_ui___main_window_aafcafa85aa479d79a8e7dbde6b7d4018}{IntervalsLineEdit}}.text())}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00111}00111\ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00112}00112\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00113}\mbox{\hyperlink{classmain_1_1_my_application_a2b8ac716b401a9e9dbd579e1daa451f2}{00113}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classmain_1_1_my_application_a2b8ac716b401a9e9dbd579e1daa451f2}{get\_selected\_random\_variable}}(self,\ location:\ float,\ scale:\ float)\ -\/>\ RandomVariable:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00114}00114\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00115}00115\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Строит\ объект\ случайной\ величины\ на\ основе\ выбранного\ распределения.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00116}00116\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00117}00117\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ location\ Параметр\ сдвига\ для\ распределения.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00118}00118\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ scale\ Параметр\ масштаба\ для\ распределения.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00119}00119\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ Экземпляр\ подкласса\ RandomVariable,\ соответствующий\ выбранному\ типу\ распределения.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00120}00120\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00121}00121\ \ \ \ \ \ \ \ \ selected\_text\ =\ self.\mbox{\hyperlink{classgui_1_1_ui___main_window_a84ab91aead055f5f2445d656986c6eb1}{DistComboBox}}.currentText()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00122}00122\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00123}00123\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ selected\_text\ ==\ DistComboBoxValues.NormalDist.value:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00124}00124\ \ \ \ \ \ \ \ \ \ \ \ \ result\ =\ \mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable}{NormalRandomVariable}}(location,\ scale)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00125}00125\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ selected\_text\ ==\ DistComboBoxValues.UniformDist.value:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00126}00126\ \ \ \ \ \ \ \ \ \ \ \ \ result\ =\ \mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable}{UniformRandomVariable}}(location,\ scale)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00127}00127\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ selected\_text\ ==\ DistComboBoxValues.ExponentialDist.value:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00128}00128\ \ \ \ \ \ \ \ \ \ \ \ \ result\ =\ \mbox{\hyperlink{classrandom__variables_1_1_exponential_random_variable}{ExponentialRandomVariable}}(location)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00129}00129\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ selected\_text\ ==\ DistComboBoxValues.LaplaceDist.value:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00130}00130\ \ \ \ \ \ \ \ \ \ \ \ \ result\ =\ \mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable}{LaplaceRandomVariable}}(location,\ scale)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00131}00131\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ selected\_text\ ==\ DistComboBoxValues.CauchyDist.value:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00132}00132\ \ \ \ \ \ \ \ \ \ \ \ \ result\ =\ \mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable}{CauchyRandomVariable}}(location,\ scale)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00133}00133\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00134}00134\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ result}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00135}00135\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00136}00136\ }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00137}00137\ \textcolor{keywordflow}{if}\ \_\_name\_\_\ ==\ \textcolor{stringliteral}{"{}\_\_main\_\_"{}}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00138}\mbox{\hyperlink{namespacemain_a5fa94f0581009434c7a63791944d6ff4}{00138}}\ \ \ \ \ app\ =\ QtWidgets.QApplication(sys.argv)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00139}\mbox{\hyperlink{namespacemain_ae1ea5d7d8ba9156ef06beef9bf8901a8}{00139}}\ \ \ \ \ window\ =\ \mbox{\hyperlink{classmain_1_1_my_application}{MyApplication}}()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00140}00140\ \ \ \ \ window.show()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00141}00141\ \ \ \ \ app.exec\_()}
+
+\end{DoxyCode}

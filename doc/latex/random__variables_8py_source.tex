@@ -1,0 +1,252 @@
+\doxysection{C\+:/\+Users/tumos/\+One\+Drive/Рабочий стол/Дик Курсовая/Оценка функций и плотностей распределений/random\+\_\+variables.py}
+\hypertarget{random__variables_8py_source}{}\label{random__variables_8py_source}\mbox{\hyperlink{random__variables_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00001}\mbox{\hyperlink{namespacerandom__variables}{00001}}\ \textcolor{keyword}{from}\ abc\ \textcolor{keyword}{import}\ ABC,\ abstractmethod}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00002}00002\ \textcolor{keyword}{from}\ estimations\ \textcolor{keyword}{import}\ Estimation}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00004}00004\ \textcolor{keyword}{import}\ math}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00005}00005\ \textcolor{keyword}{import}\ numpy\ \textcolor{keyword}{as}\ np}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00008}\mbox{\hyperlink{classrandom__variables_1_1_random_variable}{00008}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classrandom__variables_1_1_random_variable}{RandomVariable}}(ABC):}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00009}00009\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00010}00010\ \textcolor{stringliteral}{\ \ \ \ @brief\ Абстрактный\ базовый\ класс\ для\ случайных\ величин.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00011}00011\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00012}00012\ \textcolor{stringliteral}{\ \ \ \ Этот\ класс\ предоставляет\ интерфейс\ для\ случайных\ величин,\ который\ включает}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00013}00013\ \textcolor{stringliteral}{\ \ \ \ методы\ для\ вычисления\ плотности\ вероятности\ (pdf),\ кумулятивной\ функции\ распределения\ (cdf)\ и}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00014}00014\ \textcolor{stringliteral}{\ \ \ \ квантильной\ функции.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00015}00015\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00017}00017\ \ \ \ \ \textcolor{preprocessor}{@abstractmethod}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00018}\mbox{\hyperlink{classrandom__variables_1_1_random_variable_a1edc987c59408dfbfab082331b483b98}{00018}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_random_variable_a1edc987c59408dfbfab082331b483b98}{probability\_density\_function}}(self,\ x:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00020}00020\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Вычисляет\ плотность\ вероятности\ в\ заданной\ точке.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00021}00021\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00022}00022\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ x\ Точка,\ в\ которой\ вычисляется\ pdf.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00023}00023\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ Значение\ плотности\ вероятности\ в\ точке\ x.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00024}00024\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00025}00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{pass}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00027}00027\ \ \ \ \ \textcolor{preprocessor}{@abstractmethod}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00028}\mbox{\hyperlink{classrandom__variables_1_1_random_variable_aa15a98c6a25152b6f3ba555470c7e3f8}{00028}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_random_variable_aa15a98c6a25152b6f3ba555470c7e3f8}{cumulative\_distribution\_function}}(self,\ x:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00029}00029\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00030}00030\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Вычисляет\ кумулятивную\ функцию\ распределения\ в\ заданной\ точке.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00031}00031\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00032}00032\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ x\ Точка,\ в\ которой\ вычисляется\ cdf.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00033}00033\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ Значение\ кумулятивной\ функции\ распределения\ в\ точке\ x.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00034}00034\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00035}00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{pass}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00037}00037\ \ \ \ \ \textcolor{preprocessor}{@abstractmethod}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00038}\mbox{\hyperlink{classrandom__variables_1_1_random_variable_a6f8b863683dc64ade32c02eec896d08d}{00038}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_random_variable_a6f8b863683dc64ade32c02eec896d08d}{quantile}}(self,\ alpha:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00039}00039\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00040}00040\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Вычисляет\ квантильную\ функцию.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00041}00041\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00042}00042\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ alpha\ Квантиль\ уровня\ alpha.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00043}00043\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ Значение\ квантильной\ функции}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00044}00044\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00045}00045\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{pass}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00048}\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable}{00048}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable}{SmoothedRandomVariable}}(\mbox{\hyperlink{classrandom__variables_1_1_random_variable}{RandomVariable}},\ \mbox{\hyperlink{classestimations_1_1_estimation}{Estimation}}):}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00049}00049\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00050}00050\ \textcolor{stringliteral}{\ \ \ \ @brief\ Представляет\ сглаженную\ версию\ случайной\ величины\ с\ использованием\ оценки\ плотности\ ядра.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00051}00051\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00052}00052\ \textcolor{stringliteral}{\ \ \ \ Этот\ класс\ расширяет\ RandomVariable\ и\ использует\ выборку\ для\ оценки\ pdf\ и\ cdf.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00053}00053\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00055}\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_a08453283cc636e12919698922bbbadea}{00055}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_a08453283cc636e12919698922bbbadea}{\_\_init\_\_}}(self,\ sample:\ np.ndarray,\ h:\ float)\ -\/>\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00056}00056\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00057}00057\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Инициализирует\ SmoothedRandomVariable\ с\ выборкой\ и\ шириной\ полосы.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00058}00058\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00059}00059\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ sample\ Массив\ выборочных\ точек\ данных.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00060}00060\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ h\ Ширина\ полосы,\ используемая\ в\ оценке\ плотности\ ядра.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00061}00061\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00062}00062\ \ \ \ \ \ \ \ \ super().\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_a08453283cc636e12919698922bbbadea}{\_\_init\_\_}}(sample)}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00063}\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_ac070e1e11bd99bc1b4dd922d0fddb11a}{00063}}\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_ac070e1e11bd99bc1b4dd922d0fddb11a}{h}}\ =\ h}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00065}\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_a8140f0b5e74439a4f63cd1ef1d7984b1}{00065}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_a8140f0b5e74439a4f63cd1ef1d7984b1}{probability\_density\_function}}(self,\ x:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00066}00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ np.mean([SmoothedRandomVariable.\_k((x\ -\/\ y)\ /\ self.\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_ac070e1e11bd99bc1b4dd922d0fddb11a}{h}})\ \textcolor{keywordflow}{for}\ y\ \textcolor{keywordflow}{in}\ self.\mbox{\hyperlink{classestimations_1_1_estimation_a08d29495d5fbe318c219324099d56376}{sample}}])\ /\ self.\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_ac070e1e11bd99bc1b4dd922d0fddb11a}{h}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00068}\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_aa61dadc5b7c3c8ef62accf01c22d0394}{00068}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_aa61dadc5b7c3c8ef62accf01c22d0394}{cumulative\_distribution\_function}}(self,\ x:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00069}00069\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ np.mean([SmoothedRandomVariable.\_K((x\ -\/\ y)\ /\ self.\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_ac070e1e11bd99bc1b4dd922d0fddb11a}{h}})\ \textcolor{keywordflow}{for}\ y\ \textcolor{keywordflow}{in}\ self.\mbox{\hyperlink{classestimations_1_1_estimation_a08d29495d5fbe318c219324099d56376}{sample}}])}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00071}\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_a6f1cfa17af6e44012cdc7579700ee81b}{00071}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_a6f1cfa17af6e44012cdc7579700ee81b}{quantile}}(self,\ alpha:\ float)\ -\/>\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00072}00072\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{raise}\ NotImplementedError}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00074}\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_a7f14dfa3aa8d7efcfc5ac178232d3aed}{00074}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_a7f14dfa3aa8d7efcfc5ac178232d3aed}{\_k}}(x:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00075}00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ abs(x)\ <=\ 1:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.75\ *\ (1\ -\/\ x\ *\ x)}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00077}00077\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00080}\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_ac729d6f5cd0b7918ee572789ec815b48}{00080}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_smoothed_random_variable_ac729d6f5cd0b7918ee572789ec815b48}{\_K}}(x:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00081}00081\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ x\ <\ -\/1:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00083}00083\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ -\/1\ <=\ x\ <\ 1:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.5\ +\ 0.75\ *\ (x\ -\/\ x\ **\ 3\ /\ 3)}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00085}00085\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00089}\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable}{00089}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable}{NormalRandomVariable}}(\mbox{\hyperlink{classrandom__variables_1_1_random_variable}{RandomVariable}}):}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00090}00090\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00091}00091\ \textcolor{stringliteral}{\ \ \ \ @brief\ Представляет\ нормальное\ (гауссово)\ распределение.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00092}00092\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00093}00093\ \textcolor{stringliteral}{\ \ \ \ Характеризуется\ местоположением\ (средним)\ и\ масштабом\ (стандартным\ отклонением).}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00094}00094\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00096}\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_a778e478232e0932bdd90a3cb5eb25ac6}{00096}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_a778e478232e0932bdd90a3cb5eb25ac6}{\_\_init\_\_}}(self,\ location:\ float\ =\ 0,\ scale:\ float\ =\ 1)\ -\/>\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00097}00097\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00098}00098\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Инициализирует\ нормальную\ случайную\ величину\ с\ заданным\ местоположением\ и\ масштабом.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00099}00099\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00100}00100\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ location\ Среднее\ нормального\ распределения.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00101}00101\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ scale\ Стандартное\ отклонение\ нормального\ распределения.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00102}00102\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00103}00103\ \ \ \ \ \ \ \ \ super().\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_a778e478232e0932bdd90a3cb5eb25ac6}{\_\_init\_\_}}()}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00104}\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_a4184cb49e98ab02174f1e9f37761ddbb}{00104}}\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_a4184cb49e98ab02174f1e9f37761ddbb}{location}}\ =\ location}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00105}\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_a23e02909d4f1395f58d7461ad4a13323}{00105}}\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_a23e02909d4f1395f58d7461ad4a13323}{scale}}\ =\ scale}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00107}\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_af103572467c65c546cb6e49150feeee3}{00107}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_af103572467c65c546cb6e49150feeee3}{probability\_density\_function}}(self,\ x:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00108}00108\ \ \ \ \ \ \ \ \ z\ =\ (x\ -\/\ self.\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_a4184cb49e98ab02174f1e9f37761ddbb}{location}})\ /\ self.\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_a23e02909d4f1395f58d7461ad4a13323}{scale}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00109}00109\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ math.exp(-\/0.5\ *\ z\ *\ z)\ /\ (math.sqrt(2\ *\ math.pi)\ *\ self.\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_a23e02909d4f1395f58d7461ad4a13323}{scale}})}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00111}\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_a34478c0dfe6eec4274c209ff0f7b5c1c}{00111}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_a34478c0dfe6eec4274c209ff0f7b5c1c}{cumulative\_distribution\_function}}(self,\ x:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00112}00112\ \ \ \ \ \ \ \ \ z\ =\ (x\ -\/\ self.\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_a4184cb49e98ab02174f1e9f37761ddbb}{location}})\ /\ self.\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_a23e02909d4f1395f58d7461ad4a13323}{scale}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00113}00113\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ z\ <=\ 0:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00114}00114\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.852\ *\ math.exp(-\/math.pow((-\/z\ +\ 1.5774)\ /\ 2.0637,\ 2.34))}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00115}00115\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1\ -\/\ 0.852\ *\ math.exp(-\/math.pow((z\ +\ 1.5774)\ /\ 2.0637,\ 2.34))}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00116}00116\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00117}\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_a25de6dbd12a95c6d88b2034993a75f90}{00117}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_a25de6dbd12a95c6d88b2034993a75f90}{quantile}}(self,\ alpha:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00118}00118\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ self.\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_a4184cb49e98ab02174f1e9f37761ddbb}{location}}\ +\ 4.91\ *\ self.\mbox{\hyperlink{classrandom__variables_1_1_normal_random_variable_a23e02909d4f1395f58d7461ad4a13323}{scale}}\ *\ (math.pow(alpha,\ 0.14)\ -\/\ math.pow(1\ -\/\ alpha,\ 0.14))}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00119}00119\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00120}00120\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00121}\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable}{00121}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable}{UniformRandomVariable}}(\mbox{\hyperlink{classrandom__variables_1_1_random_variable}{RandomVariable}}):}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00122}00122\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00123}00123\ \textcolor{stringliteral}{\ \ \ \ @brief\ Представляет\ равномерное\ распределение.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00124}00124\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00125}00125\ \textcolor{stringliteral}{\ \ \ \ Это\ распределение\ характеризуется\ двумя\ параметрами:\ a\ (минимальное)\ и\ b\ (максимальное).}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00126}00126\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00128}\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_acb57b3a1a17a317d224d671b67513318}{00128}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_acb57b3a1a17a317d224d671b67513318}{\_\_init\_\_}}(self,\ a:\ float\ =\ 0,\ b:\ float\ =\ 1)\ -\/>\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00129}00129\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00130}00130\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Инициализирует\ равномерную\ случайную\ величину\ с\ заданными\ границами.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00131}00131\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00132}00132\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ a\ Минимальная\ (включительно)\ граница\ распределения.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00133}00133\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ b\ Максимальная\ (включительно)\ граница\ распределения.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00134}00134\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00135}00135\ \ \ \ \ \ \ \ \ super().\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_acb57b3a1a17a317d224d671b67513318}{\_\_init\_\_}}()}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00136}\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a3000493d711986c5e44b8290e1aeca04}{00136}}\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a3000493d711986c5e44b8290e1aeca04}{a}}\ =\ a}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00137}\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a6be2455eeb4c7bb13bf0504e70858675}{00137}}\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a6be2455eeb4c7bb13bf0504e70858675}{b}}\ =\ b}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00138}00138\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00139}\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a415c22539d9a01052e4dde463ac3f63c}{00139}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a415c22539d9a01052e4dde463ac3f63c}{probability\_density\_function}}(self,\ x:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00140}00140\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1.0\ /\ (self.\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a6be2455eeb4c7bb13bf0504e70858675}{b}}\ -\/\ self.\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a3000493d711986c5e44b8290e1aeca04}{a}})\ \textcolor{keywordflow}{if}\ self.\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a3000493d711986c5e44b8290e1aeca04}{a}}\ <=\ x\ <=\ self.\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a6be2455eeb4c7bb13bf0504e70858675}{b}}\ \textcolor{keywordflow}{else}\ 0}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00141}00141\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00142}\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a05b8c4559bbfd767ae29c01087989aab}{00142}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a05b8c4559bbfd767ae29c01087989aab}{cumulative\_distribution\_function}}(self,\ x:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00143}00143\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ x\ <\ self.\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a3000493d711986c5e44b8290e1aeca04}{a}}:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00144}00144\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00145}00145\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{elif}\ x\ >\ self.\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a6be2455eeb4c7bb13bf0504e70858675}{b}}:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00146}00146\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00147}00147\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00148}00148\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (x\ -\/\ self.\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a3000493d711986c5e44b8290e1aeca04}{a}})\ /\ (self.\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a6be2455eeb4c7bb13bf0504e70858675}{b}}\ -\/\ self.\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a3000493d711986c5e44b8290e1aeca04}{a}})}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00149}00149\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00150}\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a1453f187a1e26d4b77c131972fce29b8}{00150}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a1453f187a1e26d4b77c131972fce29b8}{quantile}}(self,\ alpha:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00151}00151\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ self.\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a3000493d711986c5e44b8290e1aeca04}{a}}\ +\ alpha\ *\ (self.\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a6be2455eeb4c7bb13bf0504e70858675}{b}}\ -\/\ self.\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a3000493d711986c5e44b8290e1aeca04}{a}})}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00152}00152\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00153}00153\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00154}\mbox{\hyperlink{classrandom__variables_1_1_exponential_random_variable}{00154}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classrandom__variables_1_1_exponential_random_variable}{ExponentialRandomVariable}}(\mbox{\hyperlink{classrandom__variables_1_1_random_variable}{RandomVariable}}):}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00155}00155\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00156}00156\ \textcolor{stringliteral}{\ \ \ \ @brief\ Представляет\ экспоненциальное\ распределение.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00157}00157\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00158}00158\ \textcolor{stringliteral}{\ \ \ \ Это\ распределение\ характеризуется\ параметром\ скорости.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00159}00159\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00160}00160\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00161}\mbox{\hyperlink{classrandom__variables_1_1_exponential_random_variable_aad1150cf08b201f996920c14a8ecf9c1}{00161}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_exponential_random_variable_aad1150cf08b201f996920c14a8ecf9c1}{\_\_init\_\_}}(self,\ rate:\ float)\ -\/>\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00162}00162\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00163}00163\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Инициализирует\ экспоненциальную\ случайную\ величину\ с\ заданной\ скоростью.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00164}00164\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00165}00165\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ rate\ Параметр\ скорости\ экспоненциального\ распределения.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00166}00166\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @throws\ ValueError\ если\ скорость\ не\ положительная.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00167}00167\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00168}00168\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ rate\ <=\ 0:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00169}00169\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{raise}\ ValueError(\textcolor{stringliteral}{"{}Rate\ must\ be\ positive"{}})}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00170}\mbox{\hyperlink{classrandom__variables_1_1_exponential_random_variable_a22a93280e4f7647b258fc74728e483e3}{00170}}\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classrandom__variables_1_1_exponential_random_variable_a22a93280e4f7647b258fc74728e483e3}{rate}}\ =\ rate}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00171}00171\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00172}\mbox{\hyperlink{classrandom__variables_1_1_exponential_random_variable_ae6e3815f91f862a51ff456ad1ce67d2c}{00172}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_exponential_random_variable_ae6e3815f91f862a51ff456ad1ce67d2c}{probability\_density\_function}}(self,\ x:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00173}00173\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ x\ <\ 0:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00174}00174\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00175}00175\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ self.\mbox{\hyperlink{classrandom__variables_1_1_exponential_random_variable_a22a93280e4f7647b258fc74728e483e3}{rate}}\ *\ math.exp(-\/self.\mbox{\hyperlink{classrandom__variables_1_1_exponential_random_variable_a22a93280e4f7647b258fc74728e483e3}{rate}}\ *\ x)}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00176}00176\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00177}\mbox{\hyperlink{classrandom__variables_1_1_exponential_random_variable_a9c6d6a57a4184149766707753e791a74}{00177}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_exponential_random_variable_a9c6d6a57a4184149766707753e791a74}{cumulative\_distribution\_function}}(self,\ x:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00178}00178\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ x\ <\ 0:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00179}00179\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00180}00180\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1\ -\/\ math.exp(-\/self.\mbox{\hyperlink{classrandom__variables_1_1_exponential_random_variable_a22a93280e4f7647b258fc74728e483e3}{rate}}\ *\ x)}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00181}00181\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00182}\mbox{\hyperlink{classrandom__variables_1_1_exponential_random_variable_ad556260d20f302358f6fbcde047b2d85}{00182}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_exponential_random_variable_ad556260d20f302358f6fbcde047b2d85}{quantile}}(self,\ alpha:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00183}00183\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ \textcolor{keywordflow}{not}\ 0\ <\ alpha\ <\ 1:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00184}00184\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{raise}\ ValueError(\textcolor{stringliteral}{"{}Alpha\ must\ be\ between\ 0\ and\ 1"{}})}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00185}00185\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/math.log(1\ -\/\ alpha)\ /\ self.\mbox{\hyperlink{classrandom__variables_1_1_exponential_random_variable_a22a93280e4f7647b258fc74728e483e3}{rate}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00186}00186\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00187}00187\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00188}\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable}{00188}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable}{LaplaceRandomVariable}}(\mbox{\hyperlink{classrandom__variables_1_1_random_variable}{RandomVariable}}):}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00189}00189\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00190}00190\ \textcolor{stringliteral}{\ \ \ \ @brief\ Представляет\ распределение\ Лапласа.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00191}00191\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00192}00192\ \textcolor{stringliteral}{\ \ \ \ Характеризуется\ параметром\ местоположения\ и\ параметром\ масштаба.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00193}00193\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00194}00194\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00195}\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_a573d8339ca1c7429d5ee7cc375fb39e5}{00195}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_a573d8339ca1c7429d5ee7cc375fb39e5}{\_\_init\_\_}}(self,\ location:\ float\ =\ 0,\ scale:\ float\ =\ 1)\ -\/>\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00196}00196\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00197}00197\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Инициализирует\ случайную\ величину\ распределения\ Лапласа\ с\ заданным\ местоположением\ и\ масштабом.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00198}00198\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00199}00199\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ location\ Параметр\ местоположения\ распределения\ Лапласа.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00200}00200\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ scale\ Параметр\ масштаба\ распределения\ Лапласа.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00201}00201\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00202}00202\ \ \ \ \ \ \ \ \ super().\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_a573d8339ca1c7429d5ee7cc375fb39e5}{\_\_init\_\_}}()}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00203}\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_af2e025dc2a77e59a01ae9eb66b3703f0}{00203}}\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_af2e025dc2a77e59a01ae9eb66b3703f0}{location}}\ =\ location}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00204}\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_a2e34446d03a53d1552f57a8a8cc3bcb7}{00204}}\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_a2e34446d03a53d1552f57a8a8cc3bcb7}{scale}}\ =\ scale}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00205}00205\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00206}\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_a8142fab56dfde04a67a2c2b57d46612a}{00206}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_a8142fab56dfde04a67a2c2b57d46612a}{probability\_density\_function}}(self,\ x:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00207}00207\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.5\ *\ math.exp(-\/abs(x\ -\/\ self.\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_af2e025dc2a77e59a01ae9eb66b3703f0}{location}})\ /\ self.\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_a2e34446d03a53d1552f57a8a8cc3bcb7}{scale}})\ /\ self.\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_a2e34446d03a53d1552f57a8a8cc3bcb7}{scale}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00208}00208\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00209}\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_ac38c4978bd129d30e1416a96defc29ad}{00209}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_ac38c4978bd129d30e1416a96defc29ad}{cumulative\_distribution\_function}}(self,\ x:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00210}00210\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ x\ <\ self.\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_af2e025dc2a77e59a01ae9eb66b3703f0}{location}}:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00211}00211\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.5\ *\ math.exp((x\ -\/\ self.\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_af2e025dc2a77e59a01ae9eb66b3703f0}{location}})\ /\ self.\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_a2e34446d03a53d1552f57a8a8cc3bcb7}{scale}})}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00212}00212\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00213}00213\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1\ -\/\ 0.5\ *\ math.exp(-\/(x\ -\/\ self.\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_af2e025dc2a77e59a01ae9eb66b3703f0}{location}})\ /\ self.\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_a2e34446d03a53d1552f57a8a8cc3bcb7}{scale}})}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00214}00214\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00215}\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_ac4783a7c00f94f9f47e5c4ddde42b810}{00215}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_ac4783a7c00f94f9f47e5c4ddde42b810}{quantile}}(self,\ alpha:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00216}00216\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ alpha\ <\ 0.5:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00217}00217\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ self.\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_af2e025dc2a77e59a01ae9eb66b3703f0}{location}}\ +\ self.\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_a2e34446d03a53d1552f57a8a8cc3bcb7}{scale}}\ *\ math.log(2\ *\ alpha)}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00218}00218\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ self.\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_af2e025dc2a77e59a01ae9eb66b3703f0}{location}}\ -\/\ self.\mbox{\hyperlink{classrandom__variables_1_1_laplace_random_variable_a2e34446d03a53d1552f57a8a8cc3bcb7}{scale}}\ *\ math.log(2\ *\ (1\ -\/\ alpha))}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00219}00219\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00220}00220\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00221}\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable}{00221}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable}{CauchyRandomVariable}}(\mbox{\hyperlink{classrandom__variables_1_1_random_variable}{RandomVariable}}):}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00222}00222\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00223}00223\ \textcolor{stringliteral}{\ \ \ \ @brief\ Представляет\ распределение\ Коши.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00224}00224\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00225}00225\ \textcolor{stringliteral}{\ \ \ \ Характеризуется\ параметром\ местоположения\ и\ параметром\ масштаба.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00226}00226\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00227}00227\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00228}\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_ac54a4ddf3095b372cf861a490b92e54f}{00228}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_ac54a4ddf3095b372cf861a490b92e54f}{\_\_init\_\_}}(self,\ location:\ float\ =\ 0,\ scale:\ float\ =\ 1)\ -\/>\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00229}00229\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00230}00230\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Инициализирует\ случайную\ величину\ распределения\ Коши\ с\ заданным\ местоположением\ и\ масштабом.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00231}00231\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00232}00232\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ location\ Параметр\ местоположения\ распределения\ Коши.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00233}00233\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ scale\ Параметр\ масштаба\ распределения\ Коши.}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00234}00234\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00235}\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_a9c066581f7e3fb1cfa9dd2078c51f011}{00235}}\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_a9c066581f7e3fb1cfa9dd2078c51f011}{location}}\ =\ location}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00236}\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_acf6929110b98f1d2f8374a394b322287}{00236}}\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_acf6929110b98f1d2f8374a394b322287}{scale}}\ =\ scale}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00237}00237\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00238}\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_a3abf5ded7cafa526c6b5516186c0db76}{00238}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_a3abf5ded7cafa526c6b5516186c0db76}{probability\_density\_function}}(self,\ x:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00239}00239\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1\ /\ (math.pi\ *\ self.\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_acf6929110b98f1d2f8374a394b322287}{scale}}\ *\ (1\ +\ ((x\ -\/\ self.\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_a9c066581f7e3fb1cfa9dd2078c51f011}{location}})\ /\ self.\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_acf6929110b98f1d2f8374a394b322287}{scale}})\ **\ 2))}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00240}00240\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00241}\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_a76811ae5da16053fa2a25c3aad51fef5}{00241}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_a76811ae5da16053fa2a25c3aad51fef5}{cumulative\_distribution\_function}}(self,\ x:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00242}00242\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.5\ +\ math.atan((x\ -\/\ self.\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_a9c066581f7e3fb1cfa9dd2078c51f011}{location}})\ /\ self.\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_acf6929110b98f1d2f8374a394b322287}{scale}})\ /\ math.pi}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00243}00243\ }
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00244}\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_acd2b61b62d067d2c267dffee6414b32b}{00244}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_acd2b61b62d067d2c267dffee6414b32b}{quantile}}(self,\ alpha:\ float)\ -\/>\ float:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00245}00245\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ \textcolor{keywordflow}{not}\ 0\ <\ alpha\ <\ 1:}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00246}00246\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{raise}\ ValueError(\textcolor{stringliteral}{"{}Alpha\ must\ be\ between\ 0\ and\ 1"{}})}
+\DoxyCodeLine{\Hypertarget{random__variables_8py_source_l00247}00247\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ self.\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_a9c066581f7e3fb1cfa9dd2078c51f011}{location}}\ +\ self.\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_acf6929110b98f1d2f8374a394b322287}{scale}}\ *\ math.tan(math.pi\ *\ (alpha\ -\/\ 0.5))}
+
+\end{DoxyCode}

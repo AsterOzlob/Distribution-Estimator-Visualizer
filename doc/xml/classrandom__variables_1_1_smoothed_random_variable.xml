@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classrandom__variables_1_1_smoothed_random_variable" kind="class" language="Python" prot="public">
+    <compoundname>random_variables::SmoothedRandomVariable</compoundname>
+    <basecompoundref refid="classrandom__variables_1_1_random_variable" prot="public" virt="non-virtual">random_variables.RandomVariable</basecompoundref>
+    <basecompoundref refid="classestimations_1_1_estimation" prot="public" virt="non-virtual">estimations.Estimation</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classrandom__variables_1_1_smoothed_random_variable_1ac070e1e11bd99bc1b4dd922d0fddb11a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>random_variables.SmoothedRandomVariable::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <qualifiedname>random_variables.SmoothedRandomVariable.h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="25" column="1" bodyfile="random_variables.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrandom__variables_1_1_smoothed_random_variable_1a08453283cc636e12919698922bbbadea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None random_variables.SmoothedRandomVariable.__init__</definition>
+        <argsstring>(self, np.ndarray sample, float h)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>random_variables.SmoothedRandomVariable.__init__</qualifiedname>
+        <reimplements refid="classestimations_1_1_estimation_1a5678fdc77206aa9918e2b03def8132b0">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>sample</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="23" column="1" bodyfile="random_variables.py" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classrandom__variables_1_1_smoothed_random_variable_1aa6ce89d4e269ec181a92912d46c5a7d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float random_variables.SmoothedRandomVariable.pdf</definition>
+        <argsstring>(self, float x)</argsstring>
+        <name>pdf</name>
+        <qualifiedname>random_variables.SmoothedRandomVariable.pdf</qualifiedname>
+        <reimplements refid="classrandom__variables_1_1_random_variable_1a91afa5fa2944b0fa0335ce2e657de8b7">pdf</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="27" column="1" bodyfile="random_variables.py" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classrandom__variables_1_1_smoothed_random_variable_1a59596bbf65276c553865c02e5b4a616f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float random_variables.SmoothedRandomVariable.cdf</definition>
+        <argsstring>(self, float x)</argsstring>
+        <name>cdf</name>
+        <qualifiedname>random_variables.SmoothedRandomVariable.cdf</qualifiedname>
+        <reimplements refid="classrandom__variables_1_1_random_variable_1adceeed7bf42441c4770ae0f84b9aec26">cdf</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="30" column="1" bodyfile="random_variables.py" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classrandom__variables_1_1_smoothed_random_variable_1a6f1cfa17af6e44012cdc7579700ee81b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None random_variables.SmoothedRandomVariable.quantile</definition>
+        <argsstring>(self, float alpha)</argsstring>
+        <name>quantile</name>
+        <qualifiedname>random_variables.SmoothedRandomVariable.quantile</qualifiedname>
+        <reimplements refid="classrandom__variables_1_1_random_variable_1a6f8b863683dc64ade32c02eec896d08d">quantile</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="33" column="1" bodyfile="random_variables.py" bodystart="33" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classrandom__variables_1_1_smoothed_random_variable_1a7f14dfa3aa8d7efcfc5ac178232d3aed" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float random_variables.SmoothedRandomVariable._k</definition>
+        <argsstring>(float x)</argsstring>
+        <name>_k</name>
+        <qualifiedname>random_variables.SmoothedRandomVariable._k</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="36" column="1" bodyfile="random_variables.py" bodystart="36" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classrandom__variables_1_1_smoothed_random_variable_1ac729d6f5cd0b7918ee572789ec815b48" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float random_variables.SmoothedRandomVariable._K</definition>
+        <argsstring>(float x)</argsstring>
+        <name>_K</name>
+        <qualifiedname>random_variables.SmoothedRandomVariable._K</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="42" column="1" bodyfile="random_variables.py" bodystart="42" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="4">
+        <label>estimations.Estimation</label>
+        <link refid="classestimations_1_1_estimation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>random_variables.SmoothedRandomVariable</label>
+        <link refid="classrandom__variables_1_1_smoothed_random_variable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>random_variables.RandomVariable</label>
+        <link refid="classrandom__variables_1_1_random_variable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="4">
+        <label>estimations.Estimation</label>
+        <link refid="classestimations_1_1_estimation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>random_variables.SmoothedRandomVariable</label>
+        <link refid="classrandom__variables_1_1_smoothed_random_variable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>random_variables.RandomVariable</label>
+        <link refid="classrandom__variables_1_1_random_variable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="random_variables.py" line="22" column="1" bodyfile="random_variables.py" bodystart="22" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classrandom__variables_1_1_smoothed_random_variable_1a08453283cc636e12919698922bbbadea" prot="public" virt="non-virtual"><scope>random_variables::SmoothedRandomVariable</scope><name>__init__</name></member>
+      <member refid="classrandom__variables_1_1_smoothed_random_variable_1a7f14dfa3aa8d7efcfc5ac178232d3aed" prot="protected" virt="non-virtual"><scope>random_variables::SmoothedRandomVariable</scope><name>_k</name></member>
+      <member refid="classrandom__variables_1_1_smoothed_random_variable_1ac729d6f5cd0b7918ee572789ec815b48" prot="protected" virt="non-virtual"><scope>random_variables::SmoothedRandomVariable</scope><name>_K</name></member>
+      <member refid="classrandom__variables_1_1_smoothed_random_variable_1a59596bbf65276c553865c02e5b4a616f" prot="public" virt="non-virtual"><scope>random_variables::SmoothedRandomVariable</scope><name>cdf</name></member>
+      <member refid="classrandom__variables_1_1_smoothed_random_variable_1ac070e1e11bd99bc1b4dd922d0fddb11a" prot="public" virt="non-virtual"><scope>random_variables::SmoothedRandomVariable</scope><name>h</name></member>
+      <member refid="classrandom__variables_1_1_smoothed_random_variable_1aa6ce89d4e269ec181a92912d46c5a7d0" prot="public" virt="non-virtual"><scope>random_variables::SmoothedRandomVariable</scope><name>pdf</name></member>
+      <member refid="classrandom__variables_1_1_smoothed_random_variable_1a6f1cfa17af6e44012cdc7579700ee81b" prot="public" virt="non-virtual"><scope>random_variables::SmoothedRandomVariable</scope><name>quantile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

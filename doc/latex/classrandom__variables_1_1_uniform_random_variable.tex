@@ -1,0 +1,145 @@
+\doxysection{random\+\_\+variables.\+Uniform\+Random\+Variable Class Reference}
+\hypertarget{classrandom__variables_1_1_uniform_random_variable}{}\label{classrandom__variables_1_1_uniform_random_variable}\index{random\_variables.UniformRandomVariable@{random\_variables.UniformRandomVariable}}
+
+
+Представляет равномерное распределение.  
+
+
+Inheritance diagram for random\+\_\+variables.\+Uniform\+Random\+Variable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classrandom__variables_1_1_uniform_random_variable}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_acb57b3a1a17a317d224d671b67513318}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, float \mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a3000493d711986c5e44b8290e1aeca04}{a}}=0, float \mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a6be2455eeb4c7bb13bf0504e70858675}{b}}=1)
+\begin{DoxyCompactList}\small\item\em Конструктор равномерно распределенной случайной величины. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a415c22539d9a01052e4dde463ac3f63c}{probability\+\_\+density\+\_\+function}} (self, float x)
+\begin{DoxyCompactList}\small\item\em Вычисляет плотность вероятности в указанной точке. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a05b8c4559bbfd767ae29c01087989aab}{cumulative\+\_\+distribution\+\_\+function}} (self, float x)
+\begin{DoxyCompactList}\small\item\em Вычисляет кумулятивную функцию распределения в указанной точке. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a1453f187a1e26d4b77c131972fce29b8}{quantile}} (self, float alpha)
+\begin{DoxyCompactList}\small\item\em Вычисляет квантильную функцию для заданного уровня вероятности. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a3000493d711986c5e44b8290e1aeca04}{a}}
+\item 
+\mbox{\hyperlink{classrandom__variables_1_1_uniform_random_variable_a6be2455eeb4c7bb13bf0504e70858675}{b}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Представляет равномерное распределение. 
+
+Характеризуется параметрами a (минимальное значение) и b (максимальное значение). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classrandom__variables_1_1_uniform_random_variable_acb57b3a1a17a317d224d671b67513318}\label{classrandom__variables_1_1_uniform_random_variable_acb57b3a1a17a317d224d671b67513318} 
+\index{random\_variables.UniformRandomVariable@{random\_variables.UniformRandomVariable}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!random\_variables.UniformRandomVariable@{random\_variables.UniformRandomVariable}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None random\+\_\+variables.\+Uniform\+Random\+Variable.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float }]{a = {\ttfamily 0},  }\item[{float }]{b = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Конструктор равномерно распределенной случайной величины. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Минимальное значение диапазона. \\
+\hline
+{\em b} & Максимальное значение диапазона. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classrandom__variables_1_1_uniform_random_variable_a05b8c4559bbfd767ae29c01087989aab}\label{classrandom__variables_1_1_uniform_random_variable_a05b8c4559bbfd767ae29c01087989aab} 
+\index{random\_variables.UniformRandomVariable@{random\_variables.UniformRandomVariable}!cumulative\_distribution\_function@{cumulative\_distribution\_function}}
+\index{cumulative\_distribution\_function@{cumulative\_distribution\_function}!random\_variables.UniformRandomVariable@{random\_variables.UniformRandomVariable}}
+\doxysubsubsection{\texorpdfstring{cumulative\_distribution\_function()}{cumulative\_distribution\_function()}}
+{\footnotesize\ttfamily  float random\+\_\+variables.\+Uniform\+Random\+Variable.\+cumulative\+\_\+distribution\+\_\+function (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Вычисляет кумулятивную функцию распределения в указанной точке. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Точка,в которой вычисляется кумулятивная функция распределения. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Значение кумулятивной функции распределения в точке x. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrandom__variables_1_1_random_variable_aa15a98c6a25152b6f3ba555470c7e3f8}{random\+\_\+variables.\+Random\+Variable}}.
+
+\Hypertarget{classrandom__variables_1_1_uniform_random_variable_a415c22539d9a01052e4dde463ac3f63c}\label{classrandom__variables_1_1_uniform_random_variable_a415c22539d9a01052e4dde463ac3f63c} 
+\index{random\_variables.UniformRandomVariable@{random\_variables.UniformRandomVariable}!probability\_density\_function@{probability\_density\_function}}
+\index{probability\_density\_function@{probability\_density\_function}!random\_variables.UniformRandomVariable@{random\_variables.UniformRandomVariable}}
+\doxysubsubsection{\texorpdfstring{probability\_density\_function()}{probability\_density\_function()}}
+{\footnotesize\ttfamily  float random\+\_\+variables.\+Uniform\+Random\+Variable.\+probability\+\_\+density\+\_\+function (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Вычисляет плотность вероятности в указанной точке. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Точка,в которой вычисляется плотность вероятности. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Значение плотности вероятности в точке x. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrandom__variables_1_1_random_variable_a1edc987c59408dfbfab082331b483b98}{random\+\_\+variables.\+Random\+Variable}}.
+
+\Hypertarget{classrandom__variables_1_1_uniform_random_variable_a1453f187a1e26d4b77c131972fce29b8}\label{classrandom__variables_1_1_uniform_random_variable_a1453f187a1e26d4b77c131972fce29b8} 
+\index{random\_variables.UniformRandomVariable@{random\_variables.UniformRandomVariable}!quantile@{quantile}}
+\index{quantile@{quantile}!random\_variables.UniformRandomVariable@{random\_variables.UniformRandomVariable}}
+\doxysubsubsection{\texorpdfstring{quantile()}{quantile()}}
+{\footnotesize\ttfamily  float random\+\_\+variables.\+Uniform\+Random\+Variable.\+quantile (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{alpha }\end{DoxyParamCaption})}
+
+
+
+Вычисляет квантильную функцию для заданного уровня вероятности. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alpha} & Уровень вероятности. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Квантиль, соответствующий уровню вероятности alpha. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrandom__variables_1_1_random_variable_a6f8b863683dc64ade32c02eec896d08d}{random\+\_\+variables.\+Random\+Variable}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classrandom__variables_1_1_uniform_random_variable_a3000493d711986c5e44b8290e1aeca04}\label{classrandom__variables_1_1_uniform_random_variable_a3000493d711986c5e44b8290e1aeca04} 
+\index{random\_variables.UniformRandomVariable@{random\_variables.UniformRandomVariable}!a@{a}}
+\index{a@{a}!random\_variables.UniformRandomVariable@{random\_variables.UniformRandomVariable}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily random\+\_\+variables.\+Uniform\+Random\+Variable.\+a}
+
+\Hypertarget{classrandom__variables_1_1_uniform_random_variable_a6be2455eeb4c7bb13bf0504e70858675}\label{classrandom__variables_1_1_uniform_random_variable_a6be2455eeb4c7bb13bf0504e70858675} 
+\index{random\_variables.UniformRandomVariable@{random\_variables.UniformRandomVariable}!b@{b}}
+\index{b@{b}!random\_variables.UniformRandomVariable@{random\_variables.UniformRandomVariable}}
+\doxysubsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily random\+\_\+variables.\+Uniform\+Random\+Variable.\+b}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tumos/\+One\+Drive/Рабочий стол/Проектирование программ/Оценка функций и плотностей распределений/\mbox{\hyperlink{random__variables_8py}{random\+\_\+variables.\+py}}\end{DoxyCompactItemize}

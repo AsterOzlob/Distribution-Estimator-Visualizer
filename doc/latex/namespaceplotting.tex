@@ -1,0 +1,98 @@
+\doxysection{plotting Namespace Reference}
+\hypertarget{namespaceplotting}{}\label{namespaceplotting}\index{plotting@{plotting}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespaceplotting_adbcf58f6733db71abaaac51278704ada}{plot\+\_\+distributions}} (QWidget graph\+\_\+widget, x\+\_\+array, y\+\_\+truth, y\+\_\+edf, y\+\_\+kernel)
+\begin{DoxyCompactList}\small\item\em Строит графики распределений на предоставленном виджете. \end{DoxyCompactList}\item 
+None \mbox{\hyperlink{namespaceplotting_a918244fe7ba3f43e06964e6c120b727a}{plot\+\_\+histograms}} (QWidget graph\+\_\+widget, x\+\_\+array, p\+\_\+1, p\+\_\+2, p\+\_\+3)
+\begin{DoxyCompactList}\small\item\em Строит графики гистограмм на предоставленном виджете. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceplotting_a9da31f878e0dc3f1b3f8cd304bc30c73}{PEN\+\_\+\+RED}} = mk\+Pen(color=\textquotesingle{}r\textquotesingle{}, width=2)
+\begin{DoxyCompactList}\small\item\em Глобальные переменные, используемые для построения графиков \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceplotting_ac61e15053b89157f288183455b42ed60}{PEN\+\_\+\+BLUE}} = mk\+Pen(color=\textquotesingle{}b\textquotesingle{}, width=2)
+\item 
+\mbox{\hyperlink{namespaceplotting_aab3d0b728279c45d7429657f95d637f9}{PEN\+\_\+\+GREEN}} = mk\+Pen(color=\textquotesingle{}g\textquotesingle{}, width=2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceplotting_adbcf58f6733db71abaaac51278704ada}\label{namespaceplotting_adbcf58f6733db71abaaac51278704ada} 
+\index{plotting@{plotting}!plot\_distributions@{plot\_distributions}}
+\index{plot\_distributions@{plot\_distributions}!plotting@{plotting}}
+\doxysubsubsection{\texorpdfstring{plot\_distributions()}{plot\_distributions()}}
+{\footnotesize\ttfamily  None plotting.\+plot\+\_\+distributions (\begin{DoxyParamCaption}\item[{QWidget}]{graph\+\_\+widget,  }\item[{}]{x\+\_\+array,  }\item[{}]{y\+\_\+truth,  }\item[{}]{y\+\_\+edf,  }\item[{}]{y\+\_\+kernel }\end{DoxyParamCaption})}
+
+
+
+Строит графики распределений на предоставленном виджете. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph\+\_\+widget} & Виджет QWidget, на котором будут построены графики. \\
+\hline
+{\em x\+\_\+array} & Общие данные для оси x для всех распределений. \\
+\hline
+{\em y\+\_\+truth} & Данные для оси y для графика истинного распределения. \\
+\hline
+{\em y\+\_\+edf} & Данные для оси y для графика эмпирической функции распределения. \\
+\hline
+{\em y\+\_\+kernel} & Данные для оси y для графика ядерного распределения. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Используемые перья\+: RED для истинного распределения, BLUE для EDF и GREEN для ядерного распределения. 
+\end{DoxyNote}
+\Hypertarget{namespaceplotting_a918244fe7ba3f43e06964e6c120b727a}\label{namespaceplotting_a918244fe7ba3f43e06964e6c120b727a} 
+\index{plotting@{plotting}!plot\_histograms@{plot\_histograms}}
+\index{plot\_histograms@{plot\_histograms}!plotting@{plotting}}
+\doxysubsubsection{\texorpdfstring{plot\_histograms()}{plot\_histograms()}}
+{\footnotesize\ttfamily  None plotting.\+plot\+\_\+histograms (\begin{DoxyParamCaption}\item[{QWidget}]{graph\+\_\+widget,  }\item[{}]{x\+\_\+array,  }\item[{}]{p\+\_\+1,  }\item[{}]{p\+\_\+2,  }\item[{}]{p\+\_\+3 }\end{DoxyParamCaption})}
+
+
+
+Строит графики гистограмм на предоставленном виджете. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph\+\_\+widget} & Виджет, на котором будут построены гистограммы. \\
+\hline
+{\em x\+\_\+array} & Массив данных x, общий для всех гистограмм. \\
+\hline
+{\em p\+\_\+1} & Данные y для первой гистограммы. \\
+\hline
+{\em p\+\_\+2} & Данные y для второй гистограммы. \\
+\hline
+{\em p\+\_\+3} & Данные y для третьей гистограммы. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Используются перья\+: RED для первой гистограммы, BLUE для второй и GREEN для третьей. 
+\end{DoxyNote}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceplotting_ac61e15053b89157f288183455b42ed60}\label{namespaceplotting_ac61e15053b89157f288183455b42ed60} 
+\index{plotting@{plotting}!PEN\_BLUE@{PEN\_BLUE}}
+\index{PEN\_BLUE@{PEN\_BLUE}!plotting@{plotting}}
+\doxysubsubsection{\texorpdfstring{PEN\_BLUE}{PEN\_BLUE}}
+{\footnotesize\ttfamily plotting.\+PEN\+\_\+\+BLUE = mk\+Pen(color=\textquotesingle{}b\textquotesingle{}, width=2)}
+
+\Hypertarget{namespaceplotting_aab3d0b728279c45d7429657f95d637f9}\label{namespaceplotting_aab3d0b728279c45d7429657f95d637f9} 
+\index{plotting@{plotting}!PEN\_GREEN@{PEN\_GREEN}}
+\index{PEN\_GREEN@{PEN\_GREEN}!plotting@{plotting}}
+\doxysubsubsection{\texorpdfstring{PEN\_GREEN}{PEN\_GREEN}}
+{\footnotesize\ttfamily plotting.\+PEN\+\_\+\+GREEN = mk\+Pen(color=\textquotesingle{}g\textquotesingle{}, width=2)}
+
+\Hypertarget{namespaceplotting_a9da31f878e0dc3f1b3f8cd304bc30c73}\label{namespaceplotting_a9da31f878e0dc3f1b3f8cd304bc30c73} 
+\index{plotting@{plotting}!PEN\_RED@{PEN\_RED}}
+\index{PEN\_RED@{PEN\_RED}!plotting@{plotting}}
+\doxysubsubsection{\texorpdfstring{PEN\_RED}{PEN\_RED}}
+{\footnotesize\ttfamily plotting.\+PEN\+\_\+\+RED = mk\+Pen(color=\textquotesingle{}r\textquotesingle{}, width=2)}
+
+
+
+Глобальные переменные, используемые для построения графиков 
+

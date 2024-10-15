@@ -1,0 +1,93 @@
+\doxysection{estimations.\+EDF Class Reference}
+\hypertarget{classestimations_1_1_e_d_f}{}\label{classestimations_1_1_e_d_f}\index{estimations.EDF@{estimations.EDF}}
+
+
+Класс для вычисления эмпирической функции распределения (EDF).  
+
+
+Inheritance diagram for estimations.\+EDF\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classestimations_1_1_e_d_f}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classestimations_1_1_e_d_f_a160988bc2a9562952359aa3aab5520ef}{heaviside\+\_\+function}} (float x)
+\begin{DoxyCompactList}\small\item\em Функция Хевисайда, используемая при вычислении EDF. \end{DoxyCompactList}\item 
+np.\+ndarray \mbox{\hyperlink{classestimations_1_1_e_d_f_acb6973158b08720798036e63c58193fa}{value}} (self, np.\+ndarray x\+\_\+array)
+\begin{DoxyCompactList}\small\item\em Вычисляет значение EDF в указанных точках. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classestimations_1_1_estimation}{estimations.\+Estimation}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classestimations_1_1_estimation_a5678fdc77206aa9918e2b03def8132b0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, np.\+ndarray \mbox{\hyperlink{classestimations_1_1_estimation_a08d29495d5fbe318c219324099d56376}{sample}})
+\begin{DoxyCompactList}\small\item\em Конструктор класса Estimation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classestimations_1_1_e_d_f_a69f9271482812c103bb472c1b1f1df4f}{sample}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classestimations_1_1_estimation}{estimations.\+Estimation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classestimations_1_1_estimation_a08d29495d5fbe318c219324099d56376}{sample}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для вычисления эмпирической функции распределения (EDF). 
+
+EDF -\/ это статистическая оценка, которая назначает одинаковую вероятность каждой точке данных в выборке. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classestimations_1_1_e_d_f_a160988bc2a9562952359aa3aab5520ef}\label{classestimations_1_1_e_d_f_a160988bc2a9562952359aa3aab5520ef} 
+\index{estimations.EDF@{estimations.EDF}!heaviside\_function@{heaviside\_function}}
+\index{heaviside\_function@{heaviside\_function}!estimations.EDF@{estimations.EDF}}
+\doxysubsubsection{\texorpdfstring{heaviside\_function()}{heaviside\_function()}}
+{\footnotesize\ttfamily  int estimations.\+EDF.\+heaviside\+\_\+function (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Функция Хевисайда, используемая при вычислении EDF. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Значение для оценки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращает 1, если x \texorpdfstring{$>$}{>} 0, иначе 0. 
+\end{DoxyReturn}
+\Hypertarget{classestimations_1_1_e_d_f_acb6973158b08720798036e63c58193fa}\label{classestimations_1_1_e_d_f_acb6973158b08720798036e63c58193fa} 
+\index{estimations.EDF@{estimations.EDF}!value@{value}}
+\index{value@{value}!estimations.EDF@{estimations.EDF}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily  np.\+ndarray estimations.\+EDF.\+value (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{np.\+ndarray}]{x\+\_\+array }\end{DoxyParamCaption})}
+
+
+
+Вычисляет значение EDF в указанных точках. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+array} & Массив точек, в которых вычисляется EDF. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Массив значений EDF, соответствующих входным точкам. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classestimations_1_1_e_d_f_a69f9271482812c103bb472c1b1f1df4f}\label{classestimations_1_1_e_d_f_a69f9271482812c103bb472c1b1f1df4f} 
+\index{estimations.EDF@{estimations.EDF}!sample@{sample}}
+\index{sample@{sample}!estimations.EDF@{estimations.EDF}}
+\doxysubsubsection{\texorpdfstring{sample}{sample}}
+{\footnotesize\ttfamily estimations.\+EDF.\+sample}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tumos/\+One\+Drive/Рабочий стол/Проектирование программ/Оценка функций и плотностей распределений/\mbox{\hyperlink{estimations_8py}{estimations.\+py}}\end{DoxyCompactItemize}

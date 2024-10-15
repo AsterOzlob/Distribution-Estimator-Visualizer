@@ -1,0 +1,145 @@
+\doxysection{random\+\_\+variables.\+Cauchy\+Random\+Variable Class Reference}
+\hypertarget{classrandom__variables_1_1_cauchy_random_variable}{}\label{classrandom__variables_1_1_cauchy_random_variable}\index{random\_variables.CauchyRandomVariable@{random\_variables.CauchyRandomVariable}}
+
+
+Представляет распределение Коши.  
+
+
+Inheritance diagram for random\+\_\+variables.\+Cauchy\+Random\+Variable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classrandom__variables_1_1_cauchy_random_variable}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_ac54a4ddf3095b372cf861a490b92e54f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, float \mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_a9c066581f7e3fb1cfa9dd2078c51f011}{location}}=0, float \mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_acf6929110b98f1d2f8374a394b322287}{scale}}=1)
+\begin{DoxyCompactList}\small\item\em Инициализирует случайную величину распределения Коши с заданным местоположением и масштабом. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_a3abf5ded7cafa526c6b5516186c0db76}{probability\+\_\+density\+\_\+function}} (self, float x)
+\begin{DoxyCompactList}\small\item\em Вычисляет плотность вероятности в указанной точке. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_a76811ae5da16053fa2a25c3aad51fef5}{cumulative\+\_\+distribution\+\_\+function}} (self, float x)
+\begin{DoxyCompactList}\small\item\em Вычисляет кумулятивную функцию распределения в указанной точке. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_acd2b61b62d067d2c267dffee6414b32b}{quantile}} (self, float alpha)
+\begin{DoxyCompactList}\small\item\em Вычисляет квантильную функцию для заданного уровня вероятности. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_a9c066581f7e3fb1cfa9dd2078c51f011}{location}}
+\item 
+\mbox{\hyperlink{classrandom__variables_1_1_cauchy_random_variable_acf6929110b98f1d2f8374a394b322287}{scale}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Представляет распределение Коши. 
+
+Характеризуется параметром местоположения и параметром масштаба. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classrandom__variables_1_1_cauchy_random_variable_ac54a4ddf3095b372cf861a490b92e54f}\label{classrandom__variables_1_1_cauchy_random_variable_ac54a4ddf3095b372cf861a490b92e54f} 
+\index{random\_variables.CauchyRandomVariable@{random\_variables.CauchyRandomVariable}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!random\_variables.CauchyRandomVariable@{random\_variables.CauchyRandomVariable}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None random\+\_\+variables.\+Cauchy\+Random\+Variable.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float }]{location = {\ttfamily 0},  }\item[{float }]{scale = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Инициализирует случайную величину распределения Коши с заданным местоположением и масштабом. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & Параметр местоположения распределения Коши. \\
+\hline
+{\em scale} & Параметр масштаба распределения Коши. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classrandom__variables_1_1_cauchy_random_variable_a76811ae5da16053fa2a25c3aad51fef5}\label{classrandom__variables_1_1_cauchy_random_variable_a76811ae5da16053fa2a25c3aad51fef5} 
+\index{random\_variables.CauchyRandomVariable@{random\_variables.CauchyRandomVariable}!cumulative\_distribution\_function@{cumulative\_distribution\_function}}
+\index{cumulative\_distribution\_function@{cumulative\_distribution\_function}!random\_variables.CauchyRandomVariable@{random\_variables.CauchyRandomVariable}}
+\doxysubsubsection{\texorpdfstring{cumulative\_distribution\_function()}{cumulative\_distribution\_function()}}
+{\footnotesize\ttfamily  float random\+\_\+variables.\+Cauchy\+Random\+Variable.\+cumulative\+\_\+distribution\+\_\+function (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Вычисляет кумулятивную функцию распределения в указанной точке. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Точка,в которой вычисляется кумулятивная функция распределения. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Значение кумулятивной функции распределения в точке x. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrandom__variables_1_1_random_variable_aa15a98c6a25152b6f3ba555470c7e3f8}{random\+\_\+variables.\+Random\+Variable}}.
+
+\Hypertarget{classrandom__variables_1_1_cauchy_random_variable_a3abf5ded7cafa526c6b5516186c0db76}\label{classrandom__variables_1_1_cauchy_random_variable_a3abf5ded7cafa526c6b5516186c0db76} 
+\index{random\_variables.CauchyRandomVariable@{random\_variables.CauchyRandomVariable}!probability\_density\_function@{probability\_density\_function}}
+\index{probability\_density\_function@{probability\_density\_function}!random\_variables.CauchyRandomVariable@{random\_variables.CauchyRandomVariable}}
+\doxysubsubsection{\texorpdfstring{probability\_density\_function()}{probability\_density\_function()}}
+{\footnotesize\ttfamily  float random\+\_\+variables.\+Cauchy\+Random\+Variable.\+probability\+\_\+density\+\_\+function (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Вычисляет плотность вероятности в указанной точке. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Точка,в которой вычисляется плотность вероятности. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Значение плотности вероятности в точке x. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrandom__variables_1_1_random_variable_a1edc987c59408dfbfab082331b483b98}{random\+\_\+variables.\+Random\+Variable}}.
+
+\Hypertarget{classrandom__variables_1_1_cauchy_random_variable_acd2b61b62d067d2c267dffee6414b32b}\label{classrandom__variables_1_1_cauchy_random_variable_acd2b61b62d067d2c267dffee6414b32b} 
+\index{random\_variables.CauchyRandomVariable@{random\_variables.CauchyRandomVariable}!quantile@{quantile}}
+\index{quantile@{quantile}!random\_variables.CauchyRandomVariable@{random\_variables.CauchyRandomVariable}}
+\doxysubsubsection{\texorpdfstring{quantile()}{quantile()}}
+{\footnotesize\ttfamily  float random\+\_\+variables.\+Cauchy\+Random\+Variable.\+quantile (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{alpha }\end{DoxyParamCaption})}
+
+
+
+Вычисляет квантильную функцию для заданного уровня вероятности. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alpha} & Уровень вероятности. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Квантиль, соответствующий уровню вероятности alpha. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classrandom__variables_1_1_random_variable_a6f8b863683dc64ade32c02eec896d08d}{random\+\_\+variables.\+Random\+Variable}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classrandom__variables_1_1_cauchy_random_variable_a9c066581f7e3fb1cfa9dd2078c51f011}\label{classrandom__variables_1_1_cauchy_random_variable_a9c066581f7e3fb1cfa9dd2078c51f011} 
+\index{random\_variables.CauchyRandomVariable@{random\_variables.CauchyRandomVariable}!location@{location}}
+\index{location@{location}!random\_variables.CauchyRandomVariable@{random\_variables.CauchyRandomVariable}}
+\doxysubsubsection{\texorpdfstring{location}{location}}
+{\footnotesize\ttfamily random\+\_\+variables.\+Cauchy\+Random\+Variable.\+location}
+
+\Hypertarget{classrandom__variables_1_1_cauchy_random_variable_acf6929110b98f1d2f8374a394b322287}\label{classrandom__variables_1_1_cauchy_random_variable_acf6929110b98f1d2f8374a394b322287} 
+\index{random\_variables.CauchyRandomVariable@{random\_variables.CauchyRandomVariable}!scale@{scale}}
+\index{scale@{scale}!random\_variables.CauchyRandomVariable@{random\_variables.CauchyRandomVariable}}
+\doxysubsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily random\+\_\+variables.\+Cauchy\+Random\+Variable.\+scale}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tumos/\+One\+Drive/Рабочий стол/Проектирование программ/Оценка функций и плотностей распределений/\mbox{\hyperlink{random__variables_8py}{random\+\_\+variables.\+py}}\end{DoxyCompactItemize}

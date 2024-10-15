@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classmain_1_1_my_application" kind="class" language="Python" prot="public">
+    <compoundname>main::MyApplication</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QtWidgets.QMainWindow</basecompoundref>
+    <basecompoundref refid="classui___lab2_1_1_ui___main_window" prot="public" virt="non-virtual">ui_Lab2.Ui_MainWindow</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmain_1_1_my_application_1ab6eb66e46ff62f3633499e97ac98bd23" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.MyApplication::on_combobox_changed</definition>
+        <argsstring></argsstring>
+        <name>on_combobox_changed</name>
+        <qualifiedname>main.MyApplication.on_combobox_changed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="20" column="1" bodyfile="main.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmain_1_1_my_application_1a543964c902127e2b46c18027150ee8a1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.MyApplication::calculate</definition>
+        <argsstring></argsstring>
+        <name>calculate</name>
+        <qualifiedname>main.MyApplication.calculate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="21" column="1" bodyfile="main.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmain_1_1_my_application_1a927957419a31e11484daed27d7d77bea" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.MyApplication::firstGraphWidget</definition>
+        <argsstring></argsstring>
+        <name>firstGraphWidget</name>
+        <qualifiedname>main.MyApplication.firstGraphWidget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="61" column="1" bodyfile="main.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmain_1_1_my_application_1a3d3e7c77cb484ad398cdca7b851cd93b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.MyApplication::secondGraphWidget</definition>
+        <argsstring></argsstring>
+        <name>secondGraphWidget</name>
+        <qualifiedname>main.MyApplication.secondGraphWidget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="68" column="1" bodyfile="main.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmain_1_1_my_application_1a8e8e412681dd8c3cd329f9f322a20e29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None main.MyApplication.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>main.MyApplication.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="16" column="1" bodyfile="main.py" bodystart="16" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classmain_1_1_my_application_1a6fed158424101c5cdea7cbcf32e98a48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None main.MyApplication.on_combobox_changed</definition>
+        <argsstring>(self)</argsstring>
+        <name>on_combobox_changed</name>
+        <qualifiedname>main.MyApplication.on_combobox_changed</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="23" column="1" bodyfile="main.py" bodystart="23" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classmain_1_1_my_application_1a3cde2d0aad0b151bea2814a40f99f71c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None main.MyApplication.calculate</definition>
+        <argsstring>(self)</argsstring>
+        <name>calculate</name>
+        <qualifiedname>main.MyApplication.calculate</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="40" column="1" bodyfile="main.py" bodystart="40" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classmain_1_1_my_application_1ab8e5186ebf799caa8a56af74c1eb5993" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>tuple</type>
+        <definition> tuple main.MyApplication.get_input_parameters</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_input_parameters</name>
+        <qualifiedname>main.MyApplication.get_input_parameters</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="70" column="1" bodyfile="main.py" bodystart="70" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classmain_1_1_my_application_1a2b8ac716b401a9e9dbd579e1daa451f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrandom__variables_1_1_random_variable" kindref="compound">RandomVariable</ref></type>
+        <definition> RandomVariable main.MyApplication.get_selected_random_variable</definition>
+        <argsstring>(self, float location, float scale)</argsstring>
+        <name>get_selected_random_variable</name>
+        <qualifiedname>main.MyApplication.get_selected_random_variable</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.py" line="79" column="1" bodyfile="main.py" bodystart="79" bodyend="95"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QtWidgets::QMainWindow</label>
+      </node>
+      <node id="1">
+        <label>main.MyApplication</label>
+        <link refid="classmain_1_1_my_application"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>object</label>
+      </node>
+      <node id="3">
+        <label>ui_Lab2.Ui_MainWindow</label>
+        <link refid="classui___lab2_1_1_ui___main_window"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QtWidgets::QMainWindow</label>
+      </node>
+      <node id="1">
+        <label>main.MyApplication</label>
+        <link refid="classmain_1_1_my_application"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>object</label>
+      </node>
+      <node id="3">
+        <label>ui_Lab2.Ui_MainWindow</label>
+        <link refid="classui___lab2_1_1_ui___main_window"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="main.py" line="15" column="1" bodyfile="main.py" bodystart="15" bodyend="95"/>
+    <listofallmembers>
+      <member refid="classmain_1_1_my_application_1a8e8e412681dd8c3cd329f9f322a20e29" prot="public" virt="non-virtual"><scope>main::MyApplication</scope><name>__init__</name></member>
+      <member refid="classmain_1_1_my_application_1a543964c902127e2b46c18027150ee8a1" prot="public" virt="non-virtual"><scope>main::MyApplication</scope><name>calculate</name></member>
+      <member refid="classmain_1_1_my_application_1a3cde2d0aad0b151bea2814a40f99f71c" prot="public" virt="non-virtual"><scope>main::MyApplication</scope><name>calculate</name></member>
+      <member refid="classmain_1_1_my_application_1a927957419a31e11484daed27d7d77bea" prot="public" virt="non-virtual"><scope>main::MyApplication</scope><name>firstGraphWidget</name></member>
+      <member refid="classmain_1_1_my_application_1ab8e5186ebf799caa8a56af74c1eb5993" prot="public" virt="non-virtual"><scope>main::MyApplication</scope><name>get_input_parameters</name></member>
+      <member refid="classmain_1_1_my_application_1a2b8ac716b401a9e9dbd579e1daa451f2" prot="public" virt="non-virtual"><scope>main::MyApplication</scope><name>get_selected_random_variable</name></member>
+      <member refid="classmain_1_1_my_application_1ab6eb66e46ff62f3633499e97ac98bd23" prot="public" virt="non-virtual"><scope>main::MyApplication</scope><name>on_combobox_changed</name></member>
+      <member refid="classmain_1_1_my_application_1a6fed158424101c5cdea7cbcf32e98a48" prot="public" virt="non-virtual"><scope>main::MyApplication</scope><name>on_combobox_changed</name></member>
+      <member refid="classmain_1_1_my_application_1a3d3e7c77cb484ad398cdca7b851cd93b" prot="public" virt="non-virtual"><scope>main::MyApplication</scope><name>secondGraphWidget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classrandom__variables_1_1_random_variable" kind="class" language="Python" prot="public">
+    <compoundname>random_variables::RandomVariable</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ABC</basecompoundref>
+    <derivedcompoundref refid="classrandom__variables_1_1_cauchy_random_variable" prot="public" virt="non-virtual">random_variables.CauchyRandomVariable</derivedcompoundref>
+    <derivedcompoundref refid="classrandom__variables_1_1_exponential_random_variable" prot="public" virt="non-virtual">random_variables.ExponentialRandomVariable</derivedcompoundref>
+    <derivedcompoundref refid="classrandom__variables_1_1_laplace_random_variable" prot="public" virt="non-virtual">random_variables.LaplaceRandomVariable</derivedcompoundref>
+    <derivedcompoundref refid="classrandom__variables_1_1_normal_random_variable" prot="public" virt="non-virtual">random_variables.NormalRandomVariable</derivedcompoundref>
+    <derivedcompoundref refid="classrandom__variables_1_1_smoothed_random_variable" prot="public" virt="non-virtual">random_variables.SmoothedRandomVariable</derivedcompoundref>
+    <derivedcompoundref refid="classrandom__variables_1_1_uniform_random_variable" prot="public" virt="non-virtual">random_variables.UniformRandomVariable</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrandom__variables_1_1_random_variable_1a91afa5fa2944b0fa0335ce2e657de8b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float random_variables.RandomVariable.pdf</definition>
+        <argsstring>(self, float x)</argsstring>
+        <name>pdf</name>
+        <qualifiedname>random_variables.RandomVariable.pdf</qualifiedname>
+        <reimplementedby refid="classrandom__variables_1_1_smoothed_random_variable_1aa6ce89d4e269ec181a92912d46c5a7d0">pdf</reimplementedby>
+        <reimplementedby refid="classrandom__variables_1_1_normal_random_variable_1a6f33deb9f8a24d187ac5a6945e849cf4">pdf</reimplementedby>
+        <reimplementedby refid="classrandom__variables_1_1_uniform_random_variable_1ad75344462c8b453063a7bc2f884dd407">pdf</reimplementedby>
+        <reimplementedby refid="classrandom__variables_1_1_exponential_random_variable_1aaeeedc7f1b690b7d0e588ab302346b5c">pdf</reimplementedby>
+        <reimplementedby refid="classrandom__variables_1_1_laplace_random_variable_1a2448b928777e0db1e9c22a3316f3dd13">pdf</reimplementedby>
+        <reimplementedby refid="classrandom__variables_1_1_cauchy_random_variable_1a3b42f017a92eeae04a4cf9f604a05ff3">pdf</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="10" column="1" bodyfile="random_variables.py" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classrandom__variables_1_1_random_variable_1adceeed7bf42441c4770ae0f84b9aec26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float random_variables.RandomVariable.cdf</definition>
+        <argsstring>(self, float x)</argsstring>
+        <name>cdf</name>
+        <qualifiedname>random_variables.RandomVariable.cdf</qualifiedname>
+        <reimplementedby refid="classrandom__variables_1_1_smoothed_random_variable_1a59596bbf65276c553865c02e5b4a616f">cdf</reimplementedby>
+        <reimplementedby refid="classrandom__variables_1_1_normal_random_variable_1a220959e1835388e2f38d7f4e0ac0db8f">cdf</reimplementedby>
+        <reimplementedby refid="classrandom__variables_1_1_uniform_random_variable_1a7756a10fa21d9c3fde443b310744b30f">cdf</reimplementedby>
+        <reimplementedby refid="classrandom__variables_1_1_exponential_random_variable_1a344cae85f88ebd69b6aecdd5d04b3c55">cdf</reimplementedby>
+        <reimplementedby refid="classrandom__variables_1_1_laplace_random_variable_1a368109c689ff68fcf19e8792ef1ab58c">cdf</reimplementedby>
+        <reimplementedby refid="classrandom__variables_1_1_cauchy_random_variable_1a7eda7a123b48767f3b37689d65f48031">cdf</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="14" column="1" bodyfile="random_variables.py" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classrandom__variables_1_1_random_variable_1a6f8b863683dc64ade32c02eec896d08d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float random_variables.RandomVariable.quantile</definition>
+        <argsstring>(self, float alpha)</argsstring>
+        <name>quantile</name>
+        <qualifiedname>random_variables.RandomVariable.quantile</qualifiedname>
+        <reimplementedby refid="classrandom__variables_1_1_smoothed_random_variable_1a6f1cfa17af6e44012cdc7579700ee81b">quantile</reimplementedby>
+        <reimplementedby refid="classrandom__variables_1_1_normal_random_variable_1a25de6dbd12a95c6d88b2034993a75f90">quantile</reimplementedby>
+        <reimplementedby refid="classrandom__variables_1_1_uniform_random_variable_1a1453f187a1e26d4b77c131972fce29b8">quantile</reimplementedby>
+        <reimplementedby refid="classrandom__variables_1_1_exponential_random_variable_1ad556260d20f302358f6fbcde047b2d85">quantile</reimplementedby>
+        <reimplementedby refid="classrandom__variables_1_1_laplace_random_variable_1ac4783a7c00f94f9f47e5c4ddde42b810">quantile</reimplementedby>
+        <reimplementedby refid="classrandom__variables_1_1_cauchy_random_variable_1acd2b61b62d067d2c267dffee6414b32b">quantile</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="18" column="1" bodyfile="random_variables.py" bodystart="18" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>random_variables.RandomVariable</label>
+        <link refid="classrandom__variables_1_1_random_variable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>random_variables.CauchyRandomVariable</label>
+        <link refid="classrandom__variables_1_1_cauchy_random_variable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>random_variables.ExponentialRandomVariable</label>
+        <link refid="classrandom__variables_1_1_exponential_random_variable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>random_variables.LaplaceRandomVariable</label>
+        <link refid="classrandom__variables_1_1_laplace_random_variable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>random_variables.NormalRandomVariable</label>
+        <link refid="classrandom__variables_1_1_normal_random_variable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>random_variables.SmoothedRandomVariable</label>
+        <link refid="classrandom__variables_1_1_smoothed_random_variable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>random_variables.UniformRandomVariable</label>
+        <link refid="classrandom__variables_1_1_uniform_random_variable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>random_variables.RandomVariable</label>
+        <link refid="classrandom__variables_1_1_random_variable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="random_variables.py" line="8" column="1" bodyfile="random_variables.py" bodystart="8" bodyend="21"/>
+    <listofallmembers>
+      <member refid="classrandom__variables_1_1_random_variable_1adceeed7bf42441c4770ae0f84b9aec26" prot="public" virt="non-virtual"><scope>random_variables::RandomVariable</scope><name>cdf</name></member>
+      <member refid="classrandom__variables_1_1_random_variable_1a91afa5fa2944b0fa0335ce2e657de8b7" prot="public" virt="non-virtual"><scope>random_variables::RandomVariable</scope><name>pdf</name></member>
+      <member refid="classrandom__variables_1_1_random_variable_1a6f8b863683dc64ade32c02eec896d08d" prot="public" virt="non-virtual"><scope>random_variables::RandomVariable</scope><name>quantile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

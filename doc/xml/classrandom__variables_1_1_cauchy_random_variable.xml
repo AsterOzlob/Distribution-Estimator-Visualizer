@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classrandom__variables_1_1_cauchy_random_variable" kind="class" language="Python" prot="public">
+    <compoundname>random_variables::CauchyRandomVariable</compoundname>
+    <basecompoundref refid="classrandom__variables_1_1_random_variable" prot="public" virt="non-virtual">random_variables.RandomVariable</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classrandom__variables_1_1_cauchy_random_variable_1a9c066581f7e3fb1cfa9dd2078c51f011" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>random_variables.CauchyRandomVariable::location</definition>
+        <argsstring></argsstring>
+        <name>location</name>
+        <qualifiedname>random_variables.CauchyRandomVariable.location</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="137" column="1" bodyfile="random_variables.py" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrandom__variables_1_1_cauchy_random_variable_1acf6929110b98f1d2f8374a394b322287" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>random_variables.CauchyRandomVariable::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <qualifiedname>random_variables.CauchyRandomVariable.scale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="138" column="1" bodyfile="random_variables.py" bodystart="138" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrandom__variables_1_1_cauchy_random_variable_1ac54a4ddf3095b372cf861a490b92e54f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None random_variables.CauchyRandomVariable.__init__</definition>
+        <argsstring>(self, float location=0, float scale=1)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>random_variables.CauchyRandomVariable.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>location</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="136" column="1" bodyfile="random_variables.py" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classrandom__variables_1_1_cauchy_random_variable_1a3b42f017a92eeae04a4cf9f604a05ff3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float random_variables.CauchyRandomVariable.pdf</definition>
+        <argsstring>(self, float x)</argsstring>
+        <name>pdf</name>
+        <qualifiedname>random_variables.CauchyRandomVariable.pdf</qualifiedname>
+        <reimplements refid="classrandom__variables_1_1_random_variable_1a91afa5fa2944b0fa0335ce2e657de8b7">pdf</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="140" column="1" bodyfile="random_variables.py" bodystart="140" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classrandom__variables_1_1_cauchy_random_variable_1a7eda7a123b48767f3b37689d65f48031" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float random_variables.CauchyRandomVariable.cdf</definition>
+        <argsstring>(self, float x)</argsstring>
+        <name>cdf</name>
+        <qualifiedname>random_variables.CauchyRandomVariable.cdf</qualifiedname>
+        <reimplements refid="classrandom__variables_1_1_random_variable_1adceeed7bf42441c4770ae0f84b9aec26">cdf</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="143" column="1" bodyfile="random_variables.py" bodystart="143" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classrandom__variables_1_1_cauchy_random_variable_1acd2b61b62d067d2c267dffee6414b32b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float random_variables.CauchyRandomVariable.quantile</definition>
+        <argsstring>(self, float alpha)</argsstring>
+        <name>quantile</name>
+        <qualifiedname>random_variables.CauchyRandomVariable.quantile</qualifiedname>
+        <reimplements refid="classrandom__variables_1_1_random_variable_1a6f8b863683dc64ade32c02eec896d08d">quantile</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="146" column="1" bodyfile="random_variables.py" bodystart="146" bodyend="150"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>random_variables.CauchyRandomVariable</label>
+        <link refid="classrandom__variables_1_1_cauchy_random_variable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>random_variables.RandomVariable</label>
+        <link refid="classrandom__variables_1_1_random_variable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>random_variables.CauchyRandomVariable</label>
+        <link refid="classrandom__variables_1_1_cauchy_random_variable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>random_variables.RandomVariable</label>
+        <link refid="classrandom__variables_1_1_random_variable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="random_variables.py" line="135" column="1" bodyfile="random_variables.py" bodystart="135" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classrandom__variables_1_1_cauchy_random_variable_1ac54a4ddf3095b372cf861a490b92e54f" prot="public" virt="non-virtual"><scope>random_variables::CauchyRandomVariable</scope><name>__init__</name></member>
+      <member refid="classrandom__variables_1_1_cauchy_random_variable_1a7eda7a123b48767f3b37689d65f48031" prot="public" virt="non-virtual"><scope>random_variables::CauchyRandomVariable</scope><name>cdf</name></member>
+      <member refid="classrandom__variables_1_1_cauchy_random_variable_1a9c066581f7e3fb1cfa9dd2078c51f011" prot="public" virt="non-virtual"><scope>random_variables::CauchyRandomVariable</scope><name>location</name></member>
+      <member refid="classrandom__variables_1_1_cauchy_random_variable_1a3b42f017a92eeae04a4cf9f604a05ff3" prot="public" virt="non-virtual"><scope>random_variables::CauchyRandomVariable</scope><name>pdf</name></member>
+      <member refid="classrandom__variables_1_1_cauchy_random_variable_1acd2b61b62d067d2c267dffee6414b32b" prot="public" virt="non-virtual"><scope>random_variables::CauchyRandomVariable</scope><name>quantile</name></member>
+      <member refid="classrandom__variables_1_1_cauchy_random_variable_1acf6929110b98f1d2f8374a394b322287" prot="public" virt="non-virtual"><scope>random_variables::CauchyRandomVariable</scope><name>scale</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

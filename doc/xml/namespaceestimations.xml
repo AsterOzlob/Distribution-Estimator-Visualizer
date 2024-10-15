@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespaceestimations" kind="namespace" language="Python">
+    <compoundname>estimations</compoundname>
+    <innerclass refid="classestimations_1_1_e_d_f" prot="public">estimations::EDF</innerclass>
+    <innerclass refid="classestimations_1_1_estimation" prot="public">estimations::Estimation</innerclass>
+    <innerclass refid="classestimations_1_1_histogram" prot="public">estimations::Histogram</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="estimations.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

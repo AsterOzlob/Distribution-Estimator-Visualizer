@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classrandom__number__generators_1_1_random_number_generator" kind="class" language="Python" prot="public">
+    <compoundname>random_number_generators::RandomNumberGenerator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ABC</basecompoundref>
+    <derivedcompoundref refid="classrandom__number__generators_1_1_simple_random_number_generator" prot="public" virt="non-virtual">random_number_generators.SimpleRandomNumberGenerator</derivedcompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classrandom__number__generators_1_1_random_number_generator_1aac5500852a4c0bc01a2b06d1e4cd6ee8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>random_number_generators.RandomNumberGenerator::random_variable</definition>
+        <argsstring></argsstring>
+        <name>random_variable</name>
+        <qualifiedname>random_number_generators.RandomNumberGenerator.random_variable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_number_generators.py" line="9" column="1" bodyfile="random_number_generators.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrandom__number__generators_1_1_random_number_generator_1a7be18a6e17eb0fbe51aef055d3cb0bc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None random_number_generators.RandomNumberGenerator.__init__</definition>
+        <argsstring>(self, RandomVariable random_variable)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>random_number_generators.RandomNumberGenerator.__init__</qualifiedname>
+        <reimplementedby refid="classrandom__number__generators_1_1_simple_random_number_generator_1ae94bedf89f85409f96722fe4d3b230ec">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classrandom__variables_1_1_random_variable" kindref="compound">RandomVariable</ref></type>
+          <declname>random_variable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_number_generators.py" line="8" column="1" bodyfile="random_number_generators.py" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classrandom__number__generators_1_1_random_number_generator_1a5dfc89a10e6e44939933c5db51396939" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>np.ndarray</type>
+        <definition> np.ndarray random_number_generators.RandomNumberGenerator.get</definition>
+        <argsstring>(self, int N)</argsstring>
+        <name>get</name>
+        <qualifiedname>random_number_generators.RandomNumberGenerator.get</qualifiedname>
+        <reimplementedby refid="classrandom__number__generators_1_1_simple_random_number_generator_1a9ee805035209b95f9fe01047e785a227">get</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_number_generators.py" line="12" column="1" bodyfile="random_number_generators.py" bodystart="12" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>random_number_generators.RandomNumberGenerator</label>
+        <link refid="classrandom__number__generators_1_1_random_number_generator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>random_number_generators.SimpleRandomNumberGenerator</label>
+        <link refid="classrandom__number__generators_1_1_simple_random_number_generator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>random_number_generators.RandomNumberGenerator</label>
+        <link refid="classrandom__number__generators_1_1_random_number_generator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="random_number_generators.py" line="7" column="1" bodyfile="random_number_generators.py" bodystart="7" bodyend="15"/>
+    <listofallmembers>
+      <member refid="classrandom__number__generators_1_1_random_number_generator_1a7be18a6e17eb0fbe51aef055d3cb0bc2" prot="public" virt="non-virtual"><scope>random_number_generators::RandomNumberGenerator</scope><name>__init__</name></member>
+      <member refid="classrandom__number__generators_1_1_random_number_generator_1a5dfc89a10e6e44939933c5db51396939" prot="public" virt="non-virtual"><scope>random_number_generators::RandomNumberGenerator</scope><name>get</name></member>
+      <member refid="classrandom__number__generators_1_1_random_number_generator_1aac5500852a4c0bc01a2b06d1e4cd6ee8" prot="public" virt="non-virtual"><scope>random_number_generators::RandomNumberGenerator</scope><name>random_variable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

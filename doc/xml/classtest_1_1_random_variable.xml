@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classtest_1_1_random_variable" kind="class" language="Python" prot="public">
+    <compoundname>test::RandomVariable</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ABC</basecompoundref>
+    <derivedcompoundref refid="classtest_1_1_normal_random_variable" prot="public" virt="non-virtual">test.NormalRandomVariable</derivedcompoundref>
+    <derivedcompoundref refid="classtest_1_1_smoothed_random_variable" prot="public" virt="non-virtual">test.SmoothedRandomVariable</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtest_1_1_random_variable_1a1ea55991c99d09c1f39a80c3c9f1c097" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.RandomVariable.pdf</definition>
+        <argsstring>(self, x)</argsstring>
+        <name>pdf</name>
+        <qualifiedname>test.RandomVariable.pdf</qualifiedname>
+        <reimplementedby refid="classtest_1_1_normal_random_variable_1a85a4d278428821d247628c2f8ad8134f">pdf</reimplementedby>
+        <reimplementedby refid="classtest_1_1_smoothed_random_variable_1a1d0cfc032d322fa36dccfb0d88b5d175">pdf</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="9" column="1" bodyfile="test.py" bodystart="9" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1_random_variable_1a47f92bc60ba444fdfc3a4a39370d5f9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.RandomVariable.cdf</definition>
+        <argsstring>(self, x)</argsstring>
+        <name>cdf</name>
+        <qualifiedname>test.RandomVariable.cdf</qualifiedname>
+        <reimplementedby refid="classtest_1_1_normal_random_variable_1a034b79c26b57c16d7ad21c987aacc622">cdf</reimplementedby>
+        <reimplementedby refid="classtest_1_1_smoothed_random_variable_1a9e3977c1d32bdb19b676d7c91a2474ee">cdf</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="13" column="1" bodyfile="test.py" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1_random_variable_1a3d34bf40bfb7d965aa1ff8bc2d70409c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.RandomVariable.quantile</definition>
+        <argsstring>(self, alpha)</argsstring>
+        <name>quantile</name>
+        <qualifiedname>test.RandomVariable.quantile</qualifiedname>
+        <reimplementedby refid="classtest_1_1_normal_random_variable_1ab7840c04b36fc02c023f5a61517f6e0f">quantile</reimplementedby>
+        <reimplementedby refid="classtest_1_1_smoothed_random_variable_1a1c6023b6d14826005e32cf4143d4e7a4">quantile</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>alpha</type>
+          <defname>alpha</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="17" column="1" bodyfile="test.py" bodystart="17" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>test.RandomVariable</label>
+        <link refid="classtest_1_1_random_variable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>test.NormalRandomVariable</label>
+        <link refid="classtest_1_1_normal_random_variable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>test.SmoothedRandomVariable</label>
+        <link refid="classtest_1_1_smoothed_random_variable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>test.RandomVariable</label>
+        <link refid="classtest_1_1_random_variable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="test.py" line="7" column="1" bodyfile="test.py" bodystart="7" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classtest_1_1_random_variable_1a47f92bc60ba444fdfc3a4a39370d5f9d" prot="public" virt="non-virtual"><scope>test::RandomVariable</scope><name>cdf</name></member>
+      <member refid="classtest_1_1_random_variable_1a1ea55991c99d09c1f39a80c3c9f1c097" prot="public" virt="non-virtual"><scope>test::RandomVariable</scope><name>pdf</name></member>
+      <member refid="classtest_1_1_random_variable_1a3d34bf40bfb7d965aa1ff8bc2d70409c" prot="public" virt="non-virtual"><scope>test::RandomVariable</scope><name>quantile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

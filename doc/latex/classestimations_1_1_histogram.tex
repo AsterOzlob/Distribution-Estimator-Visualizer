@@ -1,0 +1,175 @@
+\doxysection{estimations.\+Histogram Class Reference}
+\hypertarget{classestimations_1_1_histogram}{}\label{classestimations_1_1_histogram}\index{estimations.Histogram@{estimations.Histogram}}
+
+
+Класс для создания гистограммы по выборке данных.  
+
+
+Inheritance diagram for estimations.\+Histogram\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classestimations_1_1_histogram}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval}{Interval}}
+\begin{DoxyCompactList}\small\item\em Представляет интервал в гистограмме. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classestimations_1_1_histogram_a594cd6faad51e7a685695dd0d4d9d26b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, np.\+ndarray \mbox{\hyperlink{classestimations_1_1_histogram_a45a8946177f658f9c4b191386cef24e9}{sample}}, int \mbox{\hyperlink{classestimations_1_1_histogram_a042605d6d89e7c6084fd49db63e22b25}{m}})
+\begin{DoxyCompactList}\small\item\em Конструктор класса Histogram. \end{DoxyCompactList}\item 
+None \mbox{\hyperlink{classestimations_1_1_histogram_a879d3fb7770f06d5fbb91dcebede8999}{init\+\_\+intervals}} (self)
+\begin{DoxyCompactList}\small\item\em Инициализирует интервалы на основе выборки данных и желаемого количества интервалов. \end{DoxyCompactList}\item 
+Optional\mbox{[}\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval}{Interval}}\mbox{]} \mbox{\hyperlink{classestimations_1_1_histogram_acfd9facf5c3d8689b01ff4217543df2b}{get\+\_\+interval}} (self, float x)
+\begin{DoxyCompactList}\small\item\em Получает интервал, содержащий определенное значение. \end{DoxyCompactList}\item 
+np.\+ndarray \mbox{\hyperlink{classestimations_1_1_histogram_adfb848b6cc9b9274e0ff971c2a19c8c1}{get\+\_\+sample\+\_\+by\+\_\+interval}} (self, \mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval}{Interval}} interval)
+\begin{DoxyCompactList}\small\item\em Получает все точки выборки, попадающие в заданный интервал. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classestimations_1_1_histogram_a565841d0a993eab21bf2441f03d4ca9f}{value}} (self, float x)
+\begin{DoxyCompactList}\small\item\em Вычисляет значение гистограммы в определенной точке. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classestimations_1_1_histogram_a042605d6d89e7c6084fd49db63e22b25}{m}}
+\item 
+\mbox{\hyperlink{classestimations_1_1_histogram_a916cfba7d1383d136745c6f94976ae91}{intervals}}
+\item 
+\mbox{\hyperlink{classestimations_1_1_histogram_a9e675cdad0e13b322330a4f08ff1989a}{sub\+\_\+interval\+\_\+width}}
+\item 
+\mbox{\hyperlink{classestimations_1_1_histogram_a45a8946177f658f9c4b191386cef24e9}{sample}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classestimations_1_1_estimation}{estimations.\+Estimation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classestimations_1_1_estimation_a08d29495d5fbe318c219324099d56376}{sample}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для создания гистограммы по выборке данных. 
+
+Разбивает диапазон выборки на интервалы и подсчитывает количество точек в каждом интервале. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classestimations_1_1_histogram_a594cd6faad51e7a685695dd0d4d9d26b}\label{classestimations_1_1_histogram_a594cd6faad51e7a685695dd0d4d9d26b} 
+\index{estimations.Histogram@{estimations.Histogram}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!estimations.Histogram@{estimations.Histogram}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None estimations.\+Histogram.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{np.\+ndarray}]{sample,  }\item[{int}]{m }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса Histogram. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sample} & Массив образцов данных. \\
+\hline
+{\em m} & Количество интервалов для создания. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classestimations_1_1_estimation_a5678fdc77206aa9918e2b03def8132b0}{estimations.\+Estimation}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classestimations_1_1_histogram_acfd9facf5c3d8689b01ff4217543df2b}\label{classestimations_1_1_histogram_acfd9facf5c3d8689b01ff4217543df2b} 
+\index{estimations.Histogram@{estimations.Histogram}!get\_interval@{get\_interval}}
+\index{get\_interval@{get\_interval}!estimations.Histogram@{estimations.Histogram}}
+\doxysubsubsection{\texorpdfstring{get\_interval()}{get\_interval()}}
+{\footnotesize\ttfamily  Optional\mbox{[}\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval}{Interval}}\mbox{]} estimations.\+Histogram.\+get\+\_\+interval (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Получает интервал, содержащий определенное значение. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Значение, для которого необходимо найти интервал. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Интервал, содержащий x, или None, если интервал не найден. 
+\end{DoxyReturn}
+\Hypertarget{classestimations_1_1_histogram_adfb848b6cc9b9274e0ff971c2a19c8c1}\label{classestimations_1_1_histogram_adfb848b6cc9b9274e0ff971c2a19c8c1} 
+\index{estimations.Histogram@{estimations.Histogram}!get\_sample\_by\_interval@{get\_sample\_by\_interval}}
+\index{get\_sample\_by\_interval@{get\_sample\_by\_interval}!estimations.Histogram@{estimations.Histogram}}
+\doxysubsubsection{\texorpdfstring{get\_sample\_by\_interval()}{get\_sample\_by\_interval()}}
+{\footnotesize\ttfamily  np.\+ndarray estimations.\+Histogram.\+get\+\_\+sample\+\_\+by\+\_\+interval (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval}{Interval}}}]{interval }\end{DoxyParamCaption})}
+
+
+
+Получает все точки выборки, попадающие в заданный интервал. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em interval} & Интервал для проверки по точкам выборки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Массив точек выборки внутри интервала. 
+\end{DoxyReturn}
+\Hypertarget{classestimations_1_1_histogram_a879d3fb7770f06d5fbb91dcebede8999}\label{classestimations_1_1_histogram_a879d3fb7770f06d5fbb91dcebede8999} 
+\index{estimations.Histogram@{estimations.Histogram}!init\_intervals@{init\_intervals}}
+\index{init\_intervals@{init\_intervals}!estimations.Histogram@{estimations.Histogram}}
+\doxysubsubsection{\texorpdfstring{init\_intervals()}{init\_intervals()}}
+{\footnotesize\ttfamily  None estimations.\+Histogram.\+init\+\_\+intervals (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Инициализирует интервалы на основе выборки данных и желаемого количества интервалов. 
+
+\Hypertarget{classestimations_1_1_histogram_a565841d0a993eab21bf2441f03d4ca9f}\label{classestimations_1_1_histogram_a565841d0a993eab21bf2441f03d4ca9f} 
+\index{estimations.Histogram@{estimations.Histogram}!value@{value}}
+\index{value@{value}!estimations.Histogram@{estimations.Histogram}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily  float estimations.\+Histogram.\+value (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Вычисляет значение гистограммы в определенной точке. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Точка, в которой вычисляется гистограмма. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Значение гистограммы в точке x. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classestimations_1_1_histogram_a916cfba7d1383d136745c6f94976ae91}\label{classestimations_1_1_histogram_a916cfba7d1383d136745c6f94976ae91} 
+\index{estimations.Histogram@{estimations.Histogram}!intervals@{intervals}}
+\index{intervals@{intervals}!estimations.Histogram@{estimations.Histogram}}
+\doxysubsubsection{\texorpdfstring{intervals}{intervals}}
+{\footnotesize\ttfamily estimations.\+Histogram.\+intervals}
+
+\Hypertarget{classestimations_1_1_histogram_a042605d6d89e7c6084fd49db63e22b25}\label{classestimations_1_1_histogram_a042605d6d89e7c6084fd49db63e22b25} 
+\index{estimations.Histogram@{estimations.Histogram}!m@{m}}
+\index{m@{m}!estimations.Histogram@{estimations.Histogram}}
+\doxysubsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily estimations.\+Histogram.\+m}
+
+\Hypertarget{classestimations_1_1_histogram_a45a8946177f658f9c4b191386cef24e9}\label{classestimations_1_1_histogram_a45a8946177f658f9c4b191386cef24e9} 
+\index{estimations.Histogram@{estimations.Histogram}!sample@{sample}}
+\index{sample@{sample}!estimations.Histogram@{estimations.Histogram}}
+\doxysubsubsection{\texorpdfstring{sample}{sample}}
+{\footnotesize\ttfamily estimations.\+Histogram.\+sample}
+
+\Hypertarget{classestimations_1_1_histogram_a9e675cdad0e13b322330a4f08ff1989a}\label{classestimations_1_1_histogram_a9e675cdad0e13b322330a4f08ff1989a} 
+\index{estimations.Histogram@{estimations.Histogram}!sub\_interval\_width@{sub\_interval\_width}}
+\index{sub\_interval\_width@{sub\_interval\_width}!estimations.Histogram@{estimations.Histogram}}
+\doxysubsubsection{\texorpdfstring{sub\_interval\_width}{sub\_interval\_width}}
+{\footnotesize\ttfamily estimations.\+Histogram.\+sub\+\_\+interval\+\_\+width}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tumos/\+One\+Drive/Рабочий стол/Проектирование программ/Оценка функций и плотностей распределений/\mbox{\hyperlink{estimations_8py}{estimations.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classrandom__variables_1_1_exponential_random_variable" kind="class" language="Python" prot="public">
+    <compoundname>random_variables::ExponentialRandomVariable</compoundname>
+    <basecompoundref refid="classrandom__variables_1_1_random_variable" prot="public" virt="non-virtual">random_variables.RandomVariable</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classrandom__variables_1_1_exponential_random_variable_1a22a93280e4f7647b258fc74728e483e3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>random_variables.ExponentialRandomVariable::rate</definition>
+        <argsstring></argsstring>
+        <name>rate</name>
+        <qualifiedname>random_variables.ExponentialRandomVariable.rate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="96" column="1" bodyfile="random_variables.py" bodystart="96" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrandom__variables_1_1_exponential_random_variable_1aad1150cf08b201f996920c14a8ecf9c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None random_variables.ExponentialRandomVariable.__init__</definition>
+        <argsstring>(self, float rate)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>random_variables.ExponentialRandomVariable.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="93" column="1" bodyfile="random_variables.py" bodystart="93" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classrandom__variables_1_1_exponential_random_variable_1aaeeedc7f1b690b7d0e588ab302346b5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float random_variables.ExponentialRandomVariable.pdf</definition>
+        <argsstring>(self, float x)</argsstring>
+        <name>pdf</name>
+        <qualifiedname>random_variables.ExponentialRandomVariable.pdf</qualifiedname>
+        <reimplements refid="classrandom__variables_1_1_random_variable_1a91afa5fa2944b0fa0335ce2e657de8b7">pdf</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="98" column="1" bodyfile="random_variables.py" bodystart="98" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classrandom__variables_1_1_exponential_random_variable_1a344cae85f88ebd69b6aecdd5d04b3c55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float random_variables.ExponentialRandomVariable.cdf</definition>
+        <argsstring>(self, float x)</argsstring>
+        <name>cdf</name>
+        <qualifiedname>random_variables.ExponentialRandomVariable.cdf</qualifiedname>
+        <reimplements refid="classrandom__variables_1_1_random_variable_1adceeed7bf42441c4770ae0f84b9aec26">cdf</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="103" column="1" bodyfile="random_variables.py" bodystart="103" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classrandom__variables_1_1_exponential_random_variable_1ad556260d20f302358f6fbcde047b2d85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float random_variables.ExponentialRandomVariable.quantile</definition>
+        <argsstring>(self, float alpha)</argsstring>
+        <name>quantile</name>
+        <qualifiedname>random_variables.ExponentialRandomVariable.quantile</qualifiedname>
+        <reimplements refid="classrandom__variables_1_1_random_variable_1a6f8b863683dc64ade32c02eec896d08d">quantile</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="random_variables.py" line="108" column="1" bodyfile="random_variables.py" bodystart="108" bodyend="113"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>random_variables.ExponentialRandomVariable</label>
+        <link refid="classrandom__variables_1_1_exponential_random_variable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>random_variables.RandomVariable</label>
+        <link refid="classrandom__variables_1_1_random_variable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>random_variables.ExponentialRandomVariable</label>
+        <link refid="classrandom__variables_1_1_exponential_random_variable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>random_variables.RandomVariable</label>
+        <link refid="classrandom__variables_1_1_random_variable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="random_variables.py" line="92" column="1" bodyfile="random_variables.py" bodystart="92" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classrandom__variables_1_1_exponential_random_variable_1aad1150cf08b201f996920c14a8ecf9c1" prot="public" virt="non-virtual"><scope>random_variables::ExponentialRandomVariable</scope><name>__init__</name></member>
+      <member refid="classrandom__variables_1_1_exponential_random_variable_1a344cae85f88ebd69b6aecdd5d04b3c55" prot="public" virt="non-virtual"><scope>random_variables::ExponentialRandomVariable</scope><name>cdf</name></member>
+      <member refid="classrandom__variables_1_1_exponential_random_variable_1aaeeedc7f1b690b7d0e588ab302346b5c" prot="public" virt="non-virtual"><scope>random_variables::ExponentialRandomVariable</scope><name>pdf</name></member>
+      <member refid="classrandom__variables_1_1_exponential_random_variable_1ad556260d20f302358f6fbcde047b2d85" prot="public" virt="non-virtual"><scope>random_variables::ExponentialRandomVariable</scope><name>quantile</name></member>
+      <member refid="classrandom__variables_1_1_exponential_random_variable_1a22a93280e4f7647b258fc74728e483e3" prot="public" virt="non-virtual"><scope>random_variables::ExponentialRandomVariable</scope><name>rate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

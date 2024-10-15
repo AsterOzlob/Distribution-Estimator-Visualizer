@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacerandom__variables" kind="namespace" language="Python">
+    <compoundname>random_variables</compoundname>
+    <innerclass refid="classrandom__variables_1_1_cauchy_random_variable" prot="public">random_variables::CauchyRandomVariable</innerclass>
+    <innerclass refid="classrandom__variables_1_1_exponential_random_variable" prot="public">random_variables::ExponentialRandomVariable</innerclass>
+    <innerclass refid="classrandom__variables_1_1_laplace_random_variable" prot="public">random_variables::LaplaceRandomVariable</innerclass>
+    <innerclass refid="classrandom__variables_1_1_normal_random_variable" prot="public">random_variables::NormalRandomVariable</innerclass>
+    <innerclass refid="classrandom__variables_1_1_random_variable" prot="public">random_variables::RandomVariable</innerclass>
+    <innerclass refid="classrandom__variables_1_1_smoothed_random_variable" prot="public">random_variables::SmoothedRandomVariable</innerclass>
+    <innerclass refid="classrandom__variables_1_1_uniform_random_variable" prot="public">random_variables::UniformRandomVariable</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="random_variables.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

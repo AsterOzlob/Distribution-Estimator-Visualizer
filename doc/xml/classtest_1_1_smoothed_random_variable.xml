@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classtest_1_1_smoothed_random_variable" kind="class" language="Python" prot="public">
+    <compoundname>test::SmoothedRandomVariable</compoundname>
+    <basecompoundref refid="classtest_1_1_random_variable" prot="public" virt="non-virtual">test.RandomVariable</basecompoundref>
+    <basecompoundref refid="classtest_1_1_estimation" prot="public" virt="non-virtual">test.Estimation</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtest_1_1_smoothed_random_variable_1a48a8c202cc7749de77720bbb1ff1196b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.SmoothedRandomVariable::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <qualifiedname>test.SmoothedRandomVariable.h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="91" column="1" bodyfile="test.py" bodystart="91" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtest_1_1_smoothed_random_variable_1ae5ed38088ee7a58f9485aafca14d2c0d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.SmoothedRandomVariable._k</definition>
+        <argsstring>(x)</argsstring>
+        <name>_k</name>
+        <qualifiedname>test.SmoothedRandomVariable._k</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="75" column="1" bodyfile="test.py" bodystart="75" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1_smoothed_random_variable_1adef3a40cdc05d15cc0107e70e8d47aba" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.SmoothedRandomVariable._K</definition>
+        <argsstring>(x)</argsstring>
+        <name>_K</name>
+        <qualifiedname>test.SmoothedRandomVariable._K</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="81" column="1" bodyfile="test.py" bodystart="81" bodyend="88"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtest_1_1_smoothed_random_variable_1a69543d19548490096206e0f3d70dc53d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.SmoothedRandomVariable.__init__</definition>
+        <argsstring>(self, sample, h)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>test.SmoothedRandomVariable.__init__</qualifiedname>
+        <reimplements refid="classtest_1_1_estimation_1ab473b7acb287c6b072ff8a12cab261b0">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sample</type>
+          <defname>sample</defname>
+        </param>
+        <param>
+          <type>h</type>
+          <defname>h</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="89" column="1" bodyfile="test.py" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1_smoothed_random_variable_1a1d0cfc032d322fa36dccfb0d88b5d175" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.SmoothedRandomVariable.pdf</definition>
+        <argsstring>(self, x)</argsstring>
+        <name>pdf</name>
+        <qualifiedname>test.SmoothedRandomVariable.pdf</qualifiedname>
+        <reimplements refid="classtest_1_1_random_variable_1a1ea55991c99d09c1f39a80c3c9f1c097">pdf</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="93" column="1" bodyfile="test.py" bodystart="93" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1_smoothed_random_variable_1a9e3977c1d32bdb19b676d7c91a2474ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.SmoothedRandomVariable.cdf</definition>
+        <argsstring>(self, x)</argsstring>
+        <name>cdf</name>
+        <qualifiedname>test.SmoothedRandomVariable.cdf</qualifiedname>
+        <reimplements refid="classtest_1_1_random_variable_1a47f92bc60ba444fdfc3a4a39370d5f9d">cdf</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="96" column="1" bodyfile="test.py" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1_smoothed_random_variable_1a1c6023b6d14826005e32cf4143d4e7a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.SmoothedRandomVariable.quantile</definition>
+        <argsstring>(self, alpha)</argsstring>
+        <name>quantile</name>
+        <qualifiedname>test.SmoothedRandomVariable.quantile</qualifiedname>
+        <reimplements refid="classtest_1_1_random_variable_1a3d34bf40bfb7d965aa1ff8bc2d70409c">quantile</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>alpha</type>
+          <defname>alpha</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="99" column="1" bodyfile="test.py" bodystart="99" bodyend="102"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>test.SmoothedRandomVariable</label>
+        <link refid="classtest_1_1_smoothed_random_variable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>test.Estimation</label>
+        <link refid="classtest_1_1_estimation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>test.RandomVariable</label>
+        <link refid="classtest_1_1_random_variable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>test.SmoothedRandomVariable</label>
+        <link refid="classtest_1_1_smoothed_random_variable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>test.Estimation</label>
+        <link refid="classtest_1_1_estimation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>test.RandomVariable</label>
+        <link refid="classtest_1_1_random_variable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="test.py" line="74" column="1" bodyfile="test.py" bodystart="74" bodyend="102"/>
+    <listofallmembers>
+      <member refid="classtest_1_1_smoothed_random_variable_1a69543d19548490096206e0f3d70dc53d" prot="public" virt="non-virtual"><scope>test::SmoothedRandomVariable</scope><name>__init__</name></member>
+      <member refid="classtest_1_1_smoothed_random_variable_1ae5ed38088ee7a58f9485aafca14d2c0d" prot="protected" virt="non-virtual"><scope>test::SmoothedRandomVariable</scope><name>_k</name></member>
+      <member refid="classtest_1_1_smoothed_random_variable_1adef3a40cdc05d15cc0107e70e8d47aba" prot="protected" virt="non-virtual"><scope>test::SmoothedRandomVariable</scope><name>_K</name></member>
+      <member refid="classtest_1_1_smoothed_random_variable_1a9e3977c1d32bdb19b676d7c91a2474ee" prot="public" virt="non-virtual"><scope>test::SmoothedRandomVariable</scope><name>cdf</name></member>
+      <member refid="classtest_1_1_smoothed_random_variable_1a48a8c202cc7749de77720bbb1ff1196b" prot="public" virt="non-virtual"><scope>test::SmoothedRandomVariable</scope><name>h</name></member>
+      <member refid="classtest_1_1_smoothed_random_variable_1a1d0cfc032d322fa36dccfb0d88b5d175" prot="public" virt="non-virtual"><scope>test::SmoothedRandomVariable</scope><name>pdf</name></member>
+      <member refid="classtest_1_1_smoothed_random_variable_1a1c6023b6d14826005e32cf4143d4e7a4" prot="public" virt="non-virtual"><scope>test::SmoothedRandomVariable</scope><name>quantile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,47 @@
+\doxysection{C\+:/\+Users/tumos/\+One\+Drive/Рабочий стол/Дик Курсовая/Оценка функций и плотностей распределений/random\+\_\+number\+\_\+generators.py}
+\hypertarget{random__number__generators_8py_source}{}\label{random__number__generators_8py_source}\mbox{\hyperlink{random__number__generators_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00001}\mbox{\hyperlink{namespacerandom__number__generators}{00001}}\ \textcolor{keyword}{from}\ abc\ \textcolor{keyword}{import}\ ABC,\ abstractmethod}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00002}00002\ \textcolor{keyword}{from}\ random\_variables\ \textcolor{keyword}{import}\ RandomVariable}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00004}00004\ \textcolor{keyword}{import}\ numpy\ \textcolor{keyword}{as}\ np}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00007}\mbox{\hyperlink{classrandom__number__generators_1_1_random_number_generator}{00007}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classrandom__number__generators_1_1_random_number_generator}{RandomNumberGenerator}}(ABC):}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00008}00008\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00009}00009\ \textcolor{stringliteral}{\ \ \ \ @brief\ Абстрактный\ базовый\ класс\ для\ генераторов\ случайных\ чисел.}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00010}00010\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00011}00011\ \textcolor{stringliteral}{\ \ \ \ Этот\ класс\ определяет\ интерфейс\ для\ генераторов\ случайных\ чисел.}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00012}00012\ \textcolor{stringliteral}{\ \ \ \ Подклассы\ должны\ реализовать\ метод\ get().}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00013}00013\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00015}\mbox{\hyperlink{classrandom__number__generators_1_1_random_number_generator_a7be18a6e17eb0fbe51aef055d3cb0bc2}{00015}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__number__generators_1_1_random_number_generator_a7be18a6e17eb0fbe51aef055d3cb0bc2}{\_\_init\_\_}}(self,\ random\_variable:\ RandomVariable)\ -\/>\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00016}00016\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00017}00017\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Инициализирует\ новый\ экземпляр\ класса\ RandomNumberGenerator.}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00018}00018\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ random\_variable:\ Случайная\ величина,\ используемая\ для\ генерации\ чисел.}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00019}00019\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00020}\mbox{\hyperlink{classrandom__number__generators_1_1_random_number_generator_aac5500852a4c0bc01a2b06d1e4cd6ee8}{00020}}\ \ \ \ \ \ \ \ \ self.\mbox{\hyperlink{classrandom__number__generators_1_1_random_number_generator_aac5500852a4c0bc01a2b06d1e4cd6ee8}{random\_variable}}\ =\ random\_variable}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00022}00022\ \ \ \ \ \textcolor{preprocessor}{@abstractmethod}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00023}\mbox{\hyperlink{classrandom__number__generators_1_1_random_number_generator_a3db9116b0a0510f9806913148c24063a}{00023}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__number__generators_1_1_random_number_generator_a3db9116b0a0510f9806913148c24063a}{get}}(self,\ size:\ int)\ -\/>\ np.ndarray:}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00025}00025\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @brief\ Генерирует\ случайные\ числа.}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00026}00026\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ size:\ Количество\ генерируемых\ случайных\ чисел.}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00027}00027\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return:\ Массив\ случайных\ чисел.}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00028}00028\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00029}00029\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{pass}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00032}\mbox{\hyperlink{classrandom__number__generators_1_1_simple_random_number_generator}{00032}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classrandom__number__generators_1_1_simple_random_number_generator}{SimpleRandomNumberGenerator}}(\mbox{\hyperlink{classrandom__number__generators_1_1_random_number_generator}{RandomNumberGenerator}}):}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00033}00033\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00034}00034\ \textcolor{stringliteral}{\ \ \ \ @brief\ Простой\ генератор\ случайных\ чисел,\ использующий\ преобразование\ квантилей.}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00035}00035\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00037}\mbox{\hyperlink{classrandom__number__generators_1_1_simple_random_number_generator_ae94bedf89f85409f96722fe4d3b230ec}{00037}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__number__generators_1_1_simple_random_number_generator_ae94bedf89f85409f96722fe4d3b230ec}{\_\_init\_\_}}(self,\ random\_variable:\ RandomVariable)\ -\/>\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00038}00038\ \ \ \ \ \ \ \ \ super().\mbox{\hyperlink{classrandom__number__generators_1_1_simple_random_number_generator_ae94bedf89f85409f96722fe4d3b230ec}{\_\_init\_\_}}(random\_variable)}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00040}\mbox{\hyperlink{classrandom__number__generators_1_1_simple_random_number_generator_a2b3b45b2646833b4acdf49c1ff2b2a95}{00040}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{classrandom__number__generators_1_1_simple_random_number_generator_a2b3b45b2646833b4acdf49c1ff2b2a95}{get}}(self,\ size:\ int)\ -\/>\ np.ndarray:}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00041}00041\ \ \ \ \ \ \ \ \ us\ =\ np.random.uniform(0,\ 1,\ size)}
+\DoxyCodeLine{\Hypertarget{random__number__generators_8py_source_l00042}00042\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ np.vectorize(self.\mbox{\hyperlink{classrandom__number__generators_1_1_random_number_generator_aac5500852a4c0bc01a2b06d1e4cd6ee8}{random\_variable}}.quantile)(us)}
+
+\end{DoxyCode}

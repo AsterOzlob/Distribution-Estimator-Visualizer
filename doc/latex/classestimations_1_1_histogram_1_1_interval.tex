@@ -1,0 +1,100 @@
+\doxysection{estimations.\+Histogram.\+Interval Class Reference}
+\hypertarget{classestimations_1_1_histogram_1_1_interval}{}\label{classestimations_1_1_histogram_1_1_interval}\index{estimations.Histogram.Interval@{estimations.Histogram.Interval}}
+
+
+Представляет интервал в гистограмме.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval_afc9012c9e9c50429d1b19a5c0c2637a5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, float a, float b)
+\begin{DoxyCompactList}\small\item\em Инициализирует интервал с заданными границами. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval_a5f4f5822b9456aba0d58b6774c723d70}{is\+\_\+in}} (self, float x)
+\begin{DoxyCompactList}\small\item\em Проверяет, попадает ли значение в интервал. \end{DoxyCompactList}\item 
+str \mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval_a309817ae73245358d632c19161234bdb}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em Возвращает строковое представление интервала. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval_a78a94d2ee19cbb0a7e8262c9d7850220}{left\+\_\+boundary\+\_\+of\+\_\+interval}}
+\item 
+\mbox{\hyperlink{classestimations_1_1_histogram_1_1_interval_a113d9f0a959348c410a82e257dd869ef}{right\+\_\+boundary\+\_\+of\+\_\+intervals}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Представляет интервал в гистограмме. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classestimations_1_1_histogram_1_1_interval_afc9012c9e9c50429d1b19a5c0c2637a5}\label{classestimations_1_1_histogram_1_1_interval_afc9012c9e9c50429d1b19a5c0c2637a5} 
+\index{estimations.Histogram.Interval@{estimations.Histogram.Interval}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!estimations.Histogram.Interval@{estimations.Histogram.Interval}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None estimations.\+Histogram.\+Interval.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{a,  }\item[{float}]{b }\end{DoxyParamCaption})}
+
+
+
+Инициализирует интервал с заданными границами. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Нижняя граница интервала. \\
+\hline
+{\em b} & Верхняя граница интервала. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classestimations_1_1_histogram_1_1_interval_a309817ae73245358d632c19161234bdb}\label{classestimations_1_1_histogram_1_1_interval_a309817ae73245358d632c19161234bdb} 
+\index{estimations.Histogram.Interval@{estimations.Histogram.Interval}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!estimations.Histogram.Interval@{estimations.Histogram.Interval}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily  str estimations.\+Histogram.\+Interval.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Возвращает строковое представление интервала. 
+
+\begin{DoxyReturn}{Returns}
+Строка, представляющая границы интервала. 
+\end{DoxyReturn}
+\Hypertarget{classestimations_1_1_histogram_1_1_interval_a5f4f5822b9456aba0d58b6774c723d70}\label{classestimations_1_1_histogram_1_1_interval_a5f4f5822b9456aba0d58b6774c723d70} 
+\index{estimations.Histogram.Interval@{estimations.Histogram.Interval}!is\_in@{is\_in}}
+\index{is\_in@{is\_in}!estimations.Histogram.Interval@{estimations.Histogram.Interval}}
+\doxysubsubsection{\texorpdfstring{is\_in()}{is\_in()}}
+{\footnotesize\ttfamily  bool estimations.\+Histogram.\+Interval.\+is\+\_\+in (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Проверяет, попадает ли значение в интервал. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Значение для проверки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True, если x находится внутри интервала, иначе False. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classestimations_1_1_histogram_1_1_interval_a78a94d2ee19cbb0a7e8262c9d7850220}\label{classestimations_1_1_histogram_1_1_interval_a78a94d2ee19cbb0a7e8262c9d7850220} 
+\index{estimations.Histogram.Interval@{estimations.Histogram.Interval}!left\_boundary\_of\_interval@{left\_boundary\_of\_interval}}
+\index{left\_boundary\_of\_interval@{left\_boundary\_of\_interval}!estimations.Histogram.Interval@{estimations.Histogram.Interval}}
+\doxysubsubsection{\texorpdfstring{left\_boundary\_of\_interval}{left\_boundary\_of\_interval}}
+{\footnotesize\ttfamily estimations.\+Histogram.\+Interval.\+left\+\_\+boundary\+\_\+of\+\_\+interval}
+
+\Hypertarget{classestimations_1_1_histogram_1_1_interval_a113d9f0a959348c410a82e257dd869ef}\label{classestimations_1_1_histogram_1_1_interval_a113d9f0a959348c410a82e257dd869ef} 
+\index{estimations.Histogram.Interval@{estimations.Histogram.Interval}!right\_boundary\_of\_intervals@{right\_boundary\_of\_intervals}}
+\index{right\_boundary\_of\_intervals@{right\_boundary\_of\_intervals}!estimations.Histogram.Interval@{estimations.Histogram.Interval}}
+\doxysubsubsection{\texorpdfstring{right\_boundary\_of\_intervals}{right\_boundary\_of\_intervals}}
+{\footnotesize\ttfamily estimations.\+Histogram.\+Interval.\+right\+\_\+boundary\+\_\+of\+\_\+intervals}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tumos/\+One\+Drive/Рабочий стол/Проектирование программ/Оценка функций и плотностей распределений/\mbox{\hyperlink{estimations_8py}{estimations.\+py}}\end{DoxyCompactItemize}

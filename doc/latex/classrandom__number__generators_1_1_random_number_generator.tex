@@ -1,0 +1,91 @@
+\doxysection{random\+\_\+number\+\_\+generators.\+Random\+Number\+Generator Class Reference}
+\hypertarget{classrandom__number__generators_1_1_random_number_generator}{}\label{classrandom__number__generators_1_1_random_number_generator}\index{random\_number\_generators.RandomNumberGenerator@{random\_number\_generators.RandomNumberGenerator}}
+
+
+Абстрактный базовый класс для генераторов случайных чисел.  
+
+
+Inheritance diagram for random\+\_\+number\+\_\+generators.\+Random\+Number\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classrandom__number__generators_1_1_random_number_generator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classrandom__number__generators_1_1_random_number_generator_a7be18a6e17eb0fbe51aef055d3cb0bc2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classrandom__variables_1_1_random_variable}{Random\+Variable}} \mbox{\hyperlink{classrandom__number__generators_1_1_random_number_generator_aac5500852a4c0bc01a2b06d1e4cd6ee8}{random\+\_\+variable}})
+\begin{DoxyCompactList}\small\item\em Конструктор класса Random\+Number\+Generator. \end{DoxyCompactList}\item 
+np.\+ndarray \mbox{\hyperlink{classrandom__number__generators_1_1_random_number_generator_a3db9116b0a0510f9806913148c24063a}{get}} (self, int size)
+\begin{DoxyCompactList}\small\item\em Абстрактный метод для генерации случайных чисел. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrandom__number__generators_1_1_random_number_generator_aac5500852a4c0bc01a2b06d1e4cd6ee8}{random\+\_\+variable}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Абстрактный базовый класс для генераторов случайных чисел. 
+
+Определяет интерфейс для всех генераторов случайных чисел. Подклассы должны реализовать метод get(). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classrandom__number__generators_1_1_random_number_generator_a7be18a6e17eb0fbe51aef055d3cb0bc2}\label{classrandom__number__generators_1_1_random_number_generator_a7be18a6e17eb0fbe51aef055d3cb0bc2} 
+\index{random\_number\_generators.RandomNumberGenerator@{random\_number\_generators.RandomNumberGenerator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!random\_number\_generators.RandomNumberGenerator@{random\_number\_generators.RandomNumberGenerator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None random\+\_\+number\+\_\+generators.\+Random\+Number\+Generator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classrandom__variables_1_1_random_variable}{Random\+Variable}}}]{random\+\_\+variable }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса Random\+Number\+Generator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em random\+\_\+variable} & Случайная величина, используемая для генерации чисел. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classrandom__number__generators_1_1_simple_random_number_generator_ae94bedf89f85409f96722fe4d3b230ec}{random\+\_\+number\+\_\+generators.\+Simple\+Random\+Number\+Generator}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classrandom__number__generators_1_1_random_number_generator_a3db9116b0a0510f9806913148c24063a}\label{classrandom__number__generators_1_1_random_number_generator_a3db9116b0a0510f9806913148c24063a} 
+\index{random\_number\_generators.RandomNumberGenerator@{random\_number\_generators.RandomNumberGenerator}!get@{get}}
+\index{get@{get}!random\_number\_generators.RandomNumberGenerator@{random\_number\_generators.RandomNumberGenerator}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily  np.\+ndarray random\+\_\+number\+\_\+generators.\+Random\+Number\+Generator.\+get (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Абстрактный метод для генерации случайных чисел. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Количество генерируемых случайных чисел. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Массив случайных чисел. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classrandom__number__generators_1_1_simple_random_number_generator_a2b3b45b2646833b4acdf49c1ff2b2a95}{random\+\_\+number\+\_\+generators.\+Simple\+Random\+Number\+Generator}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classrandom__number__generators_1_1_random_number_generator_aac5500852a4c0bc01a2b06d1e4cd6ee8}\label{classrandom__number__generators_1_1_random_number_generator_aac5500852a4c0bc01a2b06d1e4cd6ee8} 
+\index{random\_number\_generators.RandomNumberGenerator@{random\_number\_generators.RandomNumberGenerator}!random\_variable@{random\_variable}}
+\index{random\_variable@{random\_variable}!random\_number\_generators.RandomNumberGenerator@{random\_number\_generators.RandomNumberGenerator}}
+\doxysubsubsection{\texorpdfstring{random\_variable}{random\_variable}}
+{\footnotesize\ttfamily random\+\_\+number\+\_\+generators.\+Random\+Number\+Generator.\+random\+\_\+variable}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/tumos/\+One\+Drive/Рабочий стол/Проектирование программ/Оценка функций и плотностей распределений/\mbox{\hyperlink{random__number__generators_8py}{random\+\_\+number\+\_\+generators.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classtest_1_1_e_d_f" kind="class" language="Python" prot="public">
+    <compoundname>test::EDF</compoundname>
+    <basecompoundref refid="classtest_1_1_estimation" prot="public" virt="non-virtual">test.Estimation</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtest_1_1_e_d_f_1a9337d22d768ac0d3bda78e9c7dade7ff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.EDF::sample</definition>
+        <argsstring></argsstring>
+        <name>sample</name>
+        <qualifiedname>test.EDF.sample</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="71" column="1" bodyfile="test.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtest_1_1_e_d_f_1a9ed48456a84bede239c767eae5826a7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.EDF.heaviside_function</definition>
+        <argsstring>(x)</argsstring>
+        <name>heaviside_function</name>
+        <qualifiedname>test.EDF.heaviside_function</qualifiedname>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="65" column="1" bodyfile="test.py" bodystart="65" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1_e_d_f_1a93ffa78afa10d3ac41401584e4c6f4db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.EDF.value</definition>
+        <argsstring>(self, x)</argsstring>
+        <name>value</name>
+        <qualifiedname>test.EDF.value</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="70" column="1" bodyfile="test.py" bodystart="70" bodyend="73"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>test.EDF</label>
+        <link refid="classtest_1_1_e_d_f"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>test.Estimation</label>
+        <link refid="classtest_1_1_estimation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>test.EDF</label>
+        <link refid="classtest_1_1_e_d_f"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>test.Estimation</label>
+        <link refid="classtest_1_1_estimation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="test.py" line="64" column="1" bodyfile="test.py" bodystart="64" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classtest_1_1_e_d_f_1a9ed48456a84bede239c767eae5826a7d" prot="public" virt="non-virtual"><scope>test::EDF</scope><name>heaviside_function</name></member>
+      <member refid="classtest_1_1_e_d_f_1a9337d22d768ac0d3bda78e9c7dade7ff" prot="public" virt="non-virtual"><scope>test::EDF</scope><name>sample</name></member>
+      <member refid="classtest_1_1_e_d_f_1a93ffa78afa10d3ac41401584e4c6f4db" prot="public" virt="non-virtual"><scope>test::EDF</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

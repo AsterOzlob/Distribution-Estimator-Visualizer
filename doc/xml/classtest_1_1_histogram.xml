@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classtest_1_1_histogram" kind="class" language="Python" prot="public">
+    <compoundname>test::Histogram</compoundname>
+    <basecompoundref refid="classtest_1_1_estimation" prot="public" virt="non-virtual">test.Estimation</basecompoundref>
+    <innerclass refid="classtest_1_1_histogram_1_1_interval" prot="public">test::Histogram::Interval</innerclass>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtest_1_1_histogram_1aaa95a8cbe2a2863faf4d8de50b16cdf9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.Histogram::m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <qualifiedname>test.Histogram.m</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="117" column="1" bodyfile="test.py" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtest_1_1_histogram_1a8052bc45a6fd68db80bff01f4a73372e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.Histogram::intervals</definition>
+        <argsstring></argsstring>
+        <name>intervals</name>
+        <qualifiedname>test.Histogram.intervals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="125" column="1" bodyfile="test.py" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtest_1_1_histogram_1a88bc04a086f4fe6db7166bc96a11fb6e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.Histogram::sub_interval_width</definition>
+        <argsstring></argsstring>
+        <name>sub_interval_width</name>
+        <qualifiedname>test.Histogram.sub_interval_width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="128" column="1" bodyfile="test.py" bodystart="128" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtest_1_1_histogram_1afdab361e6a2a972439fa98802b7d7961" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.Histogram.__init__</definition>
+        <argsstring>(self, sample, m)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>test.Histogram.__init__</qualifiedname>
+        <reimplements refid="classtest_1_1_estimation_1ab473b7acb287c6b072ff8a12cab261b0">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sample</type>
+          <defname>sample</defname>
+        </param>
+        <param>
+          <type>m</type>
+          <defname>m</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="115" column="1" bodyfile="test.py" bodystart="115" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1_histogram_1a160adaabc95419106ada1a4c16f0f1d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.Histogram.init_intervals</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_intervals</name>
+        <qualifiedname>test.Histogram.init_intervals</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="121" column="1" bodyfile="test.py" bodystart="121" bodyend="130"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>test.Histogram</label>
+        <link refid="classtest_1_1_histogram"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>test.Estimation</label>
+        <link refid="classtest_1_1_estimation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>test.Histogram</label>
+        <link refid="classtest_1_1_histogram"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>test.Estimation</label>
+        <link refid="classtest_1_1_estimation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="test.py" line="103" column="1" bodyfile="test.py" bodystart="103" bodyend="130"/>
+    <listofallmembers>
+      <member refid="classtest_1_1_histogram_1afdab361e6a2a972439fa98802b7d7961" prot="public" virt="non-virtual"><scope>test::Histogram</scope><name>__init__</name></member>
+      <member refid="classtest_1_1_histogram_1a160adaabc95419106ada1a4c16f0f1d1" prot="public" virt="non-virtual"><scope>test::Histogram</scope><name>init_intervals</name></member>
+      <member refid="classtest_1_1_histogram_1a8052bc45a6fd68db80bff01f4a73372e" prot="public" virt="non-virtual"><scope>test::Histogram</scope><name>intervals</name></member>
+      <member refid="classtest_1_1_histogram_1aaa95a8cbe2a2863faf4d8de50b16cdf9" prot="public" virt="non-virtual"><scope>test::Histogram</scope><name>m</name></member>
+      <member refid="classtest_1_1_histogram_1a88bc04a086f4fe6db7166bc96a11fb6e" prot="public" virt="non-virtual"><scope>test::Histogram</scope><name>sub_interval_width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

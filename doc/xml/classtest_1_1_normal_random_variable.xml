@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classtest_1_1_normal_random_variable" kind="class" language="Python" prot="public">
+    <compoundname>test::NormalRandomVariable</compoundname>
+    <basecompoundref refid="classtest_1_1_random_variable" prot="public" virt="non-virtual">test.RandomVariable</basecompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtest_1_1_normal_random_variable_1a3f625f2639b2c4c4545856a36f67adc1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.NormalRandomVariable::location</definition>
+        <argsstring></argsstring>
+        <name>location</name>
+        <qualifiedname>test.NormalRandomVariable.location</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="33" column="1" bodyfile="test.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtest_1_1_normal_random_variable_1ac766d58e05ebc230ff26ab743ea67648" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.NormalRandomVariable::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <qualifiedname>test.NormalRandomVariable.scale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="34" column="1" bodyfile="test.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtest_1_1_normal_random_variable_1ae4276db17c7e3c31e2bd9708436546df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None test.NormalRandomVariable.__init__</definition>
+        <argsstring>(self, location=0, scale=1)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>test.NormalRandomVariable.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>location</type>
+          <defname>location</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>scale</type>
+          <defname>scale</defname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="31" column="1" bodyfile="test.py" bodystart="31" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1_normal_random_variable_1a85a4d278428821d247628c2f8ad8134f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.NormalRandomVariable.pdf</definition>
+        <argsstring>(self, x)</argsstring>
+        <name>pdf</name>
+        <qualifiedname>test.NormalRandomVariable.pdf</qualifiedname>
+        <reimplements refid="classtest_1_1_random_variable_1a1ea55991c99d09c1f39a80c3c9f1c097">pdf</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="36" column="1" bodyfile="test.py" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1_normal_random_variable_1a034b79c26b57c16d7ad21c987aacc622" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.NormalRandomVariable.cdf</definition>
+        <argsstring>(self, x)</argsstring>
+        <name>cdf</name>
+        <qualifiedname>test.NormalRandomVariable.cdf</qualifiedname>
+        <reimplements refid="classtest_1_1_random_variable_1a47f92bc60ba444fdfc3a4a39370d5f9d">cdf</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="40" column="1" bodyfile="test.py" bodystart="40" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1_normal_random_variable_1ab7840c04b36fc02c023f5a61517f6e0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.NormalRandomVariable.quantile</definition>
+        <argsstring>(self, alpha)</argsstring>
+        <name>quantile</name>
+        <qualifiedname>test.NormalRandomVariable.quantile</qualifiedname>
+        <reimplements refid="classtest_1_1_random_variable_1a3d34bf40bfb7d965aa1ff8bc2d70409c">quantile</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>alpha</type>
+          <defname>alpha</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="46" column="1" bodyfile="test.py" bodystart="46" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>test.NormalRandomVariable</label>
+        <link refid="classtest_1_1_normal_random_variable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>test.RandomVariable</label>
+        <link refid="classtest_1_1_random_variable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>test.NormalRandomVariable</label>
+        <link refid="classtest_1_1_normal_random_variable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>test.RandomVariable</label>
+        <link refid="classtest_1_1_random_variable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="test.py" line="30" column="1" bodyfile="test.py" bodystart="30" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classtest_1_1_normal_random_variable_1ae4276db17c7e3c31e2bd9708436546df" prot="public" virt="non-virtual"><scope>test::NormalRandomVariable</scope><name>__init__</name></member>
+      <member refid="classtest_1_1_normal_random_variable_1a034b79c26b57c16d7ad21c987aacc622" prot="public" virt="non-virtual"><scope>test::NormalRandomVariable</scope><name>cdf</name></member>
+      <member refid="classtest_1_1_normal_random_variable_1a3f625f2639b2c4c4545856a36f67adc1" prot="public" virt="non-virtual"><scope>test::NormalRandomVariable</scope><name>location</name></member>
+      <member refid="classtest_1_1_normal_random_variable_1a85a4d278428821d247628c2f8ad8134f" prot="public" virt="non-virtual"><scope>test::NormalRandomVariable</scope><name>pdf</name></member>
+      <member refid="classtest_1_1_normal_random_variable_1ab7840c04b36fc02c023f5a61517f6e0f" prot="public" virt="non-virtual"><scope>test::NormalRandomVariable</scope><name>quantile</name></member>
+      <member refid="classtest_1_1_normal_random_variable_1ac766d58e05ebc230ff26ab743ea67648" prot="public" virt="non-virtual"><scope>test::NormalRandomVariable</scope><name>scale</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

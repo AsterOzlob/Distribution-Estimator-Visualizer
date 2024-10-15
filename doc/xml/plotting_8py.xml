@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="plotting_8py" kind="file" language="Python">
+    <compoundname>plotting.py</compoundname>
+    <innernamespace refid="namespaceplotting">plotting</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>pyqtgraph<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>mkPen</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>PyQt5.QtWidgets<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>QWidget</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">PEN_RED<sp/>=<sp/>mkPen(color=</highlight><highlight class="stringliteral">&apos;r&apos;</highlight><highlight class="normal">,<sp/>width=2)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">PEN_BLUE<sp/>=<sp/>mkPen(color=</highlight><highlight class="stringliteral">&apos;b&apos;</highlight><highlight class="normal">,<sp/>width=2)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">PEN_GREEN<sp/>=<sp/>mkPen(color=</highlight><highlight class="stringliteral">&apos;g&apos;</highlight><highlight class="normal">,<sp/>width=2)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">plot_distributions(first_widget:<sp/>QWidget,<sp/>x,<sp/>y_truth,<sp/>y_edf,<sp/>y_kernel)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>first_widget.plot(x,<sp/>y_truth,<sp/>pen=PEN_RED)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>first_widget.plot(x,<sp/>y_edf,<sp/>pen=PEN_BLUE)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>first_widget.plot(x,<sp/>y_kernel,<sp/>pen=PEN_GREEN)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">plot_histograms(second_widget:<sp/>QWidget,<sp/>x,<sp/>p_1,<sp/>p_2,<sp/>p_3)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>second_widget.plot(x,<sp/>p_1,<sp/>pen=PEN_RED)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>second_widget.plot(x,<sp/>p_2,<sp/>pen=PEN_BLUE)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>second_widget.plot(x,<sp/>p_3,<sp/>pen=PEN_GREEN)</highlight></codeline>
+    </programlisting>
+    <location file="plotting.py"/>
+  </compounddef>
+</doxygen>

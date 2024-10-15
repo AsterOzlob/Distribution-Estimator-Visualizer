@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.10.0" xml:lang="en-US">
+  <compound refid="classrandom__variables_1_1_cauchy_random_variable" kind="class"><name>random_variables::CauchyRandomVariable</name>
+    <member refid="classrandom__variables_1_1_cauchy_random_variable_1a9c066581f7e3fb1cfa9dd2078c51f011" kind="variable"><name>location</name></member>
+    <member refid="classrandom__variables_1_1_cauchy_random_variable_1acf6929110b98f1d2f8374a394b322287" kind="variable"><name>scale</name></member>
+    <member refid="classrandom__variables_1_1_cauchy_random_variable_1ac54a4ddf3095b372cf861a490b92e54f" kind="function"><name>__init__</name></member>
+    <member refid="classrandom__variables_1_1_cauchy_random_variable_1a3b42f017a92eeae04a4cf9f604a05ff3" kind="function"><name>pdf</name></member>
+    <member refid="classrandom__variables_1_1_cauchy_random_variable_1a7eda7a123b48767f3b37689d65f48031" kind="function"><name>cdf</name></member>
+    <member refid="classrandom__variables_1_1_cauchy_random_variable_1acd2b61b62d067d2c267dffee6414b32b" kind="function"><name>quantile</name></member>
+  </compound>
+  <compound refid="classenums_1_1_dist_combo_box_values" kind="class"><name>enums::DistComboBoxValues</name>
+    <member refid="classenums_1_1_dist_combo_box_values_1aaea1668adbf4f6f4408d7e33648d2943" kind="variable"><name>NormalDist</name></member>
+    <member refid="classenums_1_1_dist_combo_box_values_1a3dc2d0223027d5b5380ec737d6c7d0be" kind="variable"><name>UniformDist</name></member>
+    <member refid="classenums_1_1_dist_combo_box_values_1a614d31b9327662efaab382c9a2b869e2" kind="variable"><name>ExponentialDist</name></member>
+    <member refid="classenums_1_1_dist_combo_box_values_1a6e6af66a9dff528a708382d0e761ec53" kind="variable"><name>LaplaceDist</name></member>
+    <member refid="classenums_1_1_dist_combo_box_values_1a46d981a16ab0dc665884e77ad87c6a57" kind="variable"><name>CauchyDist</name></member>
+  </compound>
+  <compound refid="classestimations_1_1_e_d_f" kind="class"><name>estimations::EDF</name>
+    <member refid="classestimations_1_1_e_d_f_1a69f9271482812c103bb472c1b1f1df4f" kind="variable"><name>sample</name></member>
+    <member refid="classestimations_1_1_e_d_f_1a160988bc2a9562952359aa3aab5520ef" kind="function"><name>heaviside_function</name></member>
+    <member refid="classestimations_1_1_e_d_f_1af4be6e8abdf409be25e262e105bc5a70" kind="function"><name>value</name></member>
+  </compound>
+  <compound refid="classtest_1_1_e_d_f" kind="class"><name>test::EDF</name>
+    <member refid="classtest_1_1_e_d_f_1a9337d22d768ac0d3bda78e9c7dade7ff" kind="variable"><name>sample</name></member>
+    <member refid="classtest_1_1_e_d_f_1a9ed48456a84bede239c767eae5826a7d" kind="function"><name>heaviside_function</name></member>
+    <member refid="classtest_1_1_e_d_f_1a93ffa78afa10d3ac41401584e4c6f4db" kind="function"><name>value</name></member>
+  </compound>
+  <compound refid="classestimations_1_1_estimation" kind="class"><name>estimations::Estimation</name>
+    <member refid="classestimations_1_1_estimation_1a08d29495d5fbe318c219324099d56376" kind="variable"><name>sample</name></member>
+    <member refid="classestimations_1_1_estimation_1a5678fdc77206aa9918e2b03def8132b0" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classtest_1_1_estimation" kind="class"><name>test::Estimation</name>
+    <member refid="classtest_1_1_estimation_1a509d09c101f88539999d6c3274abf245" kind="variable"><name>sample</name></member>
+    <member refid="classtest_1_1_estimation_1ab473b7acb287c6b072ff8a12cab261b0" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classrandom__variables_1_1_exponential_random_variable" kind="class"><name>random_variables::ExponentialRandomVariable</name>
+    <member refid="classrandom__variables_1_1_exponential_random_variable_1a22a93280e4f7647b258fc74728e483e3" kind="variable"><name>rate</name></member>
+    <member refid="classrandom__variables_1_1_exponential_random_variable_1aad1150cf08b201f996920c14a8ecf9c1" kind="function"><name>__init__</name></member>
+    <member refid="classrandom__variables_1_1_exponential_random_variable_1aaeeedc7f1b690b7d0e588ab302346b5c" kind="function"><name>pdf</name></member>
+    <member refid="classrandom__variables_1_1_exponential_random_variable_1a344cae85f88ebd69b6aecdd5d04b3c55" kind="function"><name>cdf</name></member>
+    <member refid="classrandom__variables_1_1_exponential_random_variable_1ad556260d20f302358f6fbcde047b2d85" kind="function"><name>quantile</name></member>
+  </compound>
+  <compound refid="classestimations_1_1_histogram" kind="class"><name>estimations::Histogram</name>
+    <member refid="classestimations_1_1_histogram_1a042605d6d89e7c6084fd49db63e22b25" kind="variable"><name>m</name></member>
+    <member refid="classestimations_1_1_histogram_1a916cfba7d1383d136745c6f94976ae91" kind="variable"><name>intervals</name></member>
+    <member refid="classestimations_1_1_histogram_1a9e675cdad0e13b322330a4f08ff1989a" kind="variable"><name>sub_interval_width</name></member>
+    <member refid="classestimations_1_1_histogram_1a45a8946177f658f9c4b191386cef24e9" kind="variable"><name>sample</name></member>
+    <member refid="classestimations_1_1_histogram_1a594cd6faad51e7a685695dd0d4d9d26b" kind="function"><name>__init__</name></member>
+    <member refid="classestimations_1_1_histogram_1a879d3fb7770f06d5fbb91dcebede8999" kind="function"><name>init_intervals</name></member>
+    <member refid="classestimations_1_1_histogram_1acfd9facf5c3d8689b01ff4217543df2b" kind="function"><name>get_interval</name></member>
+    <member refid="classestimations_1_1_histogram_1adfb848b6cc9b9274e0ff971c2a19c8c1" kind="function"><name>get_sample_by_interval</name></member>
+    <member refid="classestimations_1_1_histogram_1a565841d0a993eab21bf2441f03d4ca9f" kind="function"><name>value</name></member>
+  </compound>
+  <compound refid="classhistogram_1_1_histogram" kind="class"><name>histogram::Histogram</name>
+    <member refid="classhistogram_1_1_histogram_1af29e036a42ccdd271fd20b5799e30939" kind="variable"><name>m</name></member>
+    <member refid="classhistogram_1_1_histogram_1a683621a71d8f331f7e4a62e20c13048c" kind="variable"><name>intervals</name></member>
+    <member refid="classhistogram_1_1_histogram_1a21351a65f461a10808f0273d92751849" kind="variable"><name>sub_interval_width</name></member>
+    <member refid="classhistogram_1_1_histogram_1a00448c3bae3a17abfb5e66941a2ea5d0" kind="variable"><name>sample</name></member>
+    <member refid="classhistogram_1_1_histogram_1a2ea0c266e1bc70dabd3c3646ef261394" kind="function"><name>__init__</name></member>
+    <member refid="classhistogram_1_1_histogram_1a7d7b113efb9a1b42012dfd87258a4485" kind="function"><name>init_intervals</name></member>
+    <member refid="classhistogram_1_1_histogram_1a696f789f84a92c791a4de2da87f5d896" kind="function"><name>get_interval</name></member>
+    <member refid="classhistogram_1_1_histogram_1ac08af17f38d4cbabebef67b1ef3f47cf" kind="function"><name>get_sample_by_interval</name></member>
+    <member refid="classhistogram_1_1_histogram_1ad8ae55262547afd7d44f3f03d4d9ce87" kind="function"><name>value</name></member>
+  </compound>
+  <compound refid="classtest_1_1_histogram" kind="class"><name>test::Histogram</name>
+    <member refid="classtest_1_1_histogram_1aaa95a8cbe2a2863faf4d8de50b16cdf9" kind="variable"><name>m</name></member>
+    <member refid="classtest_1_1_histogram_1a8052bc45a6fd68db80bff01f4a73372e" kind="variable"><name>intervals</name></member>
+    <member refid="classtest_1_1_histogram_1a88bc04a086f4fe6db7166bc96a11fb6e" kind="variable"><name>sub_interval_width</name></member>
+    <member refid="classtest_1_1_histogram_1afdab361e6a2a972439fa98802b7d7961" kind="function"><name>__init__</name></member>
+    <member refid="classtest_1_1_histogram_1a160adaabc95419106ada1a4c16f0f1d1" kind="function"><name>init_intervals</name></member>
+  </compound>
+  <compound refid="classestimations_1_1_histogram_1_1_interval" kind="class"><name>estimations::Histogram::Interval</name>
+    <member refid="classestimations_1_1_histogram_1_1_interval_1ae43e82789115dd41cd45f7ae7dd0a4ad" kind="variable"><name>a</name></member>
+    <member refid="classestimations_1_1_histogram_1_1_interval_1a3cfcacd800daa5653a225dd8312b8b5e" kind="variable"><name>b</name></member>
+    <member refid="classestimations_1_1_histogram_1_1_interval_1afc9012c9e9c50429d1b19a5c0c2637a5" kind="function"><name>__init__</name></member>
+    <member refid="classestimations_1_1_histogram_1_1_interval_1a5f4f5822b9456aba0d58b6774c723d70" kind="function"><name>is_in</name></member>
+    <member refid="classestimations_1_1_histogram_1_1_interval_1a309817ae73245358d632c19161234bdb" kind="function"><name>__repr__</name></member>
+  </compound>
+  <compound refid="classhistogram_1_1_histogram_1_1_interval" kind="class"><name>histogram::Histogram::Interval</name>
+    <member refid="classhistogram_1_1_histogram_1_1_interval_1a195bd576cd99d540157e7039bafc2812" kind="variable"><name>a</name></member>
+    <member refid="classhistogram_1_1_histogram_1_1_interval_1a0b07e44d6b0844ea1850afc3ee89ba74" kind="variable"><name>b</name></member>
+    <member refid="classhistogram_1_1_histogram_1_1_interval_1ab68aa54e1b8c63dde30fb431e37900ff" kind="function"><name>__init__</name></member>
+    <member refid="classhistogram_1_1_histogram_1_1_interval_1a8680b7bb7f5af9f60616b782bb6cd1c4" kind="function"><name>is_in</name></member>
+    <member refid="classhistogram_1_1_histogram_1_1_interval_1a45d0715a03d9921f8a4817892c522541" kind="function"><name>__repr__</name></member>
+  </compound>
+  <compound refid="classtest_1_1_histogram_1_1_interval" kind="class"><name>test::Histogram::Interval</name>
+    <member refid="classtest_1_1_histogram_1_1_interval_1ad5b742cde3dfb166a7051331bdea49a5" kind="variable"><name>a</name></member>
+    <member refid="classtest_1_1_histogram_1_1_interval_1a76d12ba156784af3ddabf2642b40e48a" kind="variable"><name>b</name></member>
+    <member refid="classtest_1_1_histogram_1_1_interval_1aad702d5401448e270dee3b74317e361d" kind="function"><name>__init__</name></member>
+    <member refid="classtest_1_1_histogram_1_1_interval_1a8d774b70187e099f37b5dcdb86d677d5" kind="function"><name>is_in</name></member>
+    <member refid="classtest_1_1_histogram_1_1_interval_1a56f388db0d4c1c44de0d5b69310b8796" kind="function"><name>__repr__</name></member>
+  </compound>
+  <compound refid="classrandom__variables_1_1_laplace_random_variable" kind="class"><name>random_variables::LaplaceRandomVariable</name>
+    <member refid="classrandom__variables_1_1_laplace_random_variable_1af2e025dc2a77e59a01ae9eb66b3703f0" kind="variable"><name>location</name></member>
+    <member refid="classrandom__variables_1_1_laplace_random_variable_1a2e34446d03a53d1552f57a8a8cc3bcb7" kind="variable"><name>scale</name></member>
+    <member refid="classrandom__variables_1_1_laplace_random_variable_1a573d8339ca1c7429d5ee7cc375fb39e5" kind="function"><name>__init__</name></member>
+    <member refid="classrandom__variables_1_1_laplace_random_variable_1a2448b928777e0db1e9c22a3316f3dd13" kind="function"><name>pdf</name></member>
+    <member refid="classrandom__variables_1_1_laplace_random_variable_1a368109c689ff68fcf19e8792ef1ab58c" kind="function"><name>cdf</name></member>
+    <member refid="classrandom__variables_1_1_laplace_random_variable_1ac4783a7c00f94f9f47e5c4ddde42b810" kind="function"><name>quantile</name></member>
+  </compound>
+  <compound refid="classmain_1_1_my_application" kind="class"><name>main::MyApplication</name>
+    <member refid="classmain_1_1_my_application_1ab6eb66e46ff62f3633499e97ac98bd23" kind="variable"><name>on_combobox_changed</name></member>
+    <member refid="classmain_1_1_my_application_1a543964c902127e2b46c18027150ee8a1" kind="variable"><name>calculate</name></member>
+    <member refid="classmain_1_1_my_application_1a927957419a31e11484daed27d7d77bea" kind="variable"><name>firstGraphWidget</name></member>
+    <member refid="classmain_1_1_my_application_1a3d3e7c77cb484ad398cdca7b851cd93b" kind="variable"><name>secondGraphWidget</name></member>
+    <member refid="classmain_1_1_my_application_1a8e8e412681dd8c3cd329f9f322a20e29" kind="function"><name>__init__</name></member>
+    <member refid="classmain_1_1_my_application_1a6fed158424101c5cdea7cbcf32e98a48" kind="function"><name>on_combobox_changed</name></member>
+    <member refid="classmain_1_1_my_application_1a3cde2d0aad0b151bea2814a40f99f71c" kind="function"><name>calculate</name></member>
+    <member refid="classmain_1_1_my_application_1ab8e5186ebf799caa8a56af74c1eb5993" kind="function"><name>get_input_parameters</name></member>
+    <member refid="classmain_1_1_my_application_1a2b8ac716b401a9e9dbd579e1daa451f2" kind="function"><name>get_selected_random_variable</name></member>
+  </compound>
+  <compound refid="classrandom__variables_1_1_normal_random_variable" kind="class"><name>random_variables::NormalRandomVariable</name>
+    <member refid="classrandom__variables_1_1_normal_random_variable_1a4184cb49e98ab02174f1e9f37761ddbb" kind="variable"><name>location</name></member>
+    <member refid="classrandom__variables_1_1_normal_random_variable_1a23e02909d4f1395f58d7461ad4a13323" kind="variable"><name>scale</name></member>
+    <member refid="classrandom__variables_1_1_normal_random_variable_1a778e478232e0932bdd90a3cb5eb25ac6" kind="function"><name>__init__</name></member>
+    <member refid="classrandom__variables_1_1_normal_random_variable_1a6f33deb9f8a24d187ac5a6945e849cf4" kind="function"><name>pdf</name></member>
+    <member refid="classrandom__variables_1_1_normal_random_variable_1a220959e1835388e2f38d7f4e0ac0db8f" kind="function"><name>cdf</name></member>
+    <member refid="classrandom__variables_1_1_normal_random_variable_1a25de6dbd12a95c6d88b2034993a75f90" kind="function"><name>quantile</name></member>
+  </compound>
+  <compound refid="classtest_1_1_normal_random_variable" kind="class"><name>test::NormalRandomVariable</name>
+    <member refid="classtest_1_1_normal_random_variable_1a3f625f2639b2c4c4545856a36f67adc1" kind="variable"><name>location</name></member>
+    <member refid="classtest_1_1_normal_random_variable_1ac766d58e05ebc230ff26ab743ea67648" kind="variable"><name>scale</name></member>
+    <member refid="classtest_1_1_normal_random_variable_1ae4276db17c7e3c31e2bd9708436546df" kind="function"><name>__init__</name></member>
+    <member refid="classtest_1_1_normal_random_variable_1a85a4d278428821d247628c2f8ad8134f" kind="function"><name>pdf</name></member>
+    <member refid="classtest_1_1_normal_random_variable_1a034b79c26b57c16d7ad21c987aacc622" kind="function"><name>cdf</name></member>
+    <member refid="classtest_1_1_normal_random_variable_1ab7840c04b36fc02c023f5a61517f6e0f" kind="function"><name>quantile</name></member>
+  </compound>
+  <compound refid="classrandom__number__generators_1_1_random_number_generator" kind="class"><name>random_number_generators::RandomNumberGenerator</name>
+    <member refid="classrandom__number__generators_1_1_random_number_generator_1aac5500852a4c0bc01a2b06d1e4cd6ee8" kind="variable"><name>random_variable</name></member>
+    <member refid="classrandom__number__generators_1_1_random_number_generator_1a7be18a6e17eb0fbe51aef055d3cb0bc2" kind="function"><name>__init__</name></member>
+    <member refid="classrandom__number__generators_1_1_random_number_generator_1a5dfc89a10e6e44939933c5db51396939" kind="function"><name>get</name></member>
+  </compound>
+  <compound refid="classtest_1_1_random_number_generator" kind="class"><name>test::RandomNumberGenerator</name>
+    <member refid="classtest_1_1_random_number_generator_1afb3f06301211813b14443f3a7136da3b" kind="variable"><name>random_variable</name></member>
+    <member refid="classtest_1_1_random_number_generator_1a8fab19aa9ff4aea85e81d83ff348144b" kind="function"><name>__init__</name></member>
+    <member refid="classtest_1_1_random_number_generator_1ac8b52a85f6454ed0553d081c44cefa10" kind="function"><name>get</name></member>
+  </compound>
+  <compound refid="classrandom__variables_1_1_random_variable" kind="class"><name>random_variables::RandomVariable</name>
+    <member refid="classrandom__variables_1_1_random_variable_1a91afa5fa2944b0fa0335ce2e657de8b7" kind="function"><name>pdf</name></member>
+    <member refid="classrandom__variables_1_1_random_variable_1adceeed7bf42441c4770ae0f84b9aec26" kind="function"><name>cdf</name></member>
+    <member refid="classrandom__variables_1_1_random_variable_1a6f8b863683dc64ade32c02eec896d08d" kind="function"><name>quantile</name></member>
+  </compound>
+  <compound refid="classtest_1_1_random_variable" kind="class"><name>test::RandomVariable</name>
+    <member refid="classtest_1_1_random_variable_1a1ea55991c99d09c1f39a80c3c9f1c097" kind="function"><name>pdf</name></member>
+    <member refid="classtest_1_1_random_variable_1a47f92bc60ba444fdfc3a4a39370d5f9d" kind="function"><name>cdf</name></member>
+    <member refid="classtest_1_1_random_variable_1a3d34bf40bfb7d965aa1ff8bc2d70409c" kind="function"><name>quantile</name></member>
+  </compound>
+  <compound refid="classrandom__number__generators_1_1_simple_random_number_generator" kind="class"><name>random_number_generators::SimpleRandomNumberGenerator</name>
+    <member refid="classrandom__number__generators_1_1_simple_random_number_generator_1ae94bedf89f85409f96722fe4d3b230ec" kind="function"><name>__init__</name></member>
+    <member refid="classrandom__number__generators_1_1_simple_random_number_generator_1a9ee805035209b95f9fe01047e785a227" kind="function"><name>get</name></member>
+  </compound>
+  <compound refid="classtest_1_1_simple_random_number_generator" kind="class"><name>test::SimpleRandomNumberGenerator</name>
+    <member refid="classtest_1_1_simple_random_number_generator_1a9dc9fdf59bbd486f6ac7c3d894872e0a" kind="function"><name>__init__</name></member>
+    <member refid="classtest_1_1_simple_random_number_generator_1a8a9522657d47dc6453b25f6bd69cc0cd" kind="function"><name>get</name></member>
+  </compound>
+  <compound refid="classrandom__variables_1_1_smoothed_random_variable" kind="class"><name>random_variables::SmoothedRandomVariable</name>
+    <member refid="classrandom__variables_1_1_smoothed_random_variable_1ac070e1e11bd99bc1b4dd922d0fddb11a" kind="variable"><name>h</name></member>
+    <member refid="classrandom__variables_1_1_smoothed_random_variable_1a08453283cc636e12919698922bbbadea" kind="function"><name>__init__</name></member>
+    <member refid="classrandom__variables_1_1_smoothed_random_variable_1aa6ce89d4e269ec181a92912d46c5a7d0" kind="function"><name>pdf</name></member>
+    <member refid="classrandom__variables_1_1_smoothed_random_variable_1a59596bbf65276c553865c02e5b4a616f" kind="function"><name>cdf</name></member>
+    <member refid="classrandom__variables_1_1_smoothed_random_variable_1a6f1cfa17af6e44012cdc7579700ee81b" kind="function"><name>quantile</name></member>
+    <member refid="classrandom__variables_1_1_smoothed_random_variable_1a7f14dfa3aa8d7efcfc5ac178232d3aed" kind="function"><name>_k</name></member>
+    <member refid="classrandom__variables_1_1_smoothed_random_variable_1ac729d6f5cd0b7918ee572789ec815b48" kind="function"><name>_K</name></member>
+  </compound>
+  <compound refid="classtest_1_1_smoothed_random_variable" kind="class"><name>test::SmoothedRandomVariable</name>
+    <member refid="classtest_1_1_smoothed_random_variable_1a48a8c202cc7749de77720bbb1ff1196b" kind="variable"><name>h</name></member>
+    <member refid="classtest_1_1_smoothed_random_variable_1ae5ed38088ee7a58f9485aafca14d2c0d" kind="function"><name>_k</name></member>
+    <member refid="classtest_1_1_smoothed_random_variable_1adef3a40cdc05d15cc0107e70e8d47aba" kind="function"><name>_K</name></member>
+    <member refid="classtest_1_1_smoothed_random_variable_1a69543d19548490096206e0f3d70dc53d" kind="function"><name>__init__</name></member>
+    <member refid="classtest_1_1_smoothed_random_variable_1a1d0cfc032d322fa36dccfb0d88b5d175" kind="function"><name>pdf</name></member>
+    <member refid="classtest_1_1_smoothed_random_variable_1a9e3977c1d32bdb19b676d7c91a2474ee" kind="function"><name>cdf</name></member>
+    <member refid="classtest_1_1_smoothed_random_variable_1a1c6023b6d14826005e32cf4143d4e7a4" kind="function"><name>quantile</name></member>
+  </compound>
+  <compound refid="classui___lab2_1_1_ui___main_window" kind="class"><name>ui_Lab2::Ui_MainWindow</name>
+    <member refid="classui___lab2_1_1_ui___main_window_1a533bcb7b41fa022ac672112d18fe7979" kind="variable"><name>centralwidget</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a2ebe6fbf1fb2780e0ef6864b41e24607" kind="variable"><name>horizontalLayout</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a313275f180eb13f06af4c6b4d1cccd1b" kind="variable"><name>verticalLayout_4</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a192bde1d01962a071c0b57b66403c202" kind="variable"><name>EntryLabel</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a95b32f3b9b64f4500d1d336d2b18c9f3" kind="variable"><name>line_2</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a7631b010a4ceccdd8f7cea570fb0559d" kind="variable"><name>formLayout_4</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a3e0a964a71039cf8b0f07964e3d1a798" kind="variable"><name>distLabel</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a0daf437bda93831ff767ce5646c5d661" kind="variable"><name>distComboBox</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1ada38799d3aa0607000c6fb4c63aeab08" kind="variable"><name>LowerBoundLabel</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a10f9c5b8a8ae915672e3f5756ef77b8a" kind="variable"><name>LowerBoundLineEdit</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1ad436e620515e4292aacbc72389381b96" kind="variable"><name>UpperBoundLabel</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a2204e7d59f86462549c1743069dd8c0c" kind="variable"><name>UpperBoundLineEdit</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a6c5fdfbb444b38d3aa4cf4ad6baef2a2" kind="variable"><name>NLabel</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a356296ad1c022360966e6e0a578887f0" kind="variable"><name>NLineEdit</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1af128a062ff200c4e3abb6a1436df7345" kind="variable"><name>BandwithLabel</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1ac0da2abe5bb568758d3297027a4460ee" kind="variable"><name>BandwithLineEdit</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a95f44e37c3b87e8cfca791f68625441b" kind="variable"><name>MLabel</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a5094fce85000796aff90ce9e08af9bcc" kind="variable"><name>MLineEdit</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a6ed707247b4a4de84308df26e3c317eb" kind="variable"><name>line_5</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1ac8c64b693a72ac47dff0e07ecbffb0ec" kind="variable"><name>calcButton</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a196d337894a894886ab76bc2f042cc1a" kind="variable"><name>line</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a767b9d1ab9b280e20dd15e6f6d2b14f4" kind="variable"><name>verticalLayout</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a4550675b84dd1209475be3c9ca236175" kind="variable"><name>FirstGraphLabel</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a364364f381850dabb8a101e218431a92" kind="variable"><name>line_3</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a3ad74d4db51bf95144ecc302b337b48c" kind="variable"><name>firstGraphWidget</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1adf47a782332139b7c08700178d1efd2b" kind="variable"><name>line_6</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a91b0d73aa3baef0bf6a9241c5c75bc6c" kind="variable"><name>SecondGraphLabel</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a1f9dd7cefb5e1582950134c30fb864dd" kind="variable"><name>line_4</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a30c529d9b2869e4064ba51ff404c2b0c" kind="variable"><name>secondGraphWidget</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a8f656a827c0fb3cdb51f9e075fefeda0" kind="variable"><name>menubar</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a2bbcfef40dc3907fd948c0749f84d9b2" kind="variable"><name>statusbar</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a67de752878dfb528d7c5e55245105a09" kind="function"><name>setupUi</name></member>
+    <member refid="classui___lab2_1_1_ui___main_window_1a3440df051ad9f7cb5eeee70b05285333" kind="function"><name>retranslateUi</name></member>
+  </compound>
+  <compound refid="classrandom__variables_1_1_uniform_random_variable" kind="class"><name>random_variables::UniformRandomVariable</name>
+    <member refid="classrandom__variables_1_1_uniform_random_variable_1a3000493d711986c5e44b8290e1aeca04" kind="variable"><name>a</name></member>
+    <member refid="classrandom__variables_1_1_uniform_random_variable_1a6be2455eeb4c7bb13bf0504e70858675" kind="variable"><name>b</name></member>
+    <member refid="classrandom__variables_1_1_uniform_random_variable_1acb57b3a1a17a317d224d671b67513318" kind="function"><name>__init__</name></member>
+    <member refid="classrandom__variables_1_1_uniform_random_variable_1ad75344462c8b453063a7bc2f884dd407" kind="function"><name>pdf</name></member>
+    <member refid="classrandom__variables_1_1_uniform_random_variable_1a7756a10fa21d9c3fde443b310744b30f" kind="function"><name>cdf</name></member>
+    <member refid="classrandom__variables_1_1_uniform_random_variable_1a1453f187a1e26d4b77c131972fce29b8" kind="function"><name>quantile</name></member>
+  </compound>
+  <compound refid="namespaceenums" kind="namespace"><name>enums</name>
+  </compound>
+  <compound refid="namespaceestimations" kind="namespace"><name>estimations</name>
+  </compound>
+  <compound refid="namespacehistogram" kind="namespace"><name>histogram</name>
+  </compound>
+  <compound refid="namespacemain" kind="namespace"><name>main</name>
+    <member refid="main_8py_1a5fa94f0581009434c7a63791944d6ff4" kind="variable"><name>app</name></member>
+    <member refid="main_8py_1ae1ea5d7d8ba9156ef06beef9bf8901a8" kind="variable"><name>window</name></member>
+  </compound>
+  <compound refid="namespaceplotting" kind="namespace"><name>plotting</name>
+    <member refid="plotting_8py_1a9da31f878e0dc3f1b3f8cd304bc30c73" kind="variable"><name>PEN_RED</name></member>
+    <member refid="plotting_8py_1ac61e15053b89157f288183455b42ed60" kind="variable"><name>PEN_BLUE</name></member>
+    <member refid="plotting_8py_1aab3d0b728279c45d7429657f95d637f9" kind="variable"><name>PEN_GREEN</name></member>
+    <member refid="plotting_8py_1a5bc10f034bf8f41f40df993d14984801" kind="function"><name>plot_distributions</name></member>
+    <member refid="plotting_8py_1a14bcd4b204bb567ec51068402fa1f26f" kind="function"><name>plot_histograms</name></member>
+  </compound>
+  <compound refid="namespace_qt_widgets" kind="namespace"><name>QtWidgets</name>
+  </compound>
+  <compound refid="namespacerandom__number__generators" kind="namespace"><name>random_number_generators</name>
+  </compound>
+  <compound refid="namespacerandom__variables" kind="namespace"><name>random_variables</name>
+  </compound>
+  <compound refid="namespacetest" kind="namespace"><name>test</name>
+    <member refid="test_8py_1a07373c5d5b632b719ee7be3c05487d04" kind="variable"><name>location</name></member>
+    <member refid="test_8py_1a747382a6e9d1a6da7f209797047cd3ff" kind="variable"><name>scale</name></member>
+    <member refid="test_8py_1a68547baa961d37140f854cd8258d4b96" kind="variable"><name>N</name></member>
+    <member refid="test_8py_1a983135ff36825587f2c5eab7c060df6a" kind="variable"><name>rv</name></member>
+    <member refid="test_8py_1afc47227fb6d9fc1c0923bfe5e5003825" kind="variable"><name>generator</name></member>
+    <member refid="test_8py_1ad1b5278de6e4f95681ee800d169f4903" kind="variable"><name>sample</name></member>
+    <member refid="test_8py_1a62565f4430b64bd06558c3a3ccef0156" kind="variable"><name>M</name></member>
+    <member refid="test_8py_1a774a98474a7ee9608acbebbb789cdb64" kind="variable"><name>X</name></member>
+    <member refid="test_8py_1aa9b2871c5b110c5a4c724c8e54ff2ba8" kind="variable"><name>Y_truth</name></member>
+    <member refid="test_8py_1a083811eeb7e42b911f61227f1597c9d8" kind="variable"><name>edf</name></member>
+    <member refid="test_8py_1a283fff329935d3841239d10e6a699059" kind="variable"><name>Y_edf</name></member>
+    <member refid="test_8py_1addf93c7a5cf90e31f66bacad99634ca5" kind="variable"><name>bandwidth</name></member>
+    <member refid="test_8py_1a5dc740342ed332a3d5e8d2b7e489802a" kind="variable"><name>srv</name></member>
+    <member refid="test_8py_1aad64fe737279d6fea92a98c4da78e55e" kind="variable"><name>Y_kernel</name></member>
+    <member refid="test_8py_1ada669b02027018501f632cb9fb0a903f" kind="variable"><name>P_1</name></member>
+    <member refid="test_8py_1ae5324345f9286dad2f1e8eaf8ad1700b" kind="variable"><name>m</name></member>
+    <member refid="test_8py_1ad553b3222f9fcc6013acea8c3690b09d" kind="variable"><name>hist</name></member>
+    <member refid="test_8py_1a84d702cee36a5f884fe3f3103403b458" kind="variable"><name>P_2</name></member>
+    <member refid="test_8py_1a51c3f0d4d498dd2a203cbf5de8a34c6c" kind="variable"><name>P_3</name></member>
+    <member refid="test_8py_1abc5722df345f276d0e1736e4cfcf2505" kind="function"><name>plot</name></member>
+  </compound>
+  <compound refid="namespaceui___lab2" kind="namespace"><name>ui_Lab2</name>
+  </compound>
+  <compound refid="enums_8py" kind="file"><name>enums.py</name>
+  </compound>
+  <compound refid="estimations_8py" kind="file"><name>estimations.py</name>
+  </compound>
+  <compound refid="histogram_8py" kind="file"><name>histogram.py</name>
+  </compound>
+  <compound refid="main_8py" kind="file"><name>main.py</name>
+  </compound>
+  <compound refid="plotting_8py" kind="file"><name>plotting.py</name>
+  </compound>
+  <compound refid="random__number__generators_8py" kind="file"><name>random_number_generators.py</name>
+  </compound>
+  <compound refid="random__variables_8py" kind="file"><name>random_variables.py</name>
+  </compound>
+  <compound refid="test_8py" kind="file"><name>test.py</name>
+  </compound>
+  <compound refid="ui___lab2_8py" kind="file"><name>ui_Lab2.py</name>
+  </compound>
+</doxygenindex>

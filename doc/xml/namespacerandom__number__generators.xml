@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespacerandom__number__generators" kind="namespace" language="Python">
+    <compoundname>random_number_generators</compoundname>
+    <innerclass refid="classrandom__number__generators_1_1_random_number_generator" prot="public">random_number_generators::RandomNumberGenerator</innerclass>
+    <innerclass refid="classrandom__number__generators_1_1_simple_random_number_generator" prot="public">random_number_generators::SimpleRandomNumberGenerator</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="random_number_generators.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

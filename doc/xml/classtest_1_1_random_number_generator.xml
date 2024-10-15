@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="classtest_1_1_random_number_generator" kind="class" language="Python" prot="public">
+    <compoundname>test::RandomNumberGenerator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ABC</basecompoundref>
+    <derivedcompoundref refid="classtest_1_1_simple_random_number_generator" prot="public" virt="non-virtual">test.SimpleRandomNumberGenerator</derivedcompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtest_1_1_random_number_generator_1afb3f06301211813b14443f3a7136da3b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.RandomNumberGenerator::random_variable</definition>
+        <argsstring></argsstring>
+        <name>random_variable</name>
+        <qualifiedname>test.RandomNumberGenerator.random_variable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="23" column="1" bodyfile="test.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtest_1_1_random_number_generator_1a8fab19aa9ff4aea85e81d83ff348144b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.RandomNumberGenerator.__init__</definition>
+        <argsstring>(self, RandomVariable random_variable)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>test.RandomNumberGenerator.__init__</qualifiedname>
+        <reimplementedby refid="classtest_1_1_simple_random_number_generator_1a9dc9fdf59bbd486f6ac7c3d894872e0a">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classtest_1_1_random_variable" kindref="compound">RandomVariable</ref></type>
+          <declname>random_variable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="22" column="1" bodyfile="test.py" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1_random_number_generator_1ac8b52a85f6454ed0553d081c44cefa10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>test.RandomNumberGenerator.get</definition>
+        <argsstring>(self, n)</argsstring>
+        <name>get</name>
+        <qualifiedname>test.RandomNumberGenerator.get</qualifiedname>
+        <reimplementedby refid="classtest_1_1_simple_random_number_generator_1a8a9522657d47dc6453b25f6bd69cc0cd">get</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>n</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="test.py" line="26" column="1" bodyfile="test.py" bodystart="26" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>test.RandomNumberGenerator</label>
+        <link refid="classtest_1_1_random_number_generator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>test.SimpleRandomNumberGenerator</label>
+        <link refid="classtest_1_1_simple_random_number_generator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>test.RandomNumberGenerator</label>
+        <link refid="classtest_1_1_random_number_generator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="test.py" line="21" column="1" bodyfile="test.py" bodystart="21" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classtest_1_1_random_number_generator_1a8fab19aa9ff4aea85e81d83ff348144b" prot="public" virt="non-virtual"><scope>test::RandomNumberGenerator</scope><name>__init__</name></member>
+      <member refid="classtest_1_1_random_number_generator_1ac8b52a85f6454ed0553d081c44cefa10" prot="public" virt="non-virtual"><scope>test::RandomNumberGenerator</scope><name>get</name></member>
+      <member refid="classtest_1_1_random_number_generator_1afb3f06301211813b14443f3a7136da3b" prot="public" virt="non-virtual"><scope>test::RandomNumberGenerator</scope><name>random_variable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
